@@ -1,2 +1,4 @@
 # E-Scooter_Verleih
-Elektroroller Verleih 
+Komponentenbasierte .Net Core Anwendung.
+
+Ein Elektroroller Verleih.
