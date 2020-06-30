@@ -1,19 +1,23 @@
- -Builds
-	-
-	-
-	-
+ -Anleitung
+	- _word - Word Dokumente
+	- Anleitung.pdf
 
- -Dokumentations
-	-
-	-
-	-
+ -Dokumentation
+	- _word - Word Dokuemnte
+	- Dokumentation.pdf
 
  -Konzept
-	-
-	-
-	-
+	- Architektur
+	- Datenbank
+	- Klassendiagramme
+	- Komponentendiagramme
+	- Mockups
+	- Programmdiagramm
+	- UseCases
 
  -Projekt
-	-
-	-
-	-
+	- Assets
+	- Datenbank Dump
+	- Installer
+	- RentNScoot - Projektordner
+
