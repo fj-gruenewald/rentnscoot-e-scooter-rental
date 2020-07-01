@@ -94,5 +94,17 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="header_dummy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Untitled-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Untitled-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="nadine-shaabana-C22cB1D1K-s-unsplash.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
