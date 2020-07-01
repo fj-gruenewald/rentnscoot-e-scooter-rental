@@ -1,5 +1,5 @@
 # rentNscoot-application
-Component based C# .Net core roller rental.
+Component based C# .Net core scooter rental.
 
 There are 2 components. A component for persistent data storage in a database and a component that contains the business logic. 
 
