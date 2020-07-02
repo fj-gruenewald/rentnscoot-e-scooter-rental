@@ -1,0 +1,14 @@
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot05Persistence\bin\Debug\netstandard2.1\RentNScoot05Persistence.deps.json
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot05Persistence\bin\Debug\netstandard2.1\RentNScoot05Persistence.dll
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot05Persistence\bin\Debug\netstandard2.1\RentNScoot05Persistence.pdb
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot05Persistence\obj\Debug\netstandard2.1\RentNScoot05Persistence.AssemblyInfoInputs.cache
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot05Persistence\obj\Debug\netstandard2.1\RentNScoot05Persistence.AssemblyInfo.cs
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot05Persistence\obj\Debug\netstandard2.1\RentNScoot05Persistence.csproj.CoreCompileInputs.cache
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot05Persistence\obj\Debug\netstandard2.1\RentNScoot05Persistence.dll
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot05Persistence\obj\Debug\netstandard2.1\RentNScoot05Persistence.pdb
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot05Persistence\bin\Debug\netstandard2.1\RentNScoot03Application.dll
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot05Persistence\bin\Debug\netstandard2.1\RentNScoot04Domain.dll
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot05Persistence\bin\Debug\netstandard2.1\RentNScoot03Application.pdb
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot05Persistence\bin\Debug\netstandard2.1\RentNScoot04Domain.pdb
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot05Persistence\obj\Debug\netstandard2.1\RentNScoot05Persistence.csprojAssemblyReference.cache
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot05Persistence\obj\Debug\netstandard2.1\RentNScoot05Persistence.csproj.CopyComplete

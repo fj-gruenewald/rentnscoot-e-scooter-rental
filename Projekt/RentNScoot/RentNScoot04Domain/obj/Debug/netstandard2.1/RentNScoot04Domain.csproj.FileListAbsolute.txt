@@ -6,3 +6,12 @@ C:\Users\Freddy\Desktop\RentNScoot04Domain\RentNScoot04Domain\obj\Debug\netstand
 C:\Users\Freddy\Desktop\RentNScoot04Domain\RentNScoot04Domain\obj\Debug\netstandard2.1\RentNScoot04Domain.csproj.CoreCompileInputs.cache
 C:\Users\Freddy\Desktop\RentNScoot04Domain\RentNScoot04Domain\obj\Debug\netstandard2.1\RentNScoot04Domain.dll
 C:\Users\Freddy\Desktop\RentNScoot04Domain\RentNScoot04Domain\obj\Debug\netstandard2.1\RentNScoot04Domain.pdb
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot04Domain\bin\Debug\netstandard2.1\RentNScoot04Domain.deps.json
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot04Domain\bin\Debug\netstandard2.1\RentNScoot04Domain.dll
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot04Domain\bin\Debug\netstandard2.1\RentNScoot04Domain.pdb
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot04Domain\obj\Debug\netstandard2.1\RentNScoot04Domain.AssemblyInfoInputs.cache
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot04Domain\obj\Debug\netstandard2.1\RentNScoot04Domain.AssemblyInfo.cs
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot04Domain\obj\Debug\netstandard2.1\RentNScoot04Domain.csproj.CoreCompileInputs.cache
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot04Domain\obj\Debug\netstandard2.1\RentNScoot04Domain.dll
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot04Domain\obj\Debug\netstandard2.1\RentNScoot04Domain.pdb
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot04Domain\obj\Debug\netstandard2.1\RentNScoot04Domain.csprojAssemblyReference.cache

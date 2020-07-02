@@ -1,0 +1,51 @@
+{
+  "runtimeTarget": {
+    "name": ".NETStandard,Version=v2.1/",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETStandard,Version=v2.1": {},
+    ".NETStandard,Version=v2.1/": {
+      "RentNScoot05Persistence/1.0.0": {
+        "dependencies": {
+          "RentNScoot03Application": "1.0.0",
+          "RentNScoot04Domain": "1.0.0"
+        },
+        "runtime": {
+          "RentNScoot05Persistence.dll": {}
+        }
+      },
+      "RentNScoot03Application/1.0.0": {
+        "dependencies": {
+          "RentNScoot04Domain": "1.0.0"
+        },
+        "runtime": {
+          "RentNScoot03Application.dll": {}
+        }
+      },
+      "RentNScoot04Domain/1.0.0": {
+        "runtime": {
+          "RentNScoot04Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "RentNScoot05Persistence/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RentNScoot03Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RentNScoot04Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

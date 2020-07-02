@@ -11,8 +11,4 @@
     <ProjectReference Include="..\RentNScoot04Domain\RentNScoot04Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Application\Factories\" />
-  </ItemGroup>
-
 </Project>

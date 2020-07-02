@@ -6,6 +6,13 @@ namespace RentNScoot.Application
 {
     internal class CAppQueries : IAppQueries
     {
-        internal CAppQueries() { }
+        //
+        private IDataRead _dataRead;
+
+        //
+        internal CAppQueries(IDataRead dataRead)
+        {
+            _dataRead = dataRead;
+        }
     }
 }

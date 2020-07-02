@@ -4,7 +4,7 @@ using System.Text;
 
 namespace RentNScoot
 {
-    interface IDataRead
+    public interface IDataRead
     {
     }
 }

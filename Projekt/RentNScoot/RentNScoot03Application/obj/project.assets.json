@@ -34,11 +34,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Freddy\\Desktop\\RentNScoot04Domain\\RentNScoot03Application\\RentNScoot03Application.csproj",
+      "projectUniqueName": "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot03Application\\RentNScoot03Application.csproj",
       "projectName": "RentNScoot03Application",
-      "projectPath": "C:\\Users\\Freddy\\Desktop\\RentNScoot04Domain\\RentNScoot03Application\\RentNScoot03Application.csproj",
+      "projectPath": "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot03Application\\RentNScoot03Application.csproj",
       "packagesPath": "C:\\Users\\Freddy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Freddy\\Desktop\\RentNScoot04Domain\\RentNScoot03Application\\obj\\",
+      "outputPath": "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot03Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -59,8 +59,8 @@
       "frameworks": {
         "netstandard2.1": {
           "projectReferences": {
-            "C:\\Users\\Freddy\\Desktop\\RentNScoot04Domain\\RentNScoot04Domain\\RentNScoot04Domain.csproj": {
-              "projectPath": "C:\\Users\\Freddy\\Desktop\\RentNScoot04Domain\\RentNScoot04Domain\\RentNScoot04Domain.csproj"
+            "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot04Domain\\RentNScoot04Domain.csproj": {
+              "projectPath": "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot04Domain\\RentNScoot04Domain.csproj"
             }
           }
         }

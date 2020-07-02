@@ -5,7 +5,14 @@ using System.Text;
 namespace RentNScoot.Application
 {
     internal class CAppCommands : IAppCommands
-    {
-        internal CAppCommands() { }
+    {       
+        //
+        private IDataWrite _dataWrite;
+
+        //Konstruktor
+        public CAppCommands(IDataWrite dataWrite)
+        {
+            _dataWrite = dataWrite;
+        }
     }
 }

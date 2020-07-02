@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <RootNamespace>RentNScoot</RootNamespace>
+    <LangVersion>8</LangVersion>
+    <Nullable>Enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RentNScoot03Application\RentNScoot03Application.csproj" />
+    <ProjectReference Include="..\RentNScoot04Domain\RentNScoot04Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Persistence\Factories\" />
+  </ItemGroup>
+
+</Project>

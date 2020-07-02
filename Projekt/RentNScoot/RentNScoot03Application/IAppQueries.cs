@@ -4,7 +4,7 @@ using System.Text;
 
 namespace RentNScoot
 {
-    interface IAppQueries
+    public interface IAppQueries
     {
     }
 }
