@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\RentNScoot.Application\RentNScoot.Application.csproj" />
     <ProjectReference Include="..\RentNScoot.Domain\RentNScoot.Domain.csproj" />
   </ItemGroup>
 

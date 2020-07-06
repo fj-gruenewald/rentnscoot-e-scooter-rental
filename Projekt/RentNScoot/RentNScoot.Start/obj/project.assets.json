@@ -29,6 +29,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
+          "RentNScoot.Application": "1.0.0",
           "RentNScoot.Domain": "1.0.0"
         },
         "compile": {
