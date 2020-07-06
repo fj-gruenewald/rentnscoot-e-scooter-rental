@@ -10,3 +10,5 @@ C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot.Pers
 C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot.Persistence\obj\Debug\netstandard2.1\RentNScoot.Persistence.csproj.CopyComplete
 C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot.Persistence\obj\Debug\netstandard2.1\RentNScoot.Persistence.dll
 C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot.Persistence\obj\Debug\netstandard2.1\RentNScoot.Persistence.pdb
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot.Persistence\bin\Debug\netstandard2.1\RentNScoot.Application.dll
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot.Persistence\bin\Debug\netstandard2.1\RentNScoot.Application.pdb

@@ -9,10 +9,19 @@
     ".NETStandard,Version=v2.1/": {
       "RentNScoot.Persistence/1.0.0": {
         "dependencies": {
+          "RentNScoot.Application": "1.0.0",
           "RentNScoot.Domain": "1.0.0"
         },
         "runtime": {
           "RentNScoot.Persistence.dll": {}
+        }
+      },
+      "RentNScoot.Application/1.0.0": {
+        "dependencies": {
+          "RentNScoot.Domain": "1.0.0"
+        },
+        "runtime": {
+          "RentNScoot.Application.dll": {}
         }
       },
       "RentNScoot.Domain/1.0.0": {
@@ -24,6 +33,11 @@
   },
   "libraries": {
     "RentNScoot.Persistence/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RentNScoot.Application/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

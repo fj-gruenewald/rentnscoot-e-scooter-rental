@@ -8,7 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\RentNScoot.Application\RentNScoot.Application.csproj" />
     <ProjectReference Include="..\RentNScoot.Domain\RentNScoot.Domain.csproj" />
     <ProjectReference Include="..\RentNScoot.Persistence\RentNScoot.Persistence.csproj" />
     <ProjectReference Include="..\RentNScoot.Presentation\RentNScoot.Presentation.csproj" />
