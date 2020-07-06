@@ -7,7 +7,5 @@ namespace RentNScoot
     public interface IDialog
     {
         void Show();
-        void Hide();
-        void Dispose();
     }
 }

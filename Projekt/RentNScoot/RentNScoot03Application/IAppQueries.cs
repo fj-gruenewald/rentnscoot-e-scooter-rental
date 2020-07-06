@@ -6,5 +6,6 @@ namespace RentNScoot
 {
     public interface IAppQueries
     {
+        int CountScooters();
     }
 }

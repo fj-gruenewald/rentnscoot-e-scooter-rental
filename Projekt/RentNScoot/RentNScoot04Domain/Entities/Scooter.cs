@@ -11,6 +11,7 @@ namespace RentNScoot.Entities
         public string Make { get; }
         public string Model { get; }
 
+
         //Konstruktor zum erstellen neuer Einträge
         public Scooter(string make, string model)
         {

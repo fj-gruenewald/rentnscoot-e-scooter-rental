@@ -6,5 +6,6 @@ namespace RentNScoot
 {
     public interface IDataRead
     {
+        int CountScooters();
     }
 }

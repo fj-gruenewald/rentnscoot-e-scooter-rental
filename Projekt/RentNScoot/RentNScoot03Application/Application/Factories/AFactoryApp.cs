@@ -11,7 +11,7 @@ namespace RentNScoot.Application.Factories
             return new CAppQueries(dataRead);
         }
 
-        public static IAppCommands createCommandInstance(IDataWrite dataWrite)
+        public static IAppCommands CreateCommandInstance(IDataWrite dataWrite)
         {
             return new CAppCommands(dataWrite);
         }

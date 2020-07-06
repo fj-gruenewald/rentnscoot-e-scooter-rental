@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <RootNamespace>RentNScoot</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RentNScoot03Application\RentNScoot03Application.csproj" />
+    <ProjectReference Include="..\RentNScoot04Domain\RentNScoot04Domain.csproj" />
+  </ItemGroup>
+
+</Project>

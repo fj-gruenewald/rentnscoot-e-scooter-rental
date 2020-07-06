@@ -10,7 +10,7 @@ namespace RentNScoot.Application
         private IDataWrite _dataWrite;
 
         //Konstruktor
-        public CAppCommands(IDataWrite dataWrite)
+        internal CAppCommands(IDataWrite dataWrite)
         {
             _dataWrite = dataWrite;
         }

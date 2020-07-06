@@ -8,7 +8,11 @@ namespace RentNScoot.Persistence
     {
         internal CDataRead()
         {
+        }
 
+        public int CountScooters()
+        {
+            return 666;
         }
     }
 }

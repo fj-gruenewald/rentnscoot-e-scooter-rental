@@ -14,5 +14,13 @@ namespace RentNScoot.Application
         {
             _dataRead = dataRead;
         }
+
+        //
+        public int CountScooters()
+        {
+            int nScooter = _dataRead.CountScooters();
+            return nScooter;
+        }
+
     }
 }
