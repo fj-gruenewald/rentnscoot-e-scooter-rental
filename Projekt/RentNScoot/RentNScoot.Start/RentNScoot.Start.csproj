@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <RootNamespace>RentNScoot</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RentNScoot.Application\RentNScoot.Application.csproj" />
+    <ProjectReference Include="..\RentNScoot.Domain\RentNScoot.Domain.csproj" />
+    <ProjectReference Include="..\RentNScoot.Persistence\RentNScoot.Persistence.csproj" />
+    <ProjectReference Include="..\RentNScoot.Presentation\RentNScoot.Presentation.csproj" />
+  </ItemGroup>
+
+</Project>
