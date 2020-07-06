@@ -6,8 +6,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
-          "RentNScoot.Domain": "1.0.0",
-          "RentNScoot.Persistence": "1.0.0"
+          "RentNScoot.Domain": "1.0.0"
         },
         "compile": {
           "bin/placeholder/RentNScoot.Application.dll": {}
@@ -25,19 +24,6 @@
         "runtime": {
           "bin/placeholder/RentNScoot.Domain.dll": {}
         }
-      },
-      "RentNScoot.Persistence/1.0.0": {
-        "type": "project",
-        "framework": ".NETStandard,Version=v2.1",
-        "dependencies": {
-          "RentNScoot.Domain": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/RentNScoot.Persistence.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/RentNScoot.Persistence.dll": {}
-        }
       }
     }
   },
@@ -51,11 +37,6 @@
       "type": "project",
       "path": "../RentNScoot.Domain/RentNScoot.Domain.csproj",
       "msbuildProject": "../RentNScoot.Domain/RentNScoot.Domain.csproj"
-    },
-    "RentNScoot.Persistence/1.0.0": {
-      "type": "project",
-      "path": "../RentNScoot.Persistence/RentNScoot.Persistence.csproj",
-      "msbuildProject": "../RentNScoot.Persistence/RentNScoot.Persistence.csproj"
     }
   },
   "projectFileDependencyGroups": {

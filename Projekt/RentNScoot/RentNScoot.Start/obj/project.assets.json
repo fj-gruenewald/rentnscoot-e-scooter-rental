@@ -6,8 +6,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
-          "RentNScoot.Domain": "1.0.0",
-          "RentNScoot.Persistence": "1.0.0"
+          "RentNScoot.Domain": "1.0.0"
         },
         "compile": {
           "bin/placeholder/RentNScoot.Application.dll": {}

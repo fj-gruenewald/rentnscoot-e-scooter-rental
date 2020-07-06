@@ -34,9 +34,6 @@
             "projectReferences": {
               "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Domain\\RentNScoot.Domain.csproj": {
                 "projectPath": "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Domain\\RentNScoot.Domain.csproj"
-              },
-              "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Persistence\\RentNScoot.Persistence.csproj": {
-                "projectPath": "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Persistence\\RentNScoot.Persistence.csproj"
               }
             }
           }
