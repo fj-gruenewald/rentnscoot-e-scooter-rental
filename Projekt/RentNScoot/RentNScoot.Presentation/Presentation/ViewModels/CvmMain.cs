@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
+using RentNScoot.Domain;
 
 namespace RentNScoot.Presentation.ViewModels
 {
@@ -11,14 +13,15 @@ namespace RentNScoot.Presentation.ViewModels
         private IAppQueries _appQueries;
 
         //
-        public string NCars { get; }
+        public string nScooters { get; }
 
         //
         public CvmMain(IAppCommands appCommands, IAppQueries appQueries)
         {
             _appCommands = appCommands;
             _appQueries = appQueries;
-            NCars = $"Insgesamt {_appQueries.CountScooters()} Roller";
+
+            nScooters = $"Insgesamt {_appQueries.CountScooters()} Roller";
         }
     }
 }

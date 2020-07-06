@@ -37,8 +37,8 @@ namespace RentNScoot.Start
             //Dependency Inversion Principle 
 
             //Persistence
-            _dataRead = AFactoryData.CreateReadInstance();
-            _dataWrite = AFactoryData.CreateWriteInstance();
+            _dataRead = AFactoryData.CreateReadInstance(false);
+            _dataWrite = AFactoryData.CreateWriteInstance(false);
 
             //Application
             _appQueries = AFactoryApp.CreateQueryInstance(_dataRead);
