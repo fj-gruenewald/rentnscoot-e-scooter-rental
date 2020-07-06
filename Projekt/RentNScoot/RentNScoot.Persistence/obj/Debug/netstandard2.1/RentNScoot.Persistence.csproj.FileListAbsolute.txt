@@ -1,0 +1,12 @@
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot.Persistence\bin\Debug\netstandard2.1\RentNScoot.Persistence.deps.json
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot.Persistence\bin\Debug\netstandard2.1\RentNScoot.Persistence.dll
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot.Persistence\bin\Debug\netstandard2.1\RentNScoot.Persistence.pdb
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot.Persistence\bin\Debug\netstandard2.1\RentNScoot.Domain.dll
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot.Persistence\bin\Debug\netstandard2.1\RentNScoot.Domain.pdb
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot.Persistence\obj\Debug\netstandard2.1\RentNScoot.Persistence.csprojAssemblyReference.cache
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot.Persistence\obj\Debug\netstandard2.1\RentNScoot.Persistence.AssemblyInfoInputs.cache
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot.Persistence\obj\Debug\netstandard2.1\RentNScoot.Persistence.AssemblyInfo.cs
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot.Persistence\obj\Debug\netstandard2.1\RentNScoot.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot.Persistence\obj\Debug\netstandard2.1\RentNScoot.Persistence.csproj.CopyComplete
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot.Persistence\obj\Debug\netstandard2.1\RentNScoot.Persistence.dll
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot.Persistence\obj\Debug\netstandard2.1\RentNScoot.Persistence.pdb

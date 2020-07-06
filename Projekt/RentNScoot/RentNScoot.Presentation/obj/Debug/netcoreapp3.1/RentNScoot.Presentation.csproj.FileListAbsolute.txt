@@ -1,0 +1,16 @@
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot.Presentation\bin\Debug\netcoreapp3.1\RentNScoot.Presentation.deps.json
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot.Presentation\bin\Debug\netcoreapp3.1\RentNScoot.Presentation.dll
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot.Presentation\bin\Debug\netcoreapp3.1\RentNScoot.Presentation.pdb
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot.Presentation\bin\Debug\netcoreapp3.1\RentNScoot.Application.dll
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot.Presentation\bin\Debug\netcoreapp3.1\RentNScoot.Domain.dll
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot.Presentation\bin\Debug\netcoreapp3.1\RentNScoot.Persistence.dll
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot.Presentation\bin\Debug\netcoreapp3.1\RentNScoot.Application.pdb
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot.Presentation\bin\Debug\netcoreapp3.1\RentNScoot.Domain.pdb
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot.Presentation\bin\Debug\netcoreapp3.1\RentNScoot.Persistence.pdb
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot.Presentation\obj\Debug\netcoreapp3.1\RentNScoot.Presentation.csprojAssemblyReference.cache
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot.Presentation\obj\Debug\netcoreapp3.1\RentNScoot.Presentation.AssemblyInfoInputs.cache
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot.Presentation\obj\Debug\netcoreapp3.1\RentNScoot.Presentation.AssemblyInfo.cs
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot.Presentation\obj\Debug\netcoreapp3.1\RentNScoot.Presentation.csproj.CoreCompileInputs.cache
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot.Presentation\obj\Debug\netcoreapp3.1\RentNScoot.Presentation.csproj.CopyComplete
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot.Presentation\obj\Debug\netcoreapp3.1\RentNScoot.Presentation.dll
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot.Presentation\obj\Debug\netcoreapp3.1\RentNScoot.Presentation.pdb
