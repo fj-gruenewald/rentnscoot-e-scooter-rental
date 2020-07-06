@@ -1,4 +1,0 @@
-C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot02Presentation\obj\Debug\netcoreapp3.1\RentNScoot02Presentation.csprojAssemblyReference.cache
-C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot02Presentation\obj\Debug\netcoreapp3.1\Presentation\Views\CviMain.g.cs
-C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot02Presentation\obj\Debug\netcoreapp3.1\RentNScoot02Presentation_MarkupCompile.cache
-C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot02Presentation\obj\Debug\netcoreapp3.1\RentNScoot02Presentation_MarkupCompile.lref

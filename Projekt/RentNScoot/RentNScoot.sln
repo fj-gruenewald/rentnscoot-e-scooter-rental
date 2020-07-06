@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentNScoot.Domain", "RentNScoot.Domain\RentNScoot.Domain.csproj", "{3280558A-D5D4-45FF-839E-D2526BF97049}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 RendNScoot.Start", "01 RendNScoot.Start", "{CC0DA107-E4B5-4FA4-9E91-D258370D42AB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 RentNScoot.Presentation", "02 RentNScoot.Presentation", "{4A681B03-3087-4FDA-B80D-893FD310611B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 RentNScoot-Application", "03 RentNScoot-Application", "{D444E740-247B-425E-BC8F-ED4818C63FCE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 RentNScoot.Domain", "04 RentNScoot.Domain", "{C7CCDBF7-A0E3-4E8A-A3B4-BE69134B7D42}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 RentNScoot.Persistence", "05 RentNScoot.Persistence", "{493D06D3-2169-420F-9FC1-7E89AC074AE7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3280558A-D5D4-45FF-839E-D2526BF97049}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3280558A-D5D4-45FF-839E-D2526BF97049}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3280558A-D5D4-45FF-839E-D2526BF97049}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3280558A-D5D4-45FF-839E-D2526BF97049}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3280558A-D5D4-45FF-839E-D2526BF97049} = {C7CCDBF7-A0E3-4E8A-A3B4-BE69134B7D42}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4635F728-57B5-4DFD-86C8-46F3049AB783}
+	EndGlobalSection
+EndGlobal
