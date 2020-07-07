@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-//
-
+﻿//
 
 namespace RentNScoot.Persistence.Factories
 {
@@ -12,7 +7,7 @@ namespace RentNScoot.Persistence.Factories
         //
         public static IDataRead CreateReadInstance(bool fake)
         {
-            return new CDataRead();
+            return new CDataScooterRead();
         }
 
         //
