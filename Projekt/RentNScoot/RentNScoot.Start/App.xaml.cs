@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
+using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Markup;
 
 //
 using RentNScoot.Persistence.Factories;
@@ -37,8 +39,8 @@ namespace RentNScoot.Start
             //Dependency Inversion Principle 
 
             //Persistence
-            _dataRead = AFactoryData.CreateReadInstance(false);
-            _dataWrite = AFactoryData.CreateWriteInstance(false);
+            _dataRead = AFactoryData.CreateReadInstance(true);
+            _dataWrite = AFactoryData.CreateWriteInstance(true);
 
             //Application
             _appQueries = AFactoryApp.CreateQueryInstance(_dataRead);
@@ -48,6 +50,19 @@ namespace RentNScoot.Start
             _dialog = AFactoryDialog.CreateSingleton(_appCommands, _appQueries);
             _dialog.Show();
 
+        }
+
+        //
+        protected override void OnStartup(StartupEventArgs e)
+        {
+
+            // Change cultureInfo in all XAML View, e.z. to de-DE
+            FrameworkElement.LanguageProperty.OverrideMetadata(
+                typeof(FrameworkElement),
+                new FrameworkPropertyMetadata(
+                    XmlLanguage.GetLanguage(CultureInfo.CurrentCulture.IetfLanguageTag)));
+
+            base.OnStartup(e);
         }
     }
 }

@@ -84,6 +84,16 @@ namespace RentNScoot.Persistence.Fakes
             return scooters;
         }
 
+        public int CountScooters(string make, string model)
+        {
+            throw new NotImplementedException();
+        }
+
+        public ICollection<Scooter> SelectScooters(ScootersToSearch scootersToSearch)
+        {
+            throw new NotImplementedException();
+        }
+
         //
 
         //

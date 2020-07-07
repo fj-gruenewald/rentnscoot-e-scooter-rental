@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
 
-1-59853408
+5-931380610
 
-61886479605
+10-1823684651
 194-727506197
-Presentation\Views\CviMain.xaml;
+Presentation\Views\CviCustomerData.xaml;Presentation\Views\CviMain.xaml;Presentation\Views\CviSearchMisc.xaml;Presentation\Views\CviSearchScooter.xaml;Presentation\Views\CviSummary.xaml;
 
-False
+True
 
