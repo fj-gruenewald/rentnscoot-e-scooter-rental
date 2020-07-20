@@ -9,6 +9,10 @@ namespace RentNScoot
 {
     public interface IDataRead
     {
+        void InitDb();
+        void DisposeDb();
         int CountScooters();
+
+        ICollection<Scooter> SelectAllScooters();
     }
 }

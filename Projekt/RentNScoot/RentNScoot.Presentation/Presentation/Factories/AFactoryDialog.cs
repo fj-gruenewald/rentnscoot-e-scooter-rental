@@ -11,6 +11,8 @@ namespace RentNScoot.Presentation.Factories
     public abstract class AFactoryDialog
     {
         //
+
+        //
         public static IDialog CreateSingleton(IAppCommands appCommands, IAppQueries appQueries)
         {
             CvmMain vmMain = new CvmMain(appCommands, appQueries);

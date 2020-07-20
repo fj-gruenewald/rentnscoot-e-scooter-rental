@@ -12,6 +12,10 @@ namespace RentNScoot.Domain
         public string Model { get; }
         public int Price { get; }
 
+        public Scooter()
+        {
+
+        }
 
         //Konstruktor zum erstellen neuer Einträge
         public Scooter(string make, string model, int price)

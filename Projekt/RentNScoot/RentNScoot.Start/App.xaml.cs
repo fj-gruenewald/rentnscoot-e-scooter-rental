@@ -38,13 +38,9 @@ namespace RentNScoot.Start
             {
                 //
                 string connectionString = string.Empty;
-
-                //Persistence Read
-                _dataRead = AFactoryData.CreateReadInstance(true);
-                _dataWrite = AFactoryData.CreateWriteInstance(true);
-
+                
                 connectionString = @"Server=localhost;Database=cardatabase;Uid=root;Pwd=geh1m_;";
-                _dataRead        = AFactoryData.CreateInstance_ReadMySql(connectionString);
+                _dataRead        = AFactoryData.Create_ReadSql(connectionString);
 
                 _dataRead.InitDb();
 

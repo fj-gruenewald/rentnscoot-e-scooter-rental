@@ -11,4 +11,8 @@
     <ProjectReference Include="..\RentNScoot.Domain\RentNScoot.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+
 </Project>

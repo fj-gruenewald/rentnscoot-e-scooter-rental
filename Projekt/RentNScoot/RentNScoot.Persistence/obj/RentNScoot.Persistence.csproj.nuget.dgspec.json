@@ -167,6 +167,16 @@
       },
       "frameworks": {
         "netstandard2.1": {
+          "dependencies": {
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.21, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
