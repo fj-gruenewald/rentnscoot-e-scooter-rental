@@ -1,17 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Globalization;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Markup;
+﻿using RentNScoot.Application.Factories;
 
 //
 using RentNScoot.Persistence.Factories;
-using RentNScoot.Application.Factories;
 using RentNScoot.Presentation.Factories;
+using System;
+using System.Globalization;
+using System.Windows;
+using System.Windows.Markup;
 
 namespace RentNScoot.Start
 {
@@ -22,40 +17,59 @@ namespace RentNScoot.Start
     {
         //Persistence
         private IDataRead _dataRead;
+
         private IDataWrite _dataWrite;
 
         //Application
         private IAppQueries _appQueries;
+
         private IAppCommands _appCommands;
 
         //Presentation
         private IDialog _dialog;
 
-
         //EventHandler for StartUp
-        void AppStartUp(object sender, StartupEventArgs e)
+        private void AppStartUp(object sender, StartupEventArgs e)
         {
             //Dependency Injection Setup
-            //Dependency Inversion Principle 
+            //Dependency Inversion Principle
 
-            //Persistence
-            _dataRead = AFactoryData.CreateReadInstance(true);
-            _dataWrite = AFactoryData.CreateWriteInstance(true);
+            try
+            {
+                //
+                string connectionString = string.Empty;
 
-            //Application
-            _appQueries = AFactoryApp.CreateQueryInstance(_dataRead);
-            _appCommands = AFactoryApp.CreateCommandInstance(_dataWrite);
+                //Persistence Read
+                _dataRead = AFactoryData.CreateReadInstance(true);
+                _dataWrite = AFactoryData.CreateWriteInstance(true);
 
-            //Presentation
-            _dialog = AFactoryDialog.CreateSingleton(_appCommands, _appQueries);
-            _dialog.Show();
+                connectionString = @"Server=localhost;Database=cardatabase;Uid=root;Pwd=geh1m_;";
+                _dataRead        = AFactoryData.CreateInstance_ReadMySql(connectionString);
 
+                _dataRead.InitDb();
+
+                //Persistence Write
+
+                connectionString = @"Server=localhost;Database=cardatabase;Uid=root;Pwd=geh1m_;";
+                _dataWrite       = AFactoryData.Create_CarWriteMySql(connectionString);
+
+                //Application
+                _appQueries = AFactoryApp.CreateQueryInstance(_dataRead);
+                _appCommands = AFactoryApp.CreateCommandInstance(_dataWrite);
+
+                //Presentation
+                _dialog = AFactoryDialog.CreateSingleton(_appCommands, _appQueries);
+                _dialog.Show();
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message, "ABBRUCH", MessageBoxButton.OK,MessageBoxImage.Stop);
+            }
         }
 
         //
         protected override void OnStartup(StartupEventArgs e)
         {
-
             // Change cultureInfo in all XAML View, e.z. to de-DE
             FrameworkElement.LanguageProperty.OverrideMetadata(
                 typeof(FrameworkElement),

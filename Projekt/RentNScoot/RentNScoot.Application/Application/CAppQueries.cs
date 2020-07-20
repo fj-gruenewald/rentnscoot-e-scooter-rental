@@ -25,51 +25,5 @@ namespace RentNScoot.Application
             int nScooters = _dataRead.CountScooters();
             return nScooters;
         }
-
-        //
-        public IEnumerable<string> GetMakes()
-        {
-            IEnumerable<string> makes = _dataRead.SelectMakes();
-            return makes;
-        }
-
-        //
-        public int CountScooters(string make)
-        {
-            int nScooters = _dataRead.CountScooters(make); 
-            return nScooters; 
-
-        }
-
-        //
-        public IEnumerable<string> GetModels(string make)
-        {
-            IEnumerable<string> models = _dataRead.SelectModels(make);  
-            return models;
-        }
-
-        //
-        public int CountScooters(string make, string model)
-        {
-            int nScooters = _dataRead.CountScooters(make, model);
-            return nScooters; 
-
-        }
-
-        //
-        public int CountScooters(ScootersToSearch scootersToSearch) 
-        {
-            int nScooters = _dataRead.CountScooters(scootersToSearch);
-            return nScooters;
-        }
-
-        //
-        public ICollection<Scooter> GetScooters(ScootersToSearch scootersToSearch)
-        {
-            ICollection<Scooter> scooter = _dataRead.SelectScooters(scootersToSearch);
-            return scooter; 
-
-        }
-
     }
 }

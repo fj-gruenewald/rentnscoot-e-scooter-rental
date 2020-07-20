@@ -6,8 +6,5 @@
         xmlns:local="clr-namespace:RentNScoot.Presentation.Views"
         mc:Ignorable="d"
         Title="CviMain" Height="450" Width="800">
-    <Grid>
-        <DataGrid Margin="65,37,65,70"/>
-
-    </Grid>
+    <Grid/>
 </Window>

@@ -1,20 +1,25 @@
-﻿//
+﻿using RentNScoot.Persistence.Read;
+using System.Data.SqlClient;
+using System.Data.SQLite;
+using MySql.Data.MySqlClient;
+
 
 namespace RentNScoot.Persistence.Factories
 {
-    public class AFactoryData
+    public abstract class AFactoryData
     {
         //
-        public static IDataRead CreateReadInstance(bool fake)
+        public static IDataRead Create_ReadCarMySql(string connectionString)
         {
-            return new CDataScooterRead();
+            var dbProviderFactory = MySqlClientFactory.Instance;
+            return new CDataCarReadMySql(dbProviderFactory, connectionString);
         }
 
         //
-        public static IDataWrite CreateWriteInstance(bool fake)
+        public static IDataWrite Create_CarWriteMySql(string connectionString)
         {
-            //if (fake) return new CDataWriteFake();
-            return new CDataWrite();
+            var dbProviderFactory = MySqlClientFactory.Instance;
+            return new CDataCarWriteMySql(dbProviderFactory, connectionString);
         }
     }
 }
