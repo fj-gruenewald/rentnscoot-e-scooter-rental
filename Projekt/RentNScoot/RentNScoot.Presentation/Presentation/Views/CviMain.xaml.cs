@@ -31,5 +31,12 @@ namespace RentNScoot.Presentation.Views
             DataContext = vmMain;
             InitializeComponent();
         }
+
+        private void bttn_start_Click(object sender, RoutedEventArgs e)
+        {
+            CviSearchLocation cviSearchLocation = new CviSearchLocation();
+            this.Visibility = Visibility.Hidden;
+            cviSearchLocation.Show();
+        }
     }
 }

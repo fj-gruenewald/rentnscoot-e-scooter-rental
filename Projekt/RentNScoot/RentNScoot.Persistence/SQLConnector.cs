@@ -8,74 +8,72 @@ namespace RentNScoot
 {
     internal class SQLConnector
     {
-        #region fields
-        private readonly string _connectionString;
-        private readonly DbProviderFactory _dbProviderFactory;
-        protected readonly DbConnection _dbConnection;
-        protected readonly DbCommand _dbCommand;
-        protected DbTransaction? _dbTransaction;
-        #endregion
+        protected DbCommand command;
+        protected DbConnection connection;
+        protected DbTransaction transaction;
 
-        #region ctor
-        protected SQLConnector(DbProviderFactory dbProviderFactory, string connectionString)
+        private readonly string connectionString;
+        private readonly DbProviderFactory providerFactory;
+
+        protected SQLConnector(DbProviderFactory providerFactory, string connectionString)
         {
             if (string.IsNullOrEmpty(connectionString))
-                throw new ApplicationException("ConnectionString ist leer");
-            _dbProviderFactory = dbProviderFactory ??
-                                 throw new ApplicationException("DbProviderFactory ist null");
-            _connectionString = connectionString;
+            {
+                throw new ApplicationException("connectionString cannot be empty.");
+            }
 
-            // Create a DbConnection object
-            _dbConnection = _dbProviderFactory.CreateConnection();
-            if (_dbConnection == null)
-                throw new ApplicationException("DbConnection konnte nicht erzeugen");
-            // set connection string
-            _dbConnection.ConnectionString = _connectionString;
-
-            // Create a DbCommand object
-            _dbCommand = _dbProviderFactory.CreateCommand();
-            if (_dbCommand == null)
-                throw new ApplicationException("DbCommand konnte nicht erzeugen");
-            // setter injection of DbConnection object
-            _dbCommand.Connection = _dbConnection;
+            this.providerFactory = providerFactory ?? throw new ApplicationException("providerFactory cannot be null.");
+            this.connectionString = connectionString;
         }
-        #endregion
+
+        protected static void AddParameter(DbCommand command, string parameterName, object parameterValue)
+        {
+            var parameter = command.CreateParameter();
+
+            parameter.ParameterName = parameterName;
+            parameter.Value = parameterValue;
+
+            command.Parameters.Add(parameter);
+        }
+
+        public virtual void CloseDb()
+        {
+            CloseConnection();
+        }
 
         public virtual void InitDb()
         {
-            // Test Connection
-            _dbConnection.Open();
-            if (_dbConnection.State == ConnectionState.Open)
+            connection = providerFactory.CreateConnection() ?? throw new ApplicationException("Could not create connection.");
+            connection.ConnectionString = connectionString;
+
+            connection.Open();
+            if (connection.State == ConnectionState.Open)
             {
-                _dbConnection.Close();
+                connection.Close();
             }
             else
             {
-                throw new ApplicationException(
-                   $"Datenbank {_connectionString} konnte nicht geöffnet werden");
+                throw new ApplicationException($"Could not connect to {connectionString}.");
+            }
+
+            command = providerFactory.CreateCommand() ?? throw new ApplicationException("Could not create command.");
+            command.CommandType = CommandType.Text;
+            command.Connection = connection;
+        }
+
+        protected void CloseConnection()
+        {
+            if (connection.State == ConnectionState.Open)
+            {
+                connection.Close();
             }
         }
 
-        public virtual void DisposeDb()
+        protected virtual bool OpenConnection()
         {
-            if (_dbConnection.State == ConnectionState.Open)
-                _dbConnection.Close();
-            _dbCommand.Dispose();
-            _dbConnection.Dispose();
-        }
+            connection.Open();
 
-        protected virtual bool Open()
-        {
-
-            return false;
-        }
-
-        public static void AddParameter(DbCommand dbCommand, string parameterName, object value)
-        {
-            DbParameter dbParameter = dbCommand.CreateParameter();
-            dbParameter.ParameterName = parameterName;
-            dbParameter.Value = value;
-            dbCommand.Parameters.Add(dbParameter);
+            return connection.State == ConnectionState.Open;
         }
     }
 }

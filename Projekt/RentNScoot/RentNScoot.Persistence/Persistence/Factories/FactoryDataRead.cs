@@ -11,10 +11,10 @@ namespace RentNScoot.Persistence.Factories
     {
         public static IDataRead CreateInstance(string dataSourcePath)
         {
-            var providerFactory = DbProviderFactories.GetFactory("System.Data.OleDb") ?? throw new ApplicationException("Could not create System.Data.OleDb.");
-            var connectionString = $"Provider=Microsoft.ACE.OLEDB.12.0;Data Source={dataSourcePath};";
+            var providerFactory = DbProviderFactories.GetFactory("System.Data.SqlClient") ?? throw new ApplicationException("Could not create System.Data.OleDb.");
+            var connectionString = $"Data Source=DESKTOP-T6LLR5B;Initial Catalog=RNSDB;Integrated Security=True;Pooling=False";
 
-            return new CDataReadSQL(providerFactory, connectionString); ?? throw new ApplicationException("Could not create DataReader.");
-
+            return new CDataReadSQL(providerFactory, connectionString) ?? throw new ApplicationException("Could not create DataReader.");
         }
+    }
 }

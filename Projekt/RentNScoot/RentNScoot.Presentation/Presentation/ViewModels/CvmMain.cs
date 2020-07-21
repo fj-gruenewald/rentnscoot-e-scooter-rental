@@ -20,8 +20,7 @@ namespace RentNScoot.Presentation.ViewModels
         {
             _appCommands = appCommands;
             _appQueries = appQueries;
-
-            nScooters = $"Insgesamt {_appQueries.CountScooters()} Roller";
+            
         }
     }
 }

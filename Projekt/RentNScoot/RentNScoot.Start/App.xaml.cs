@@ -34,6 +34,8 @@ namespace RentNScoot.Start
             //Dependency Injection Setup
             //Dependency Inversion Principle
 
+            _dialog = AFactoryDialog.CreateSingleton(_appCommands, _appQueries);
+            _dialog.Show();
         }
 
         //

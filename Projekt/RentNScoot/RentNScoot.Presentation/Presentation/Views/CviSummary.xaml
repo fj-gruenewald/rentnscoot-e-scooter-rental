@@ -7,6 +7,33 @@
         mc:Ignorable="d"
         Title="CviEnd" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- Header -->
+        <TextBox Grid.Row ="0" Grid.Column="0" Text="Zusammenfassung" FontSize="36" TextAlignment="Center" Margin="0,0,0,260" Grid.RowSpan="2" BorderThickness="0,0,0,0" Background="#FF2B2D42" Foreground="#FFEDF2F4" IsReadOnly="True"/>
+
+        <!-- Body -->
+
+
+        <!-- Footer -->
+        <Grid Grid.Row ="2" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button Grid.Row ="2" Grid.Column="0" Content="Zurück" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="150" Background="#FF2B2D42" Foreground="#FFEDF2F4" FontSize="18"/>
+            <Button Grid.Row ="2" Grid.Column="2" Content="Abschließen" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="150" Background="#FF2B2D42" Foreground="#FFEDF2F4" FontSize="18"/>
+        </Grid>        
     </Grid>
 </Window>
