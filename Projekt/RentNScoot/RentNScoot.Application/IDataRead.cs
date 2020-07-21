@@ -13,6 +13,5 @@ namespace RentNScoot
         void DisposeDb();
         int CountScooters();
 
-        ICollection<Scooter> SelectAllScooters();
     }
 }

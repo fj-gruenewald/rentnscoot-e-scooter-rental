@@ -34,33 +34,6 @@ namespace RentNScoot.Start
             //Dependency Injection Setup
             //Dependency Inversion Principle
 
-            try
-            {
-                //
-                string connectionString = string.Empty;
-                
-                connectionString = @"Server=localhost;Database=cardatabase;Uid=root;Pwd=geh1m_;";
-                _dataRead        = AFactoryData.Create_ReadSql(connectionString);
-
-                _dataRead.InitDb();
-
-                //Persistence Write
-
-                connectionString = @"Server=localhost;Database=cardatabase;Uid=root;Pwd=geh1m_;";
-                _dataWrite       = AFactoryData.Create_CarWriteMySql(connectionString);
-
-                //Application
-                _appQueries = AFactoryApp.CreateQueryInstance(_dataRead);
-                _appCommands = AFactoryApp.CreateCommandInstance(_dataWrite);
-
-                //Presentation
-                _dialog = AFactoryDialog.CreateSingleton(_appCommands, _appQueries);
-                _dialog.Show();
-            }
-            catch (Exception exception)
-            {
-                MessageBox.Show(exception.Message, "ABBRUCH", MessageBoxButton.OK,MessageBoxImage.Stop);
-            }
         }
 
         //
