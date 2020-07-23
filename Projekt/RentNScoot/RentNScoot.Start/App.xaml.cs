@@ -17,12 +17,10 @@ namespace RentNScoot.Start
     {
         //Persistence
         private IDataRead _dataRead;
-
         private IDataWrite _dataWrite;
 
         //Application
         private IAppQueries _appQueries;
-
         private IAppCommands _appCommands;
 
         //Presentation
@@ -34,8 +32,30 @@ namespace RentNScoot.Start
             //Dependency Injection Setup
             //Dependency Inversion Principle
 
-            _dialog = AFactoryDialog.CreateSingleton(_appCommands, _appQueries);
-            _dialog.Show();
+            try
+            {
+                //
+                string connectionString = string.Empty;
+                
+                connectionString = @"Server=localhost;Database=scooterdatabase;Uid=root;Pwd=geh1m_;";
+                _dataRead        = AFactoryData.Create_ReadSql(connectionString);
+
+                _dataRead.InitDb();
+
+                //Persistence Write
+
+                //Application
+                _appQueries = AFactoryApp.CreateQueryInstance(_dataRead);
+                _appCommands = AFactoryApp.CreateCommandInstance(_dataWrite);
+
+                //Presentation
+                _dialog = AFactoryDialog.CreateSingleton(_appCommands, _appQueries);
+                _dialog.Show();
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show(exception.Message, "ABBRUCH", MessageBoxButton.OK,MessageBoxImage.Stop);
+            }
         }
 
         //

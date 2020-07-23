@@ -8,9 +8,11 @@
     ".NETCoreApp,Version=v3.1": {
       "RentNScoot.Start/1.0.0": {
         "dependencies": {
+          "MySql.Data": "8.0.21",
           "RentNScoot.Domain": "1.0.0",
           "RentNScoot.Persistence": "1.0.0",
-          "RentNScoot.Presentation": "1.0.0"
+          "RentNScoot.Presentation": "1.0.0",
+          "System.Data.SqlClient": "4.8.1"
         },
         "runtime": {
           "RentNScoot.Start.dll": {}
@@ -1044,13 +1046,19 @@
       },
       "RentNScoot.Application/1.0.0": {
         "dependencies": {
-          "RentNScoot.Domain": "1.0.0"
+          "MySql.Data": "8.0.21",
+          "RentNScoot.Domain": "1.0.0",
+          "System.Data.SqlClient": "4.8.1"
         },
         "runtime": {
           "RentNScoot.Application.dll": {}
         }
       },
       "RentNScoot.Domain/1.0.0": {
+        "dependencies": {
+          "MySql.Data": "8.0.21",
+          "System.Data.SqlClient": "4.8.1"
+        },
         "runtime": {
           "RentNScoot.Domain.dll": {}
         }
@@ -1068,8 +1076,10 @@
       },
       "RentNScoot.Presentation/1.0.0": {
         "dependencies": {
+          "MySql.Data": "8.0.21",
           "RentNScoot.Application": "1.0.0",
-          "RentNScoot.Domain": "1.0.0"
+          "RentNScoot.Domain": "1.0.0",
+          "System.Data.SqlClient": "4.8.1"
         },
         "runtime": {
           "RentNScoot.Presentation.dll": {}

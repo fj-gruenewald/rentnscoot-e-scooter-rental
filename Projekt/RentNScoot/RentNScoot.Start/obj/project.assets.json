@@ -1776,7 +1776,9 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
-          "RentNScoot.Domain": "1.0.0"
+          "MySql.Data": "8.0.21",
+          "RentNScoot.Domain": "1.0.0",
+          "System.Data.SqlClient": "4.8.1"
         },
         "compile": {
           "bin/placeholder/RentNScoot.Application.dll": {}
@@ -1788,6 +1790,10 @@
       "RentNScoot.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "MySql.Data": "8.0.21",
+          "System.Data.SqlClient": "4.8.1"
+        },
         "compile": {
           "bin/placeholder/RentNScoot.Domain.dll": {}
         },
@@ -1815,8 +1821,10 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "MySql.Data": "8.0.21",
           "RentNScoot.Application": "1.0.0",
-          "RentNScoot.Domain": "1.0.0"
+          "RentNScoot.Domain": "1.0.0",
+          "System.Data.SqlClient": "4.8.1"
         },
         "compile": {
           "bin/placeholder/RentNScoot.Presentation.dll": {}
@@ -6287,9 +6295,11 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "MySql.Data >= 8.0.21",
       "RentNScoot.Domain >= 1.0.0",
       "RentNScoot.Persistence >= 1.0.0",
-      "RentNScoot.Presentation >= 1.0.0"
+      "RentNScoot.Presentation >= 1.0.0",
+      "System.Data.SqlClient >= 4.8.1"
     ]
   },
   "packageFolders": {
@@ -6300,11 +6310,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Start\\RentNScoot.Start.csproj",
+      "projectUniqueName": "C:\\Users\\Freddy\\Desktop\\rentnscoot_architecture_backup\\RentNScoot.Start\\RentNScoot.Start.csproj",
       "projectName": "RentNScoot.Start",
-      "projectPath": "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Start\\RentNScoot.Start.csproj",
+      "projectPath": "C:\\Users\\Freddy\\Desktop\\rentnscoot_architecture_backup\\RentNScoot.Start\\RentNScoot.Start.csproj",
       "packagesPath": "C:\\Users\\Freddy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Start\\obj\\",
+      "outputPath": "C:\\Users\\Freddy\\Desktop\\rentnscoot_architecture_backup\\RentNScoot.Start\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -6325,14 +6335,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Domain\\RentNScoot.Domain.csproj": {
-              "projectPath": "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Domain\\RentNScoot.Domain.csproj"
+            "C:\\Users\\Freddy\\Desktop\\rentnscoot_architecture_backup\\RentNScoot.Domain\\RentNScoot.Domain.csproj": {
+              "projectPath": "C:\\Users\\Freddy\\Desktop\\rentnscoot_architecture_backup\\RentNScoot.Domain\\RentNScoot.Domain.csproj"
             },
-            "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Persistence\\RentNScoot.Persistence.csproj": {
-              "projectPath": "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Persistence\\RentNScoot.Persistence.csproj"
+            "C:\\Users\\Freddy\\Desktop\\rentnscoot_architecture_backup\\RentNScoot.Persistence\\RentNScoot.Persistence.csproj": {
+              "projectPath": "C:\\Users\\Freddy\\Desktop\\rentnscoot_architecture_backup\\RentNScoot.Persistence\\RentNScoot.Persistence.csproj"
             },
-            "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Presentation\\RentNScoot.Presentation.csproj": {
-              "projectPath": "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Presentation\\RentNScoot.Presentation.csproj"
+            "C:\\Users\\Freddy\\Desktop\\rentnscoot_architecture_backup\\RentNScoot.Presentation\\RentNScoot.Presentation.csproj": {
+              "projectPath": "C:\\Users\\Freddy\\Desktop\\rentnscoot_architecture_backup\\RentNScoot.Presentation\\RentNScoot.Presentation.csproj"
             }
           }
         }
@@ -6345,6 +6355,16 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "dependencies": {
+          "MySql.Data": {
+            "target": "Package",
+            "version": "[8.0.21, )"
+          },
+          "System.Data.SqlClient": {
+            "target": "Package",
+            "version": "[4.8.1, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

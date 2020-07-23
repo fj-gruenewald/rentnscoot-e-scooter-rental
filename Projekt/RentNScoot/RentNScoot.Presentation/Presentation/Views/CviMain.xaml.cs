@@ -25,18 +25,28 @@ namespace RentNScoot.Presentation.Views
         private CvmMain _vmMain;
 
         //
-        public CviMain(CvmMain vmMain)
+        private static volatile CviMain? instance = null;
+
+        //
+        private static readonly object padlock = new object();
+
+        //
+        internal static CviMain CreateSingleton(CvmMain vmMain)
         {
-            _vmMain = vmMain;
-            DataContext = vmMain;
-            InitializeComponent();
+            lock (padlock)
+            {
+                if (instance == null) instance = new CviMain(vmMain);
+                return instance;
+            }
         }
 
-        private void bttn_start_Click(object sender, RoutedEventArgs e)
+        //
+        private CviMain(CvmMain vmMain)
         {
-            CviSearchLocation cviSearchLocation = new CviSearchLocation();
-            this.Visibility = Visibility.Hidden;
-            cviSearchLocation.Show();
+            _vmMain = vmMain;
+
+            InitializeComponent();
+            DataContext = vmMain;
         }
     }
 }

@@ -12,11 +12,9 @@ namespace RentNScoot.Persistence.Write
 {
     class ADataWrite
     {
-        //
         public ADataWrite(DbProviderFactory providerFactory, string connectionString)
         {
         }
 
-        //
     }
 }

@@ -8,6 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.0.21" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\RentNScoot.Domain\RentNScoot.Domain.csproj" />
     <ProjectReference Include="..\RentNScoot.Persistence\RentNScoot.Persistence.csproj" />
     <ProjectReference Include="..\RentNScoot.Presentation\RentNScoot.Presentation.csproj" />
