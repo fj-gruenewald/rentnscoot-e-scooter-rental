@@ -10,27 +10,29 @@ namespace RentNScoot.Presentation.Views
     {
         //
         private CvmSearchLocation _vmSearchLocation;
+        private readonly CviSearchScooter _viSearchScooter;
+        private IAppQueries query;
 
         //
         private static volatile CviSearchLocation? instance = null;
 
         private static readonly object padlock = new object();
 
-        internal static CviSearchLocation CreateSingleton(CvmMain vmMain,
-            CvmSearchLocation vmSearchLocation)
+        internal static CviSearchLocation CreateSingleton(CvmMain vmMain, CvmSearchLocation vmSearchLocation, CviSearchScooter viSeachScooter)
         {
             lock (padlock)
             {
                 if (instance == null)
-                    instance = new CviSearchLocation(vmMain, vmSearchLocation);
+                    instance = new CviSearchLocation(vmMain, vmSearchLocation, viSeachScooter);
                 return instance;
             }
         }
 
         //
-        private CviSearchLocation(CvmMain vmMain, CvmSearchLocation vmSearchLocation)
+        private CviSearchLocation(CvmMain vmMain, CvmSearchLocation vmSearchLocation, CviSearchScooter viSeachScooter)
         {
             _vmSearchLocation = vmSearchLocation;
+            _viSearchScooter = viSeachScooter;
             DataContext = vmSearchLocation;
             InitializeComponent();
         }
@@ -38,6 +40,8 @@ namespace RentNScoot.Presentation.Views
         //
         private void ContinueProcess(object sender, RoutedEventArgs e)
         {
+            _viSearchScooter.Show();
+            this.Hide();
         }
     }
 }

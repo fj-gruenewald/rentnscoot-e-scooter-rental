@@ -6,7 +6,7 @@ using RentNScoot.Domain;
 
 namespace RentNScoot.Presentation.ViewModels
 {
-    class CvmSearchLocation
+    internal class CvmSearchLocation : INotifyPropertyChanged
     {
         #region fields
         private readonly CvmMain _vmMain;

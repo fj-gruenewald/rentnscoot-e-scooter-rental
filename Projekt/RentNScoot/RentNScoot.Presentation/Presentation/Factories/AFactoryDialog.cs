@@ -30,11 +30,11 @@ namespace RentNScoot.Presentation.Factories
             // Views
             CviSearchScooter viSearchScooter = CviSearchScooter.CreateSingleton(vmMain, vmSearchScooter);
 
-            CviSearchLocation viSearchLocation = CviSearchLocation.CreateSingleton(vmMain, vmSearchLocation);
+            CviSearchLocation viSearchLocation = CviSearchLocation.CreateSingleton(vmMain, vmSearchLocation, viSearchScooter);
 
             //CviAddCar viAddCar = CviAddCar.CreateSingleton(vmAddCar);
 
-            CviMain viMain = CviMain.CreateSingleton(vmMain, viSearchLocation);
+            CviMain viMain = CviMain.CreateSingleton(vmMain, viSearchLocation, viSearchScooter);
             return viMain;
         }
     }

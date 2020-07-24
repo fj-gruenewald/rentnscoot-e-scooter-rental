@@ -20,7 +20,7 @@
         <TextBox Grid.Row ="0" Grid.Column="0" Text="Wähle einen Roller" FontSize="36" TextAlignment="Center" Margin="0,0,0,260" Grid.RowSpan="2" BorderThickness="0,0,0,0" Background="#FF2B2D42" Foreground="#FFEDF2F4" IsReadOnly="True"/>
 
         <!-- Body -->
-        <DataGrid ItemsSource="{Binding SearchScooter, Mode=OneWay}"  Grid.Row ="1" Grid.Column="0"/>
+        <DataGrid ItemsSource="{Binding SearchResults, Mode=OneWay}" SelectionMode="Single" Grid.Row ="1" Grid.Column="0"/>
 
         <!-- Footer -->
         <Grid Grid.Row ="2" Grid.Column="0">
