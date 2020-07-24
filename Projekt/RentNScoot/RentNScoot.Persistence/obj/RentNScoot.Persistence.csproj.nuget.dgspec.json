@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Freddy\\Desktop\\rentnscoot_architecture_backup\\RentNScoot.Persistence\\RentNScoot.Persistence.csproj": {}
+    "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Persistence\\RentNScoot.Persistence.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Freddy\\Desktop\\rentnscoot_architecture_backup\\RentNScoot.Application\\RentNScoot.Application.csproj": {
+    "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Application\\RentNScoot.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Freddy\\Desktop\\rentnscoot_architecture_backup\\RentNScoot.Application\\RentNScoot.Application.csproj",
+        "projectUniqueName": "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Application\\RentNScoot.Application.csproj",
         "projectName": "RentNScoot.Application",
-        "projectPath": "C:\\Users\\Freddy\\Desktop\\rentnscoot_architecture_backup\\RentNScoot.Application\\RentNScoot.Application.csproj",
+        "projectPath": "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Application\\RentNScoot.Application.csproj",
         "packagesPath": "C:\\Users\\Freddy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Freddy\\Desktop\\rentnscoot_architecture_backup\\RentNScoot.Application\\obj\\",
+        "outputPath": "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -32,8 +32,8 @@
         "frameworks": {
           "netstandard2.1": {
             "projectReferences": {
-              "C:\\Users\\Freddy\\Desktop\\rentnscoot_architecture_backup\\RentNScoot.Domain\\RentNScoot.Domain.csproj": {
-                "projectPath": "C:\\Users\\Freddy\\Desktop\\rentnscoot_architecture_backup\\RentNScoot.Domain\\RentNScoot.Domain.csproj"
+              "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Domain\\RentNScoot.Domain.csproj": {
+                "projectPath": "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Domain\\RentNScoot.Domain.csproj"
               }
             }
           }
@@ -75,14 +75,14 @@
         }
       }
     },
-    "C:\\Users\\Freddy\\Desktop\\rentnscoot_architecture_backup\\RentNScoot.Domain\\RentNScoot.Domain.csproj": {
+    "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Domain\\RentNScoot.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Freddy\\Desktop\\rentnscoot_architecture_backup\\RentNScoot.Domain\\RentNScoot.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Domain\\RentNScoot.Domain.csproj",
         "projectName": "RentNScoot.Domain",
-        "projectPath": "C:\\Users\\Freddy\\Desktop\\rentnscoot_architecture_backup\\RentNScoot.Domain\\RentNScoot.Domain.csproj",
+        "projectPath": "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Domain\\RentNScoot.Domain.csproj",
         "packagesPath": "C:\\Users\\Freddy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Freddy\\Desktop\\rentnscoot_architecture_backup\\RentNScoot.Domain\\obj\\",
+        "outputPath": "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -142,14 +142,14 @@
         }
       }
     },
-    "C:\\Users\\Freddy\\Desktop\\rentnscoot_architecture_backup\\RentNScoot.Persistence\\RentNScoot.Persistence.csproj": {
+    "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Persistence\\RentNScoot.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Freddy\\Desktop\\rentnscoot_architecture_backup\\RentNScoot.Persistence\\RentNScoot.Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Persistence\\RentNScoot.Persistence.csproj",
         "projectName": "RentNScoot.Persistence",
-        "projectPath": "C:\\Users\\Freddy\\Desktop\\rentnscoot_architecture_backup\\RentNScoot.Persistence\\RentNScoot.Persistence.csproj",
+        "projectPath": "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Persistence\\RentNScoot.Persistence.csproj",
         "packagesPath": "C:\\Users\\Freddy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Freddy\\Desktop\\rentnscoot_architecture_backup\\RentNScoot.Persistence\\obj\\",
+        "outputPath": "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -170,11 +170,11 @@
         "frameworks": {
           "netstandard2.1": {
             "projectReferences": {
-              "C:\\Users\\Freddy\\Desktop\\rentnscoot_architecture_backup\\RentNScoot.Application\\RentNScoot.Application.csproj": {
-                "projectPath": "C:\\Users\\Freddy\\Desktop\\rentnscoot_architecture_backup\\RentNScoot.Application\\RentNScoot.Application.csproj"
+              "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Application\\RentNScoot.Application.csproj": {
+                "projectPath": "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Application\\RentNScoot.Application.csproj"
               },
-              "C:\\Users\\Freddy\\Desktop\\rentnscoot_architecture_backup\\RentNScoot.Domain\\RentNScoot.Domain.csproj": {
-                "projectPath": "C:\\Users\\Freddy\\Desktop\\rentnscoot_architecture_backup\\RentNScoot.Domain\\RentNScoot.Domain.csproj"
+              "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Domain\\RentNScoot.Domain.csproj": {
+                "projectPath": "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Domain\\RentNScoot.Domain.csproj"
               }
             }
           }

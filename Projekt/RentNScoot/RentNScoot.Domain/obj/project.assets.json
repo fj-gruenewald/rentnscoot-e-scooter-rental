@@ -6127,11 +6127,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Freddy\\Desktop\\rentnscoot_architecture_backup\\RentNScoot.Domain\\RentNScoot.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Domain\\RentNScoot.Domain.csproj",
       "projectName": "RentNScoot.Domain",
-      "projectPath": "C:\\Users\\Freddy\\Desktop\\rentnscoot_architecture_backup\\RentNScoot.Domain\\RentNScoot.Domain.csproj",
+      "projectPath": "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Domain\\RentNScoot.Domain.csproj",
       "packagesPath": "C:\\Users\\Freddy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Freddy\\Desktop\\rentnscoot_architecture_backup\\RentNScoot.Domain\\obj\\",
+      "outputPath": "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

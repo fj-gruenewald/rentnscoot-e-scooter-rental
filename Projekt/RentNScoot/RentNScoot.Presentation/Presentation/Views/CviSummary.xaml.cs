@@ -21,5 +21,10 @@ namespace RentNScoot.Presentation.Views
         {
             InitializeComponent();
         }
+
+        private void CloseProcess(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -69,7 +69,7 @@ namespace RentNScoot.Presentation.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/RentNScoot.Presentation;V1.0.0.0;component/presentation/views/cvimain.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/RentNScoot.Presentation;component/presentation/views/cvimain.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Presentation\Views\CviMain.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -23,6 +23,8 @@ namespace RentNScoot.Presentation.Views
     {
         //
         private CvmMain _vmMain;
+        private readonly CviSearchLocation _viSearchLocation;
+        private readonly CviSearchScooter _viSearchScooter;
 
         //
         private static volatile CviMain? instance = null;
@@ -31,22 +33,29 @@ namespace RentNScoot.Presentation.Views
         private static readonly object padlock = new object();
 
         //
-        internal static CviMain CreateSingleton(CvmMain vmMain)
+        internal static CviMain CreateSingleton(CvmMain vmMain, CviSearchLocation viSearchLocation)
         {
             lock (padlock)
             {
-                if (instance == null) instance = new CviMain(vmMain);
+                if (instance == null) instance = new CviMain(vmMain, viSearchLocation);
                 return instance;
             }
         }
 
         //
-        private CviMain(CvmMain vmMain)
+        private CviMain(CvmMain vmMain, CviSearchLocation viSearchLocation)
         {
             _vmMain = vmMain;
+            _viSearchLocation = viSearchLocation;
 
             InitializeComponent();
             DataContext = vmMain;
+        }
+
+        private void StartProcess(object sender, RoutedEventArgs e)
+        {
+            _viSearchLocation.Show();
+            this.Hide();
         }
     }
 }

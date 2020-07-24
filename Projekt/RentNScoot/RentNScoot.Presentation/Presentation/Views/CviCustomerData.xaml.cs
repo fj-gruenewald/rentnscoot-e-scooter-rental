@@ -21,5 +21,12 @@ namespace RentNScoot.Presentation.Views
         {
             InitializeComponent();
         }
+
+        private void ContinueProcess(object sender, RoutedEventArgs e)
+        {
+            CviEnd cviSummary = new CviEnd();
+            this.Visibility = Visibility.Hidden;
+            cviSummary.Show();
+        }
     }
 }

@@ -6,7 +6,7 @@ using RentNScoot.Domain;
 
 namespace RentNScoot.Presentation.ViewModels
 {
-    class CvmSearchScooter
+    class CvmSearchLocation
     {
         #region fields
         private readonly CvmMain _vmMain;
@@ -17,10 +17,10 @@ namespace RentNScoot.Presentation.ViewModels
         public event PropertyChangedEventHandler PropertyChanged = delegate { };
 
         //
-        private ICollection<Scooter> _searchResults = new List<Scooter>();
+        private ICollection<Location> _searchResults = new List<Location>();
 
         //
-        public ICollection<Scooter> SearchResults
+        public ICollection<Location> SearchResults
         {
             get
             {
@@ -28,52 +28,48 @@ namespace RentNScoot.Presentation.ViewModels
             }
             set
             {
-                _searchResults = value ?? new List<Scooter>();
+                _searchResults = value ?? new List<Location>();
                 PropertyChanged.Invoke(this, new PropertyChangedEventArgs("SearchResults"));
                 PropertyChanged.Invoke(this, new PropertyChangedEventArgs("ButtonText"));
             }
         }
 
         //
-        private Scooter _selectedScooter = new Scooter();
-        private ICollection<Scooter> _selectedCarsList = new List<Scooter>();
+        private Location _selectedLocation = new Location();
+        private ICollection<Location> _selectedCarsList = new List<Location>();
 
         //
-        public Scooter SelectedScooter
+        public Location SelectedLocation
         {
             get
             {
-                return _selectedScooter;
+                return _selectedLocation;
             }
             set
             {
-                _selectedScooter = value;
-                _selectedCarsList.Add(_selectedScooter);
+                _selectedLocation = value;
+                _selectedCarsList.Add(_selectedLocation);
             }
         }
         #endregion
 
-        #region properties(Command)
-
-        #endregion
-
         #region ctor
-        private static volatile CvmSearchScooter? instance = null;
+        private static volatile CvmSearchLocation? instance = null;
 
         private static readonly object padlock = new object();
 
-        private CvmSearchScooter(CvmMain vmMain)
+        private CvmSearchLocation(CvmMain vmMain)
         {
             _vmMain = vmMain;
         }
 
-        internal static CvmSearchScooter CreateSingleton(CvmMain vmMain)
+        internal static CvmSearchLocation CreateSingleton(CvmMain vmMain)
         {
             lock (padlock)
             {
                 if (instance == null)
                 {
-                    instance = new CvmSearchScooter(vmMain);
+                    instance = new CvmSearchLocation(vmMain);
                 }
                 return instance;
             }
@@ -81,7 +77,6 @@ namespace RentNScoot.Presentation.ViewModels
         #endregion
 
         #region events
-
         #endregion
     }
 }

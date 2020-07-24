@@ -25,5 +25,19 @@ namespace RentNScoot.Application
             int nScooters = _dataRead.CountScooters();
             return nScooters;
         }
+
+        //
+        public virtual ICollection<Scooter> GetAllScooters()
+        {
+            var scooters = _dataRead.SelectAllScooters();
+            return scooters;
+        }
+
+        //
+        public virtual ICollection<Location> GetAllLocations()
+        {
+            var locations = _dataRead.SelectAllLocations();
+            return locations;
+        }
     }
 }

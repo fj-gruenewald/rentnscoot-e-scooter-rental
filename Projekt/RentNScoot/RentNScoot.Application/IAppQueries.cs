@@ -10,5 +10,9 @@ namespace RentNScoot
     public interface IAppQueries
     {
         int CountScooters();
+
+        ICollection<Scooter> GetAllScooters();
+
+        ICollection<Location> GetAllLocations();
     }
 }

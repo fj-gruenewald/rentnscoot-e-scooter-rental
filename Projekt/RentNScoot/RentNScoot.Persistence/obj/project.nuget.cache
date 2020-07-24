@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nDfEAqrA0+RCgz7bBnoD7Wez6h82hqlt9rJn0LfeC7l/Io5XsUbwMC3ZHjnRYbXPFpYOAHDsp6+5MNia7BZC4w==",
+  "dgSpecHash": "dO0YL2rRz4NqhHXG+diA3+v4gPU0jsB3F4XKtYBjXh6PHT/SkaggiOrBR3vTyvROSnds4mPXw2BHJtM1lyTJxg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Freddy\\Desktop\\rentnscoot_architecture_backup\\RentNScoot.Persistence\\RentNScoot.Persistence.csproj",
+  "projectFilePath": "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Persistence\\RentNScoot.Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Freddy\\.nuget\\packages\\bouncycastle.netcore\\1.8.3\\bouncycastle.netcore.1.8.3.nupkg.sha512",
     "C:\\Users\\Freddy\\.nuget\\packages\\google.protobuf\\3.6.1\\google.protobuf.3.6.1.nupkg.sha512",

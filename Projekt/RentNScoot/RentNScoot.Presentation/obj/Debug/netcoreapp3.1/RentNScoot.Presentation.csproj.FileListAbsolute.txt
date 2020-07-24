@@ -21,9 +21,7 @@ C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot.Pres
 C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot.Presentation\obj\Debug\netcoreapp3.1\Presentation\Views\CviSearchScooter.g.cs
 C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot.Presentation\obj\Debug\netcoreapp3.1\Presentation\Views\CviSearchScooter.baml
 C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot.Presentation\obj\Debug\netcoreapp3.1\Presentation\Views\CviCustomerData.baml
-C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot.Presentation\obj\Debug\netcoreapp3.1\Presentation\Views\CviSearchMisc.g.cs
 C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot.Presentation\obj\Debug\netcoreapp3.1\Presentation\Views\CviSummary.g.cs
-C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot.Presentation\obj\Debug\netcoreapp3.1\Presentation\Views\CviSearchMisc.baml
 C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot.Presentation\obj\Debug\netcoreapp3.1\Presentation\Views\CviSummary.baml
 C:\Users\Freddy\Desktop\rentnscoot_architecture_backup\RentNScoot.Presentation\bin\Debug\netcoreapp3.1\RentNScoot.Presentation.deps.json
 C:\Users\Freddy\Desktop\rentnscoot_architecture_backup\RentNScoot.Presentation\bin\Debug\netcoreapp3.1\RentNScoot.Presentation.dll
@@ -52,3 +50,5 @@ C:\Users\Freddy\Desktop\rentnscoot_architecture_backup\RentNScoot.Presentation\o
 C:\Users\Freddy\Desktop\rentnscoot_architecture_backup\RentNScoot.Presentation\obj\Debug\netcoreapp3.1\RentNScoot.Presentation.dll
 C:\Users\Freddy\Desktop\rentnscoot_architecture_backup\RentNScoot.Presentation\obj\Debug\netcoreapp3.1\RentNScoot.Presentation.pdb
 C:\Users\Freddy\Desktop\rentnscoot_architecture_backup\RentNScoot.Presentation\obj\Debug\netcoreapp3.1\RentNScoot.Presentation.csproj.CoreCompileInputs.cache
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot.Presentation\obj\Debug\netcoreapp3.1\Presentation\Views\CviSearchLocation.g.cs
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot.Presentation\obj\Debug\netcoreapp3.1\Presentation\Views\CviSearchLocation.baml

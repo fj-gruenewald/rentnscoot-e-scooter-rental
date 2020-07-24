@@ -18,9 +18,9 @@ namespace RentNScoot.Presentation.Factories
             // ViewModels
             CvmMain vmMain = CvmMain.CreateSingleton(appCommands, appQueries);
 
-            //CvmSearchResults vmSearchRes = CvmSearchResults.CreateSingleton(vmMain);
+            CvmSearchScooter vmSearchScooter = CvmSearchScooter.CreateSingleton(vmMain);
 
-            //CvmSearchCars vmSearchCars = CvmSearchCars.CreateSingleton(vmSearchRes,appCarQueries);
+            CvmSearchLocation vmSearchLocation = CvmSearchLocation.CreateSingleton(vmMain);
 
             //CvmAddCar vmAddCar = CvmAddCar.CreateSingleton(appCarQueries, appCarCommands, vmMain);
 
@@ -28,13 +28,13 @@ namespace RentNScoot.Presentation.Factories
 
 
             // Views
-            //CviSearchResults viSearchResults = CviSearchResults.CreateSingleton(vmMain, vmSearchRes);
+            CviSearchScooter viSearchScooter = CviSearchScooter.CreateSingleton(vmMain, vmSearchScooter);
 
-            //CviSearchCars viSearchCars = CviSearchCars.CreateSingleton(vmSearchCars, viSearchResults);
+            CviSearchLocation viSearchLocation = CviSearchLocation.CreateSingleton(vmMain, vmSearchLocation);
 
             //CviAddCar viAddCar = CviAddCar.CreateSingleton(vmAddCar);
 
-            CviMain viMain = CviMain.CreateSingleton(vmMain);
+            CviMain viMain = CviMain.CreateSingleton(vmMain, viSearchLocation);
             return viMain;
         }
     }

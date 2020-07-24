@@ -1,14 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+﻿using System.Windows;
+using RentNScoot.Presentation.ViewModels;
 
 namespace RentNScoot.Presentation.Views
 {
@@ -17,9 +8,39 @@ namespace RentNScoot.Presentation.Views
     /// </summary>
     public partial class CviSearchScooter : Window
     {
-        public CviSearchScooter()
+        //
+        private CvmSearchScooter _vmSearchScooter;
+
+        //
+        private static volatile CviSearchScooter? instance = null;
+
+        private static readonly object padlock = new object();
+
+        internal static CviSearchScooter CreateSingleton(CvmMain vmMain,
+            CvmSearchScooter vmSearchRes)
         {
+            lock (padlock)
+            {
+                if (instance == null)
+                    instance = new CviSearchScooter(vmMain, vmSearchRes);
+                return instance;
+            }
+        }
+
+        //
+        private CviSearchScooter(CvmMain vmMain, CvmSearchScooter vmSearchScooter)
+        {
+            _vmSearchScooter = vmSearchScooter;
+            DataContext = vmSearchScooter;
             InitializeComponent();
+        }
+
+        //
+        private void ContinueProcess(object sender, RoutedEventArgs e)
+        {
+            CviCustomerData cviCustomerData = new CviCustomerData();
+            this.Visibility = Visibility.Hidden;
+            cviCustomerData.Show();
         }
     }
 }

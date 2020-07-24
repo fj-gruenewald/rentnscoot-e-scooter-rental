@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RentNScoot.Presentation.Views"
         mc:Ignorable="d"
-        Title="CviMain" Height="450" Width="800">
+        Title="RentNScoot" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -44,7 +44,7 @@
                 <ColumnDefinition Width="2*" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-            <Button x:Name="bttn_rent" Grid.Row ="2" Grid.Column="2" Content="Roller Mieten" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="180" Background="#FF2B2D42" Foreground="#FFEDF2F4" FontSize="18"/>
+            <Button x:Name="bttn_rent" Grid.Row ="2" Grid.Column="2" Content="Roller Mieten" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="180" Background="#FF2B2D42" Foreground="#FFEDF2F4" FontSize="18" Click="StartProcess"/>
             <TextBlock Text="{Binding nScooters}"  Grid.Column="1" FontSize="18" TextAlignment="Center" Margin="0,18,0,0"/>
             <Button x:Name="bttn_back" Grid.Row ="2" Grid.Column="0" Content="Roller Zurückgeben" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="180" Background="#FF2B2D42" Foreground="#FFEDF2F4" FontSize="18"/>
         </Grid>

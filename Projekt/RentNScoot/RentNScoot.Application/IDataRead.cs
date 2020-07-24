@@ -12,5 +12,9 @@ namespace RentNScoot
         void InitDb();
         void DisposeDb();
         int CountScooters();
+
+        ICollection<Scooter> SelectAllScooters();
+
+        ICollection<Location> SelectAllLocations();
     }
 }

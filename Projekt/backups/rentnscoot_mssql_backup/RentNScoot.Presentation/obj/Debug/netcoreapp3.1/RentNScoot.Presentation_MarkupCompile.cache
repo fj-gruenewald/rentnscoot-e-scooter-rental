@@ -4,7 +4,7 @@
 library
 C#
 .cs
-C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot.Presentation\obj\Debug\netcoreapp3.1\
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\backups\rentnscoot_mssql_backup\RentNScoot.Presentation\obj\Debug\netcoreapp3.1\
 RentNScoot
 none
 false
@@ -13,8 +13,8 @@ TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
 5-931380610
 
 18-1771327063
-194-727506197
+194826847203
 Presentation\Views\CviCustomerData.xaml;Presentation\Views\CviMain.xaml;Presentation\Views\CviSearchMisc.xaml;Presentation\Views\CviSearchScooter.xaml;Presentation\Views\CviSummary.xaml;
 
-False
+True
 

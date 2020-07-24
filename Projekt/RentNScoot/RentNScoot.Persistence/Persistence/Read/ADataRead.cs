@@ -13,7 +13,7 @@ namespace RentNScoot.Persistence.Read
         {
         }
 
-        #region interface IDataCarRead methods
+        #region interface IDataRead methods
         public virtual int CountScooters()
         {
             int nScooters = -1;
@@ -21,7 +21,7 @@ namespace RentNScoot.Persistence.Read
             if (_dbConnection.State == ConnectionState.Open)
             {
                 _dbCommand.CommandType = CommandType.Text;
-                _dbCommand.CommandText = GetSqlCountCars();
+                _dbCommand.CommandText = GetSqlCountScooters();
                 var records = _dbCommand.ExecuteScalar();
                 nScooters = Convert.ToInt32(records);
             }
@@ -29,47 +29,61 @@ namespace RentNScoot.Persistence.Read
             return nScooters;
         }
 
-
-        public virtual int CountScooters(string make)
+        public virtual ICollection<Scooter> SelectAllScooters()
         {
-            int nCars = -1;
+            ICollection<Scooter> scooters = new List<Scooter>();
             _dbConnection.Open();
             if (_dbConnection.State == ConnectionState.Open)
             {
                 _dbCommand.CommandType = CommandType.Text;
-                _dbCommand.CommandText = GetSqlCountCarsMake();
                 _dbCommand.Parameters.Clear();
-                AddParameter(_dbCommand, "make", make);
-                var records = _dbCommand.ExecuteScalar();
-                nCars = Convert.ToInt32(records);
+                _dbCommand.CommandText = GetSqlSelectAllScooters();
+                var dbDataReader = _dbCommand.ExecuteReader();
+                if (dbDataReader != null && dbDataReader.HasRows)
+                {
+                    while (dbDataReader.Read())
+                    {
+                        Scooter scooter = new Scooter();
+                        scooter.FromDbDataReaderScooter(dbDataReader);
+                        scooters.Add(scooter);
+                    }
+                    if (!dbDataReader.IsClosed) dbDataReader.Close();
+                }
             }
             if (_dbConnection.State == ConnectionState.Open) _dbConnection.Close();
-            return nCars;
+            return scooters;
         }
 
-
-        public virtual int CountScooters(string make, string model)
+        public virtual ICollection<Location> SelectAllLocations()
         {
-            int nCars = -1;
+            ICollection<Location> locations = new List<Location>();
             _dbConnection.Open();
             if (_dbConnection.State == ConnectionState.Open)
             {
                 _dbCommand.CommandType = CommandType.Text;
-                _dbCommand.CommandText = GetSqlCountCarsMakeModel();
                 _dbCommand.Parameters.Clear();
-                AddParameter(_dbCommand, "maker", make);
-                AddParameter(_dbCommand, "model", model);
-                var records = _dbCommand.ExecuteScalar();
-                nCars = Convert.ToInt32(records);
+                _dbCommand.CommandText = GetSqlSelectAllLocations();
+                var dbDataReader = _dbCommand.ExecuteReader();
+                if (dbDataReader != null && dbDataReader.HasRows)
+                {
+                    while (dbDataReader.Read())
+                    {
+                        Location location = new Location();
+                        location.FromDbDataReaderLocation(dbDataReader);
+                        locations.Add(location);
+                    }
+                    if (!dbDataReader.IsClosed) dbDataReader.Close();
+                }
             }
             if (_dbConnection.State == ConnectionState.Open) _dbConnection.Close();
-            return nCars;
+            return locations;
         }
-        
+
+
         #endregion
 
         #region Car SQL Query Commands
-        protected virtual string GetSqlCountCars()
+        protected virtual string GetSqlCountScooters()
         {
             return "SELECT COUNT(scooterId) FROM scootertable;";
         }
@@ -93,33 +107,20 @@ namespace RentNScoot.Persistence.Read
         {
             return "SELECT COUNT(pk) FROM scootertable WHERE make=? AND model=?;";
         }
-
-        protected virtual string GetSqlCountCarsToSearch()
-        {
-            return "SELECT COUNT(pk) FROM scootertable WHERE " +
-                   "make     =  ? AND model    =  ? AND " +
-                   "price    >= ? AND price    <= ? AND " +
-                   "firstreg >= ? AND firstreg <= ? AND " +
-                   "km       >= ? AND km       <= ? ;";
-        }
-
-        protected virtual string GetSqlSelectCarsToSearch()
-        {
-            return "SELECT * FROM scootertable WHERE " +
-                   "make     =  ? AND model    =  ? AND " +
-                   "price    >= ? AND price    <= ? AND " +
-                   "firstreg >= ? AND firstreg <= ? AND " +
-                   "km       >= ? AND km       <= ? ;";
-        }
-
+        
         protected virtual string GetSqlSelectCar()
         {
             return "SELECT * FROM scootertable WHERE pk = ?;";
         }
 
-        protected virtual string GetSqlSelectAllCars()
+        protected virtual string GetSqlSelectAllScooters()
         {
             return "SELECT * FROM scootertable;";
+        }
+
+        protected virtual string GetSqlSelectAllLocations()
+        {
+            return "SELECT * FROM scooterlocations;";
         }
         #endregion
     }

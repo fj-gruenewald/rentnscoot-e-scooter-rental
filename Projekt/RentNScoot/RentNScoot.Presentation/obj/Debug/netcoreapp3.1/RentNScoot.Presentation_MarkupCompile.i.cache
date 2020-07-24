@@ -4,17 +4,17 @@
 library
 C#
 .cs
-C:\Users\Freddy\Desktop\rentnscoot_architecture_backup\RentNScoot.Presentation\obj\Debug\netcoreapp3.1\
+C:\Users\Freddy\Code\GitHub\E-Scooter_Verleih\Projekt\RentNScoot\RentNScoot.Presentation\obj\Debug\netcoreapp3.1\
 RentNScoot
 none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
 
-5-931380610
+520896658
 
-15-1609167625
-206-1289772872
-Presentation\Views\CviCustomerData.xaml;Presentation\Views\CviMain.xaml;Presentation\Views\CviSearchMisc.xaml;Presentation\Views\CviSearchScooter.xaml;Presentation\Views\CviSummary.xaml;
+16-1019205755
+206-434183749
+Presentation\Views\CviCustomerData.xaml;Presentation\Views\CviMain.xaml;Presentation\Views\CviSearchLocation.xaml;Presentation\Views\CviSearchScooter.xaml;Presentation\Views\CviSummary.xaml;
 
-False
+True
 

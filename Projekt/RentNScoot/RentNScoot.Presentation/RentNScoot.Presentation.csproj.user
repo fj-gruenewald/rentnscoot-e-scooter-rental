@@ -11,7 +11,7 @@
     <Compile Update="Presentation\Views\CviMain.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Presentation\Views\CviSearchMisc.xaml.cs">
+    <Compile Update="Presentation\Views\CviSearchLocation.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Presentation\Views\CviSearchScooter.xaml.cs">
@@ -28,7 +28,7 @@
     <Page Update="Presentation\Views\CviMain.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Presentation\Views\CviSearchMisc.xaml">
+    <Page Update="Presentation\Views\CviSearchLocation.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Presentation\Views\CviSearchScooter.xaml">

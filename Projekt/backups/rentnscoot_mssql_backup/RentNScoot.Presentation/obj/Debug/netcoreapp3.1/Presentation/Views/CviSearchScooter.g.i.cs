@@ -53,8 +53,7 @@ namespace RentNScoot.Presentation.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/RentNScoot.Presentation;V1.0.0.0;component/presentation/views/cvisearchscooter.x" +
-                    "aml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/RentNScoot.Presentation;component/presentation/views/cvisearchscooter.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Presentation\Views\CviSearchScooter.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
