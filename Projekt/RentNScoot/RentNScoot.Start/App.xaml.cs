@@ -43,6 +43,8 @@ namespace RentNScoot.Start
                 _dataRead.InitDb();
 
                 //Persistence Write
+                connectionString = @"Server=localhost;Database=scooterdatabase;Uid=root;Pwd=geh1m_;";
+                _dataWrite = AFactoryData.Create_WriteSql(connectionString);
 
                 //Application
                 _appQueries = AFactoryApp.CreateQueryInstance(_dataRead);

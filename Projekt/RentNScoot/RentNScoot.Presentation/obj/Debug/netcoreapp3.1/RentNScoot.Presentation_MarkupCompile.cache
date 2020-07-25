@@ -12,9 +12,9 @@ TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
 
 520896658
 
-141455819626
+14-348872126
 206-434183749
 Presentation\Views\CviCustomerData.xaml;Presentation\Views\CviMain.xaml;Presentation\Views\CviSearchLocation.xaml;Presentation\Views\CviSearchScooter.xaml;Presentation\Views\CviSummary.xaml;
 
-False
+True
 

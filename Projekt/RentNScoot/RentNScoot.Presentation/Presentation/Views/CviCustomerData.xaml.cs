@@ -9,6 +9,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using RentNScoot.Presentation.ViewModels;
 
 namespace RentNScoot.Presentation.Views
 {
@@ -17,9 +18,26 @@ namespace RentNScoot.Presentation.Views
     /// </summary>
     public partial class CviCustomerData : Window
     {
-        public CviCustomerData()
+        //
+        private readonly CvmCustomerData _vmcustomerData;
+
+        //ctor
+        // Singleton C#
+        private static volatile CviCustomerData? instance = null;
+        private static readonly object padlock = new object();
+        internal static CviCustomerData CreateSingleton(CvmCustomerData vmCustomerData)
         {
+            lock (padlock)
+            {
+                if (instance == null) instance = new CviCustomerData(vmCustomerData);
+                return instance;
+            }
+        }
+        internal CviCustomerData(CvmCustomerData vmCustomerDatar)
+        {
+            _vmcustomerData = vmCustomerDatar;
             InitializeComponent();
+            DataContext = vmCustomerDatar;
         }
 
         private void ContinueProcess(object sender, RoutedEventArgs e)

@@ -10,6 +10,7 @@ namespace RentNScoot.Presentation.Views
     {
         //
         private CvmSearchScooter _vmSearchScooter;
+        private CviCustomerData _viCustomerData;
 
         //
         private static volatile CviSearchScooter? instance = null;
@@ -38,9 +39,8 @@ namespace RentNScoot.Presentation.Views
         //
         private void ContinueProcess(object sender, RoutedEventArgs e)
         {
-            CviCustomerData cviCustomerData = new CviCustomerData();
-            this.Visibility = Visibility.Hidden;
-            cviCustomerData.Show();
+            _viCustomerData.Show();
+            this.Hide();
         }
     }
 }

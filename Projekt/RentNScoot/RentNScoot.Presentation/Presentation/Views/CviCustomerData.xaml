@@ -42,17 +42,15 @@
             <TextBlock Grid.Row ="0" Grid.Column="2" Text="Ort" FontSize="18" TextAlignment="Right" Margin="0,18,20,0"/>
             <TextBlock Grid.Row ="1" Grid.Column="2" Text="Straße" FontSize="18" TextAlignment="Right" Margin="0,18,20,0"/>
             <TextBlock Grid.Row ="2" Grid.Column="2" Text="Plz" FontSize="18" TextAlignment="Right" Margin="0,18,20,0"/>
-            <TextBlock Grid.Row ="3" Grid.Column="2" Text="Adresse" FontSize="18" TextAlignment="Right" Margin="0,18,20,0"/>
 
-            <TextBox Grid.Row ="0" Grid.Column="1" Text="Test" TextAlignment="Center" FontSize="18" Margin="0,15,15,15"/>
-            <TextBox Grid.Row ="1" Grid.Column="1" Text="Test" TextAlignment="Center" FontSize="18" Margin="0,15,15,15"/>
-            <TextBox Grid.Row ="2" Grid.Column="1" Text="Test" TextAlignment="Center" FontSize="18" Margin="0,15,15,15"/>
-            <TextBox Grid.Row ="3" Grid.Column="1" Text="Test" TextAlignment="Center" FontSize="18" Margin="0,15,15,15"/>
+            <TextBox Grid.Row ="0" Grid.Column="1" Text="" TextAlignment="Center" FontSize="18" Margin="0,15,15,15"/>
+            <TextBox Grid.Row ="1" Grid.Column="1" Text="" TextAlignment="Center" FontSize="18" Margin="0,15,15,15"/>
+            <TextBox Grid.Row ="2" Grid.Column="1" Text="" TextAlignment="Center" FontSize="18" Margin="0,15,15,15"/>
+            <TextBox Grid.Row ="3" Grid.Column="1" Text="" TextAlignment="Center" FontSize="18" Margin="0,15,15,15"/>
 
-            <TextBox Grid.Row ="0" Grid.Column="3" Text="Test" TextAlignment="Center" FontSize="18" Margin="0,15,15,15"/>
-            <TextBox Grid.Row ="1" Grid.Column="3" Text="Test" TextAlignment="Center" FontSize="18" Margin="0,15,15,15"/>
-            <TextBox Grid.Row ="2" Grid.Column="3" Text="Test" TextAlignment="Center" FontSize="18" Margin="0,15,15,15"/>
-            <TextBox Grid.Row ="3" Grid.Column="3" Text="Test" TextAlignment="Center" FontSize="18" Margin="0,15,15,15"/>
+            <TextBox Grid.Row ="0" Grid.Column="3" Text="" TextAlignment="Center" FontSize="18" Margin="0,15,15,15"/>
+            <TextBox Grid.Row ="1" Grid.Column="3" Text="" TextAlignment="Center" FontSize="18" Margin="0,15,15,15"/>
+            <TextBox Grid.Row ="2" Grid.Column="3" Text="" TextAlignment="Center" FontSize="18" Margin="0,15,15,15"/>
         </Grid>
 
         <!-- Footer -->

@@ -22,7 +22,7 @@ namespace RentNScoot.Presentation.Factories
 
             CvmSearchLocation vmSearchLocation = CvmSearchLocation.CreateSingleton(vmMain);
 
-            //CvmAddCar vmAddCar = CvmAddCar.CreateSingleton(appCarQueries, appCarCommands, vmMain);
+            CvmCustomerData vmCustomerData = CvmCustomerData.CreateSingleton(appQueries, appCommands, vmMain);
 
             //CvmUpdateCar vmUpdateCar = CvmUpdateCar.CreateSingleton(appCarQueries, appCarCommands, vmMain);
 
@@ -32,7 +32,7 @@ namespace RentNScoot.Presentation.Factories
 
             CviSearchLocation viSearchLocation = CviSearchLocation.CreateSingleton(vmMain, vmSearchLocation, viSearchScooter);
 
-            //CviAddCar viAddCar = CviAddCar.CreateSingleton(vmAddCar);
+            CviCustomerData viCustomerData = CviCustomerData.CreateSingleton(vmCustomerData);
 
             CviMain viMain = CviMain.CreateSingleton(vmMain, viSearchLocation, viSearchScooter);
             return viMain;
