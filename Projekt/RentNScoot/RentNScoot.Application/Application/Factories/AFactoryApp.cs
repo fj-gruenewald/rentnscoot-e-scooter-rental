@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace RentNScoot.Application.Factories
+﻿namespace RentNScoot.Application.Factories
 {
     public abstract class AFactoryApp
     {
-        //
         public static IAppQueries CreateQueryInstance(IDataRead dataRead)
         {
             return new CAppQueries(dataRead);

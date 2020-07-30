@@ -1,5 +1,5 @@
-﻿using System.Windows;
-using RentNScoot.Presentation.ViewModels;
+﻿using RentNScoot.Presentation.ViewModels;
+using System.Windows;
 
 namespace RentNScoot.Presentation.Views
 {
@@ -10,6 +10,7 @@ namespace RentNScoot.Presentation.Views
     {
         //
         private CvmSearchScooter _vmSearchScooter;
+
         private CviCustomerData _viCustomerData;
 
         //

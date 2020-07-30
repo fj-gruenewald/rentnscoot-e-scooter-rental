@@ -1,24 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
+﻿using RentNScoot.Domain;
 using System.ComponentModel;
-using System.Text;
-using RentNScoot.Domain;
 
 namespace RentNScoot.Presentation.ViewModels
 {
-    class CvmCustomerData : INotifyPropertyChanged
+    internal class CvmCustomerData : INotifyPropertyChanged
     {
         private readonly Customer _customer = new Customer();
         private readonly IAppQueries _appQueries;
         private readonly IAppCommands _appCommands;
         private readonly CvmMain _vmMain;
 
-
         #region ctor
+        //wenn eigenschaft verändert
+        public event PropertyChangedEventHandler PropertyChanged = delegate { };
+
         // Singleton C#
         private static volatile CvmCustomerData? instance = null;
+
         private static readonly object padlock = new object();
+
         internal static CvmCustomerData CreateSingleton(IAppQueries appCarQueries,
             IAppCommands appCarCommands,
             CvmMain vmMain)
@@ -30,6 +30,7 @@ namespace RentNScoot.Presentation.ViewModels
                 return instance;
             }
         }
+
         private CvmCustomerData(IAppQueries appCarQueries,
             IAppCommands appCarCommands,
             CvmMain vmMain)
@@ -38,6 +39,7 @@ namespace RentNScoot.Presentation.ViewModels
             _appCommands = appCarCommands;
             _vmMain = vmMain;
         }
-        #endregion
+
+        #endregion ctor
     }
 }

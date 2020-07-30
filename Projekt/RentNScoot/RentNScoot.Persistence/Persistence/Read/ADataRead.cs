@@ -1,19 +1,20 @@
-﻿using System;
+﻿using RentNScoot.Domain;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Common;
-using System.Text;
-using RentNScoot.Domain;
 
 namespace RentNScoot.Persistence.Read
 {
     internal abstract class ADataRead : AData, IDataRead
     {
+        //Konstruktor
         protected ADataRead(DbProviderFactory dbProviderFactory, string connectionString) : base(dbProviderFactory, connectionString)
         {
         }
 
         #region interface IDataRead methods
+
         public virtual int CountScooters()
         {
             int nScooters = -1;
@@ -79,40 +80,15 @@ namespace RentNScoot.Persistence.Read
             return locations;
         }
 
-
-        #endregion
+        #endregion interface IDataRead methods
 
         #region Car SQL Query Commands
+
         protected virtual string GetSqlCountScooters()
         {
             return "SELECT COUNT(scooterId) FROM scootertable;";
         }
-
-        protected string GetSqlCountCarsMake()
-        {
-            return "SELECT COUNT(scooterId) FROM scootertable WHERE make=?;";
-        }
-
-        protected virtual string GetSqlSelectMakes()
-        {
-            return "SELECT DISTINCT make FROM scootertable ORDER BY make;";
-        }
-
-        protected virtual string GetSqlSelectModels()
-        {
-            return "SELECT DISTINCT model FROM scootertable WHERE make = ? ORDER BY model;";
-        }
-
-        protected virtual string GetSqlCountCarsMakeModel()
-        {
-            return "SELECT COUNT(pk) FROM scootertable WHERE make=? AND model=?;";
-        }
         
-        protected virtual string GetSqlSelectCar()
-        {
-            return "SELECT * FROM scootertable WHERE pk = ?;";
-        }
-
         protected virtual string GetSqlSelectAllScooters()
         {
             return "SELECT * FROM scootertable;";
@@ -122,6 +98,7 @@ namespace RentNScoot.Persistence.Read
         {
             return "SELECT * FROM scooterlocations;";
         }
-        #endregion
+
+        #endregion Car SQL Query Commands
     }
 }

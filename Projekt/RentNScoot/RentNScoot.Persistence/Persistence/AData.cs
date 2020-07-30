@@ -1,22 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.Common;
-using System.Text;
 
 namespace RentNScoot.Persistence
 {
     internal class AData
     {
         #region fields
+
         private readonly string _connectionString;
         private readonly DbProviderFactory _dbProviderFactory;
         protected readonly DbConnection _dbConnection;
         protected readonly DbCommand _dbCommand;
         protected DbTransaction? _dbTransaction;
-        #endregion
+
+        #endregion fields
 
         #region ctor
+
         protected AData(DbProviderFactory dbProviderFactory, string connectionString)
         {
             if (string.IsNullOrEmpty(connectionString))
@@ -39,7 +40,8 @@ namespace RentNScoot.Persistence
             // setter injection of DbConnection object
             _dbCommand.Connection = _dbConnection;
         }
-        #endregion
+
+        #endregion ctor
 
         public virtual void InitDb()
         {
@@ -66,7 +68,6 @@ namespace RentNScoot.Persistence
 
         protected virtual bool Open()
         {
-
             return false;
         }
 

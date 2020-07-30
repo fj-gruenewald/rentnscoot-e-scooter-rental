@@ -1,25 +1,26 @@
-﻿using System;
+﻿using RentNScoot.Domain;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Text;
-using RentNScoot.Domain;
 
 namespace RentNScoot.Presentation.ViewModels
 {
-    class CvmSearchScooter
+    internal class CvmSearchScooter
     {
         #region fields
+
         private readonly CvmMain _vmMain;
-        #endregion
+
+        #endregion fields
 
         #region properties(Data)
-        //
+
+        //wenn eigenschaft verändert
         public event PropertyChangedEventHandler PropertyChanged = delegate { };
 
-        //
+        //Liste alle Scooter
         private ICollection<Scooter> _searchResults = new List<Scooter>();
 
-        //
+        //Liste aller Scooter holen
         public ICollection<Scooter> SearchResults
         {
             get
@@ -34,11 +35,12 @@ namespace RentNScoot.Presentation.ViewModels
             }
         }
 
-        //
+        //Ausgewählten Scooter
         private Scooter _selectedScooter = new Scooter();
+
         private ICollection<Scooter> _selectedCarsList = new List<Scooter>();
 
-        //
+        //Ausgewählter Scooter
         public Scooter SelectedScooter
         {
             get
@@ -51,11 +53,10 @@ namespace RentNScoot.Presentation.ViewModels
                 _selectedCarsList.Add(_selectedScooter);
             }
         }
-        #endregion
 
-        #region properties(Command)
+        #endregion properties(Data)
 
-        #endregion
+
 
         #region ctor
         private static volatile CvmSearchScooter? instance = null;
@@ -78,10 +79,7 @@ namespace RentNScoot.Presentation.ViewModels
                 return instance;
             }
         }
-        #endregion
 
-        #region events
-
-        #endregion
+        #endregion ctor
     }
 }

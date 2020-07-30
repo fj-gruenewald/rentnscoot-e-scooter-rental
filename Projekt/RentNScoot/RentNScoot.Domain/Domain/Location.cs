@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace RentNScoot.Domain
+﻿namespace RentNScoot.Domain
 {
     public class Location : IEntity
     {
         //Was für Attribute hat eine Location
         public string Id { get; set; } = string.Empty;
+
         public string City { get; set; } = string.Empty;
         public string Plz { get; set; } = string.Empty;
         public string Adress { get; set; } = string.Empty;
@@ -16,7 +13,7 @@ namespace RentNScoot.Domain
         //Aufruf Konstruktor
         public Location()
         { }
-        
+
         //Konstruktor zum Lesen
         public Location(string id, string city, string plz, string adress, double adressNr)
         {
@@ -26,7 +23,5 @@ namespace RentNScoot.Domain
             Adress = adress;
             AdressNr = adressNr;
         }
-
-
     }
 }

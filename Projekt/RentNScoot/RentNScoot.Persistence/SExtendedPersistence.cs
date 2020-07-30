@@ -1,13 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using RentNScoot.Domain;
+using System;
 using System.Data.Common;
-using System.Text;
-using RentNScoot.Domain;
 
 namespace RentNScoot
 {
     public static class SExtendedPersistence
     {
+        //liest scooter von datenbank
         public static void FromDbDataReaderScooter(this Scooter scooter, DbDataReader dbDataReader)
         {
             scooter.Id = Convert.ToString(dbDataReader[0]);
@@ -16,6 +15,7 @@ namespace RentNScoot
             scooter.Price = Convert.ToDouble(dbDataReader[3]);
         }
 
+        //liest location von Datenbank
         public static void FromDbDataReaderLocation(this Location location, DbDataReader dbDataReader)
         {
             location.Id = Convert.ToString(dbDataReader[0]);

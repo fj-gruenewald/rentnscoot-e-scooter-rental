@@ -1,25 +1,26 @@
-﻿using System;
+﻿using RentNScoot.Domain;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Text;
-using RentNScoot.Domain;
 
 namespace RentNScoot.Presentation.ViewModels
 {
     internal class CvmSearchLocation : INotifyPropertyChanged
     {
         #region fields
+
         private readonly CvmMain _vmMain;
-        #endregion
+
+        #endregion fields
 
         #region properties(Data)
-        //
+
+        //wenn eigenschaft verändert
         public event PropertyChangedEventHandler PropertyChanged = delegate { };
 
-        //
+        //liste mit locations
         private ICollection<Location> _searchResults = new List<Location>();
 
-        //
+        //liste mit locations holen
         public ICollection<Location> SearchResults
         {
             get
@@ -34,11 +35,12 @@ namespace RentNScoot.Presentation.ViewModels
             }
         }
 
-        //
+        //ausgewählte location
         private Location _selectedLocation = new Location();
+
         private ICollection<Location> _selectedCarsList = new List<Location>();
 
-        //
+        //ausgewählte location
         public Location SelectedLocation
         {
             get
@@ -51,9 +53,11 @@ namespace RentNScoot.Presentation.ViewModels
                 _selectedCarsList.Add(_selectedLocation);
             }
         }
-        #endregion
+
+        #endregion properties(Data)
 
         #region ctor
+
         private static volatile CvmSearchLocation? instance = null;
 
         private static readonly object padlock = new object();
@@ -74,9 +78,7 @@ namespace RentNScoot.Presentation.ViewModels
                 return instance;
             }
         }
-        #endregion
 
-        #region events
-        #endregion
+        #endregion ctor
     }
 }

@@ -1,15 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using RentNScoot.Presentation.ViewModels;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
-using RentNScoot.Presentation.ViewModels;
 
 namespace RentNScoot.Presentation.Views
 {
@@ -24,7 +14,9 @@ namespace RentNScoot.Presentation.Views
         //ctor
         // Singleton C#
         private static volatile CviCustomerData? instance = null;
+
         private static readonly object padlock = new object();
+
         internal static CviCustomerData CreateSingleton(CvmCustomerData vmCustomerData)
         {
             lock (padlock)
@@ -33,6 +25,7 @@ namespace RentNScoot.Presentation.Views
                 return instance;
             }
         }
+
         internal CviCustomerData(CvmCustomerData vmCustomerDatar)
         {
             _vmcustomerData = vmCustomerDatar;

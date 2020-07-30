@@ -1,18 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-//
-using RentNScoot.Presentation.Views;
+﻿//
 using RentNScoot.Presentation.ViewModels;
+using RentNScoot.Presentation.Views;
 
 namespace RentNScoot.Presentation.Factories
 {
     public abstract class AFactoryDialog
     {
-        //
-
-        //
         public static IDialog CreateSingleton(IAppCommands appCommands, IAppQueries appQueries)
         {
             // ViewModels
@@ -23,9 +16,6 @@ namespace RentNScoot.Presentation.Factories
             CvmSearchLocation vmSearchLocation = CvmSearchLocation.CreateSingleton(vmMain);
 
             CvmCustomerData vmCustomerData = CvmCustomerData.CreateSingleton(appQueries, appCommands, vmMain);
-
-            //CvmUpdateCar vmUpdateCar = CvmUpdateCar.CreateSingleton(appCarQueries, appCarCommands, vmMain);
-
 
             // Views
             CviSearchScooter viSearchScooter = CviSearchScooter.CreateSingleton(vmMain, vmSearchScooter);

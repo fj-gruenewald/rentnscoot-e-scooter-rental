@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Common;
-using System.Text;
+﻿using System.Data.Common;
 
 namespace RentNScoot.Persistence.Read
 {
@@ -10,7 +7,6 @@ namespace RentNScoot.Persistence.Read
         internal CDataReadConnector(DbProviderFactory dbProviderFactory, string connectionString)
             : base(dbProviderFactory, connectionString)
         {
-
         }
     }
 }

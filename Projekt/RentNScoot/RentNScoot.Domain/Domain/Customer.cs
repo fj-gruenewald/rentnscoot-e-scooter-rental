@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace RentNScoot.Domain
+﻿namespace RentNScoot.Domain
 {
     public class Customer : IEntity
     {
@@ -16,12 +12,12 @@ namespace RentNScoot.Domain
         public string StreetNR { get; set; } = string.Empty;
         public string Plz { get; set; } = string.Empty;
 
-        //
+        //Konstruktor
         public Customer()
         { }
 
-        //
-        public Customer(string name,string familyname, string email, string iban, string city, string street, string streetNr, string plz)
+        //überladener konstruktor (schreiben)
+        public Customer(string name, string familyname, string email, string iban, string city, string street, string streetNr, string plz)
         {
             Name = name;
             FamilyName = familyname;
@@ -33,7 +29,7 @@ namespace RentNScoot.Domain
             Plz = plz;
         }
 
-        //
+        //überladener Konstruktor (lesen)
         public Customer(string id, string name, string familyname, string email, string iban, string city, string street, string streetNr, string plz)
         {
             Id = id;

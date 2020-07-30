@@ -8,24 +8,24 @@
         Title="Werde Kunde" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="3*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="3*" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
         <!-- Header -->
-        <TextBox Grid.Row ="0" Grid.Column="0" Text="Wir brauchen noch deine Daten" FontSize="36" TextAlignment="Center" Margin="0,0,0,260" Grid.RowSpan="2" BorderThickness="0,0,0,0" Background="#FF2B2D42" Foreground="#FFEDF2F4" IsReadOnly="True"/>
+        <TextBox Grid.Row ="0" Grid.Column="0" Text="Wir brauchen noch deine Daten" FontSize="36" TextAlignment="Center" Margin="0,0,0,260" Grid.RowSpan="2" BorderThickness="0,0,0,0" Background="#FF2B2D42" Foreground="#FFEDF2F4" IsReadOnly="True" />
 
         <!-- Body -->
         <Grid Grid.Row ="1" Grid.Column="0">
             <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
@@ -34,37 +34,37 @@
                 <ColumnDefinition Width="2*" />
             </Grid.ColumnDefinitions>
 
-            <TextBlock Grid.Row ="0" Grid.Column="0" Text="Vorname" FontSize="18" TextAlignment="Right" Margin="0,18,20,0"/>
-            <TextBlock Grid.Row ="1" Grid.Column="0" Text="Nachname" FontSize="18" TextAlignment="Right" Margin="0,18,20,0"/>
-            <TextBlock Grid.Row ="2" Grid.Column="0" Text="Email" FontSize="18" TextAlignment="Right" Margin="0,18,20,0"/>
-            <TextBlock Grid.Row ="3" Grid.Column="0" Text="IBAN" FontSize="18" TextAlignment="Right" Margin="0,18,20,0"/>
+            <TextBlock Grid.Row ="0" Grid.Column="0" Text="Vorname" FontSize="18" TextAlignment="Right" Margin="0,18,20,0" />
+            <TextBlock Grid.Row ="1" Grid.Column="0" Text="Nachname" FontSize="18" TextAlignment="Right" Margin="0,18,20,0" />
+            <TextBlock Grid.Row ="2" Grid.Column="0" Text="Email" FontSize="18" TextAlignment="Right" Margin="0,18,20,0" />
+            <TextBlock Grid.Row ="3" Grid.Column="0" Text="IBAN" FontSize="18" TextAlignment="Right" Margin="0,18,20,0" />
 
-            <TextBlock Grid.Row ="0" Grid.Column="2" Text="Ort" FontSize="18" TextAlignment="Right" Margin="0,18,20,0"/>
-            <TextBlock Grid.Row ="1" Grid.Column="2" Text="Straße" FontSize="18" TextAlignment="Right" Margin="0,18,20,0"/>
-            <TextBlock Grid.Row ="2" Grid.Column="2" Text="Plz" FontSize="18" TextAlignment="Right" Margin="0,18,20,0"/>
+            <TextBlock Grid.Row ="0" Grid.Column="2" Text="Ort" FontSize="18" TextAlignment="Right" Margin="0,18,20,0" />
+            <TextBlock Grid.Row ="1" Grid.Column="2" Text="Straße" FontSize="18" TextAlignment="Right" Margin="0,18,20,0" />
+            <TextBlock Grid.Row ="2" Grid.Column="2" Text="Plz" FontSize="18" TextAlignment="Right" Margin="0,18,20,0" />
 
-            <TextBox Grid.Row ="0" Grid.Column="1" Text="" TextAlignment="Center" FontSize="18" Margin="0,15,15,15"/>
-            <TextBox Grid.Row ="1" Grid.Column="1" Text="" TextAlignment="Center" FontSize="18" Margin="0,15,15,15"/>
-            <TextBox Grid.Row ="2" Grid.Column="1" Text="" TextAlignment="Center" FontSize="18" Margin="0,15,15,15"/>
-            <TextBox Grid.Row ="3" Grid.Column="1" Text="" TextAlignment="Center" FontSize="18" Margin="0,15,15,15"/>
+            <TextBox Grid.Row ="0" Grid.Column="1" Text="" TextAlignment="Center" FontSize="18" Margin="0,15,15,15" />
+            <TextBox Grid.Row ="1" Grid.Column="1" Text="" TextAlignment="Center" FontSize="18" Margin="0,15,15,15" />
+            <TextBox Grid.Row ="2" Grid.Column="1" Text="" TextAlignment="Center" FontSize="18" Margin="0,15,15,15" />
+            <TextBox Grid.Row ="3" Grid.Column="1" Text="" TextAlignment="Center" FontSize="18" Margin="0,15,15,15" />
 
-            <TextBox Grid.Row ="0" Grid.Column="3" Text="" TextAlignment="Center" FontSize="18" Margin="0,15,15,15"/>
-            <TextBox Grid.Row ="1" Grid.Column="3" Text="" TextAlignment="Center" FontSize="18" Margin="0,15,15,15"/>
-            <TextBox Grid.Row ="2" Grid.Column="3" Text="" TextAlignment="Center" FontSize="18" Margin="0,15,15,15"/>
+            <TextBox Grid.Row ="0" Grid.Column="3" Text="" TextAlignment="Center" FontSize="18" Margin="0,15,15,15" />
+            <TextBox Grid.Row ="1" Grid.Column="3" Text="" TextAlignment="Center" FontSize="18" Margin="0,15,15,15" />
+            <TextBox Grid.Row ="2" Grid.Column="3" Text="" TextAlignment="Center" FontSize="18" Margin="0,15,15,15" />
         </Grid>
 
         <!-- Footer -->
         <Grid Grid.Row ="2" Grid.Column="0">
             <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
+                <RowDefinition Height="*" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="2*" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-            <Button Grid.Row ="2" Grid.Column="0" Content="Zurück" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="150" Background="#FF2B2D42" Foreground="#FFEDF2F4" FontSize="18"/>
-            <Button Grid.Row ="2" Grid.Column="2" Content="Weiter" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="150" Background="#FF2B2D42" Foreground="#FFEDF2F4" FontSize="18" Click="ContinueProcess"/>
+            <Button Grid.Row ="2" Grid.Column="0" Content="Zurück" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="150" Background="#FF2B2D42" Foreground="#FFEDF2F4" FontSize="18" />
+            <Button Grid.Row ="2" Grid.Column="2" Content="Weiter" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" Width="150" Background="#FF2B2D42" Foreground="#FFEDF2F4" FontSize="18" Click="ContinueProcess" />
         </Grid>
     </Grid>
 </Window>

@@ -1,20 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using RentNScoot.Domain;
 using System.Data;
 using System.Data.Common;
-using System.Text;
-using RentNScoot.Domain;
 
 namespace RentNScoot.Persistence.Write
 {
     internal abstract class ADataWrite : AData, IDataWrite
     {
-        //
+        //Konstruktor
         protected ADataWrite(DbProviderFactory dbProviderFactory, string connectionString)
             : base(dbProviderFactory, connectionString)
         { }
 
-        //
+        //Kunde in Datenbank eintragen
         public virtual int InsertCustomer(Customer customer)
         {
             int rowsAffected = 0;

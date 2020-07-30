@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace RentNScoot.Application
+﻿namespace RentNScoot.Application
 {
     internal class CAppCommands : IAppCommands
     {
-        //
+        //DataWrite initialisieren
         private IDataWrite _dataWrite;
 
         //Konstruktor

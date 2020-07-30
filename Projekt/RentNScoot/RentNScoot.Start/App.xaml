@@ -4,6 +4,5 @@
              xmlns:local="clr-namespace:RentNScoot.Start"
              Startup="AppStartUp">
     <Application.Resources>
-         
     </Application.Resources>
 </Application>

@@ -1,26 +1,26 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Runtime.InteropServices;
-using System.Text;
 
 namespace RentNScoot.Presentation.Helper
 {
     internal static class WinHelper
     {
-        //** DISABLE MINIMIZE&MAXIMIZE BUTTON ***      
+        //** DISABLE MINIMIZE&MAXIMIZE BUTTON ***
         [DllImport("user32.dll")]
         private static extern int GetWindowLong(IntPtr hWnd, int nIndex);
+
         [DllImport("user32.dll")]
         private static extern int SetWindowLong(IntPtr hWnd, int nIndex, int dwNewLong);
 
-        //** DISABLE CLOSE BUTTON ***      
+        //** DISABLE CLOSE BUTTON ***
         [DllImport("user32.dll")]
         private static extern IntPtr GetSystemMenu(IntPtr hWnd, bool bRevert);
+
         [DllImport("user32.dll")]
         private static extern bool EnableMenuItem(IntPtr hMenu, uint uIDEnableItem, uint uEnable);
+
         [DllImport("user32.dll")]
         private static extern IntPtr DestroyMenu(IntPtr hWnd);
-
 
         public static void DisableCloseButton(IntPtr windowHandle)
         {
@@ -50,8 +50,8 @@ namespace RentNScoot.Presentation.Helper
         //   // SetWindowLong( windowHandle, GWL_STYLE, GetWindowLong( windowHandle, GWL_STYLE) & ~WS_MINIMIZEBOX);
         //   // Disable maximize button
         //   // SetWindowLong( windowHandle, GWL_STYLE, GetWindowLong( windowHandle, GWL_STYLE) & ~WS_MAXIMIZEBOX);
-        //   // Disable minimize&Maximize button and hide them 
-        //   SetWindowLong( windowHandle, GWL_STYLE, 
+        //   // Disable minimize&Maximize button and hide them
+        //   SetWindowLong( windowHandle, GWL_STYLE,
         //      GetWindowLong( windowHandle, GWL_STYLE) & ~WS_MAXIMIZEBOX & ~WS_MINIMIZEBOX);
         //}
     }

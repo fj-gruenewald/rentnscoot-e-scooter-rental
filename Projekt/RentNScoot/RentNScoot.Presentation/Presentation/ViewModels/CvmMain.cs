@@ -1,27 +1,23 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Text;
-using RentNScoot.Domain;
 
 namespace RentNScoot.Presentation.ViewModels
 {
     internal class CvmMain
     {
-        //
+        //fremdklassen initialisieren
         private IAppCommands _appCommands;
+
         private IAppQueries _appQueries;
 
-        //
+        //anz. scooter
         public string nScooters { get; } = String.Empty;
 
-        //
+        //instanz der Seite
         private static volatile CvmMain? instance = null;
 
-        //
         private static readonly object padlock = new object();
 
-        //
+        //Konstruktor
         internal static CvmMain CreateSingleton(IAppCommands appCarCommands, IAppQueries appCarQueries)
         {
             lock (padlock)
@@ -32,7 +28,7 @@ namespace RentNScoot.Presentation.ViewModels
             }
         }
 
-        //
+        //Konstruktor
         private CvmMain(IAppCommands appCommands, IAppQueries appQueries)
         {
             _appCommands = appCommands;

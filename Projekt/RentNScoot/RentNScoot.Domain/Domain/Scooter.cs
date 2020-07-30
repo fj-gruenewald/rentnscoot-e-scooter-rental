@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace RentNScoot.Domain
+﻿namespace RentNScoot.Domain
 {
     public class Scooter : IEntity
     {
         //Was für Attribute hat ein Roller
         public string Id { get; set; } = string.Empty;
+
         public string Make { get; set; } = string.Empty;
         public string Model { get; set; } = string.Empty;
         public double Price { get; set; } = 0;
