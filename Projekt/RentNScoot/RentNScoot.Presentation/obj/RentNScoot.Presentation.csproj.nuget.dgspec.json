@@ -1,24 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Presentation\\RentNScoot.Presentation.csproj": {}
+    "C:\\Users\\D3NCE\\Dokumente\\Code\\GitHub\\rentNscoot-application\\Projekt\\RentNScoot\\RentNScoot.Presentation\\RentNScoot.Presentation.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Application\\RentNScoot.Application.csproj": {
+    "C:\\Users\\D3NCE\\Dokumente\\Code\\GitHub\\rentNscoot-application\\Projekt\\RentNScoot\\RentNScoot.Application\\RentNScoot.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Application\\RentNScoot.Application.csproj",
+        "projectUniqueName": "C:\\Users\\D3NCE\\Dokumente\\Code\\GitHub\\rentNscoot-application\\Projekt\\RentNScoot\\RentNScoot.Application\\RentNScoot.Application.csproj",
         "projectName": "RentNScoot.Application",
-        "projectPath": "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Application\\RentNScoot.Application.csproj",
-        "packagesPath": "C:\\Users\\Freddy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Application\\obj\\",
+        "projectPath": "C:\\Users\\D3NCE\\Dokumente\\Code\\GitHub\\rentNscoot-application\\Projekt\\RentNScoot\\RentNScoot.Application\\RentNScoot.Application.csproj",
+        "packagesPath": "C:\\Users\\D3NCE\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\D3NCE\\Dokumente\\Code\\GitHub\\rentNscoot-application\\Projekt\\RentNScoot\\RentNScoot.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Freddy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\D3NCE\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -31,9 +32,10 @@
         },
         "frameworks": {
           "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Domain\\RentNScoot.Domain.csproj": {
-                "projectPath": "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Domain\\RentNScoot.Domain.csproj"
+              "C:\\Users\\D3NCE\\Dokumente\\Code\\GitHub\\rentNscoot-application\\Projekt\\RentNScoot\\RentNScoot.Domain\\RentNScoot.Domain.csproj": {
+                "projectPath": "C:\\Users\\D3NCE\\Dokumente\\Code\\GitHub\\rentNscoot-application\\Projekt\\RentNScoot\\RentNScoot.Domain\\RentNScoot.Domain.csproj"
               }
             }
           }
@@ -46,6 +48,7 @@
       },
       "frameworks": {
         "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
           "dependencies": {
             "MySql.Data": {
               "target": "Package",
@@ -71,25 +74,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Domain\\RentNScoot.Domain.csproj": {
+    "C:\\Users\\D3NCE\\Dokumente\\Code\\GitHub\\rentNscoot-application\\Projekt\\RentNScoot\\RentNScoot.Domain\\RentNScoot.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Domain\\RentNScoot.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\D3NCE\\Dokumente\\Code\\GitHub\\rentNscoot-application\\Projekt\\RentNScoot\\RentNScoot.Domain\\RentNScoot.Domain.csproj",
         "projectName": "RentNScoot.Domain",
-        "projectPath": "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Domain\\RentNScoot.Domain.csproj",
-        "packagesPath": "C:\\Users\\Freddy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Domain\\obj\\",
+        "projectPath": "C:\\Users\\D3NCE\\Dokumente\\Code\\GitHub\\rentNscoot-application\\Projekt\\RentNScoot\\RentNScoot.Domain\\RentNScoot.Domain.csproj",
+        "packagesPath": "C:\\Users\\D3NCE\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\D3NCE\\Dokumente\\Code\\GitHub\\rentNscoot-application\\Projekt\\RentNScoot\\RentNScoot.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Freddy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\D3NCE\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -102,6 +106,7 @@
         },
         "frameworks": {
           "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
             "projectReferences": {}
           }
         },
@@ -113,6 +118,7 @@
       },
       "frameworks": {
         "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
           "dependencies": {
             "MySql.Data": {
               "target": "Package",
@@ -138,25 +144,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Presentation\\RentNScoot.Presentation.csproj": {
+    "C:\\Users\\D3NCE\\Dokumente\\Code\\GitHub\\rentNscoot-application\\Projekt\\RentNScoot\\RentNScoot.Presentation\\RentNScoot.Presentation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Presentation\\RentNScoot.Presentation.csproj",
+        "projectUniqueName": "C:\\Users\\D3NCE\\Dokumente\\Code\\GitHub\\rentNscoot-application\\Projekt\\RentNScoot\\RentNScoot.Presentation\\RentNScoot.Presentation.csproj",
         "projectName": "RentNScoot.Presentation",
-        "projectPath": "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Presentation\\RentNScoot.Presentation.csproj",
-        "packagesPath": "C:\\Users\\Freddy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Presentation\\obj\\",
+        "projectPath": "C:\\Users\\D3NCE\\Dokumente\\Code\\GitHub\\rentNscoot-application\\Projekt\\RentNScoot\\RentNScoot.Presentation\\RentNScoot.Presentation.csproj",
+        "packagesPath": "C:\\Users\\D3NCE\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\D3NCE\\Dokumente\\Code\\GitHub\\rentNscoot-application\\Projekt\\RentNScoot\\RentNScoot.Presentation\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Freddy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\D3NCE\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -169,12 +176,13 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Application\\RentNScoot.Application.csproj": {
-                "projectPath": "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Application\\RentNScoot.Application.csproj"
+              "C:\\Users\\D3NCE\\Dokumente\\Code\\GitHub\\rentNscoot-application\\Projekt\\RentNScoot\\RentNScoot.Application\\RentNScoot.Application.csproj": {
+                "projectPath": "C:\\Users\\D3NCE\\Dokumente\\Code\\GitHub\\rentNscoot-application\\Projekt\\RentNScoot\\RentNScoot.Application\\RentNScoot.Application.csproj"
               },
-              "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Domain\\RentNScoot.Domain.csproj": {
-                "projectPath": "C:\\Users\\Freddy\\Code\\GitHub\\E-Scooter_Verleih\\Projekt\\RentNScoot\\RentNScoot.Domain\\RentNScoot.Domain.csproj"
+              "C:\\Users\\D3NCE\\Dokumente\\Code\\GitHub\\rentNscoot-application\\Projekt\\RentNScoot\\RentNScoot.Domain\\RentNScoot.Domain.csproj": {
+                "projectPath": "C:\\Users\\D3NCE\\Dokumente\\Code\\GitHub\\rentNscoot-application\\Projekt\\RentNScoot\\RentNScoot.Domain\\RentNScoot.Domain.csproj"
               }
             }
           }
@@ -187,6 +195,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "MySql.Data": {
               "target": "Package",
@@ -215,7 +224,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
