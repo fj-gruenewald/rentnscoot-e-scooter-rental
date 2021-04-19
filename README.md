@@ -33,7 +33,7 @@ The design basically consists of two areas: a table where you can select the sco
 for the period of time you want to rent the scooter.
 
 <p align="center">
-<img src="https://github.com/fj-gruenewald/pathfinding-algorithms-in-unity/blob/master/img/main_menu.PNG" width="720">
+<img src="" width="720">
   </p>
 
 ## Installation and Usage
@@ -67,15 +67,15 @@ Icon: [flaticon.com](https://www.flaticon.com/de/) by the User: [Freepik](https:
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/fj-gruenewald/pathfinding-algorithms-in-unity.svg?style=for-the-badge
-[contributors-url]: https://github.com/fj-gruenewald/pathfinding-algorithms-in-unity/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/fj-gruenewald/pathfinding-algorithms-in-unity.svg?style=for-the-badge
-[forks-url]: https://github.com/fj-gruenewald/pathfinding-algorithms-in-unity/network/members
-[stars-shield]: https://img.shields.io/github/stars/fj-gruenewald/pathfinding-algorithms-in-unity.svg?style=for-the-badge
-[stars-url]: https://github.com/fj-gruenewald/pathfinding-algorithms-in-unity/stargazers
-[issues-shield]: https://img.shields.io/github/issues/fj-gruenewald/pathfinding-algorithms-in-unity.svg?style=for-the-badge
-[issues-url]: https://github.com/fj-gruenewald/pathfinding-algorithms-in-unity/issues
-[license-shield]: https://img.shields.io/github/license/fj-gruenewald/pathfinding-algorithms-in-unity.svg?style=for-the-badge
-[license-url]: https://github.com/fj-gruenewald/pathfinding-algorithms-in-unity/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/fj-gruenewald/rentnscoot-e-scooter-rental.svg?style=for-the-badge
+[contributors-url]: https://github.com/fj-gruenewald/rentnscoot-e-scooter-rental/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/fj-gruenewald/rentnscoot-e-scooter-rental.svg?style=for-the-badge
+[forks-url]: https://github.com/fj-gruenewald/rentnscoot-e-scooter-rental/network/members
+[stars-shield]: https://img.shields.io/github/stars/fj-gruenewald/rentnscoot-e-scooter-rental.svg?style=for-the-badge
+[stars-url]: https://github.com/fj-gruenewald/rentnscoot-e-scooter-rental/stargazers
+[issues-shield]: https://img.shields.io/github/issues/fj-gruenewald/rentnscoot-e-scooter-rental.svg?style=for-the-badge
+[issues-url]: https://github.com/fj-gruenewald/rentnscoot-e-scooter-rental/issues
+[license-shield]: https://img.shields.io/github/license/fj-gruenewald/rentnscoot-e-scooter-rental.svg?style=for-the-badge
+[license-url]: https://github.com/fj-gruenewald/rentnscoot-e-scooter-rental/blob/master/LICENSE.txt
 
 <br>
