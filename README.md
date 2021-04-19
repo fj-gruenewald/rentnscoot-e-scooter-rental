@@ -52,11 +52,11 @@ Application:
 See the [open issues](https://github.com/fj-gruenewald/pathfinding-algorithms-in-unity/issues) for a list of proposed features and errors that maybe you can add or fix.
 
 <!-- LICENSE -->
-### License
+## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-### Credit
+## Credit
 
 Icon: [flaticon.com](https://www.flaticon.com/de/) by the User: [Freepik](https://www.flaticon.com/authors/freepik)
 
