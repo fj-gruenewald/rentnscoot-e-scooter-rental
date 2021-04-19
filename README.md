@@ -48,11 +48,6 @@ Application:
 
 <!-- ROADMAP -->
 ## Roadmap
-
-Current Features:
-  - 
-  - 
-  -  
  
 See the [open issues](https://github.com/fj-gruenewald/pathfinding-algorithms-in-unity/issues) for a list of proposed features and errors that maybe you can add or fix.
 
