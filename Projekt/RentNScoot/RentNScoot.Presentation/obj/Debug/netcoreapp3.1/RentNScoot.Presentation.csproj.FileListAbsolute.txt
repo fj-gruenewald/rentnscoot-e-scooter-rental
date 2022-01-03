@@ -59,7 +59,6 @@ C:\Users\D3NCE\Dokumente\Code\GitHub\rentNscoot-application\Projekt\RentNScoot\R
 C:\Users\D3NCE\Dokumente\Code\GitHub\rentNscoot-application\Projekt\RentNScoot\RentNScoot.Presentation\bin\Debug\netcoreapp3.1\RentNScoot.Domain.dll
 C:\Users\D3NCE\Dokumente\Code\GitHub\rentNscoot-application\Projekt\RentNScoot\RentNScoot.Presentation\bin\Debug\netcoreapp3.1\RentNScoot.Application.pdb
 C:\Users\D3NCE\Dokumente\Code\GitHub\rentNscoot-application\Projekt\RentNScoot\RentNScoot.Presentation\bin\Debug\netcoreapp3.1\RentNScoot.Domain.pdb
-C:\Users\D3NCE\Dokumente\Code\GitHub\rentNscoot-application\Projekt\RentNScoot\RentNScoot.Presentation\obj\Debug\netcoreapp3.1\RentNScoot.Presentation.csprojAssemblyReference.cache
 C:\Users\D3NCE\Dokumente\Code\GitHub\rentNscoot-application\Projekt\RentNScoot\RentNScoot.Presentation\obj\Debug\netcoreapp3.1\Presentation\Views\CviCustomerData.g.cs
 C:\Users\D3NCE\Dokumente\Code\GitHub\rentNscoot-application\Projekt\RentNScoot\RentNScoot.Presentation\obj\Debug\netcoreapp3.1\Presentation\Views\CviMain.g.cs
 C:\Users\D3NCE\Dokumente\Code\GitHub\rentNscoot-application\Projekt\RentNScoot\RentNScoot.Presentation\obj\Debug\netcoreapp3.1\Presentation\Views\CviSearchLocation.g.cs
@@ -79,3 +78,5 @@ C:\Users\D3NCE\Dokumente\Code\GitHub\rentNscoot-application\Projekt\RentNScoot\R
 C:\Users\D3NCE\Dokumente\Code\GitHub\rentNscoot-application\Projekt\RentNScoot\RentNScoot.Presentation\obj\Debug\netcoreapp3.1\RentNScoot.Presentation.csproj.CopyComplete
 C:\Users\D3NCE\Dokumente\Code\GitHub\rentNscoot-application\Projekt\RentNScoot\RentNScoot.Presentation\obj\Debug\netcoreapp3.1\RentNScoot.Presentation.dll
 C:\Users\D3NCE\Dokumente\Code\GitHub\rentNscoot-application\Projekt\RentNScoot\RentNScoot.Presentation\obj\Debug\netcoreapp3.1\RentNScoot.Presentation.pdb
+C:\Users\D3NCE\Dokumente\Code\GitHub\rentNscoot-application\Projekt\RentNScoot\RentNScoot.Presentation\obj\Debug\netcoreapp3.1\RentNScoot.Presentation.csproj.AssemblyReference.cache
+C:\Users\D3NCE\Dokumente\Code\GitHub\rentNscoot-application\Projekt\RentNScoot\RentNScoot.Presentation\obj\Debug\netcoreapp3.1\RentNScoot.Presentation.GeneratedMSBuildEditorConfig.editorconfig

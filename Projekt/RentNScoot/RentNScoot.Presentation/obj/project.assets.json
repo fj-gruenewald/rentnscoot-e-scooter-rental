@@ -6264,10 +6264,8 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "MySql.Data >= 8.0.21",
       "RentNScoot.Application >= 1.0.0",
-      "RentNScoot.Domain >= 1.0.0",
-      "System.Data.SqlClient >= 4.8.1"
+      "RentNScoot.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -6323,16 +6321,6 @@
     "frameworks": {
       "netcoreapp3.1": {
         "targetAlias": "netcoreapp3.1",
-        "dependencies": {
-          "MySql.Data": {
-            "target": "Package",
-            "version": "[8.0.21, )"
-          },
-          "System.Data.SqlClient": {
-            "target": "Package",
-            "version": "[4.8.1, )"
-          }
-        },
         "imports": [
           "net461",
           "net462",
@@ -6351,7 +6339,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
       }
     }
   }

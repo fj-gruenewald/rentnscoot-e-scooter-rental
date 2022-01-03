@@ -27,10 +27,11 @@ C:\Users\D3NCE\Dokumente\Code\GitHub\rentNscoot-application\Projekt\RentNScoot\R
 C:\Users\D3NCE\Dokumente\Code\GitHub\rentNscoot-application\Projekt\RentNScoot\RentNScoot.Application\bin\Debug\netstandard2.1\RentNScoot.Application.pdb
 C:\Users\D3NCE\Dokumente\Code\GitHub\rentNscoot-application\Projekt\RentNScoot\RentNScoot.Application\bin\Debug\netstandard2.1\RentNScoot.Domain.dll
 C:\Users\D3NCE\Dokumente\Code\GitHub\rentNscoot-application\Projekt\RentNScoot\RentNScoot.Application\bin\Debug\netstandard2.1\RentNScoot.Domain.pdb
-C:\Users\D3NCE\Dokumente\Code\GitHub\rentNscoot-application\Projekt\RentNScoot\RentNScoot.Application\obj\Debug\netstandard2.1\RentNScoot.Application.csprojAssemblyReference.cache
 C:\Users\D3NCE\Dokumente\Code\GitHub\rentNscoot-application\Projekt\RentNScoot\RentNScoot.Application\obj\Debug\netstandard2.1\RentNScoot.Application.AssemblyInfoInputs.cache
 C:\Users\D3NCE\Dokumente\Code\GitHub\rentNscoot-application\Projekt\RentNScoot\RentNScoot.Application\obj\Debug\netstandard2.1\RentNScoot.Application.AssemblyInfo.cs
 C:\Users\D3NCE\Dokumente\Code\GitHub\rentNscoot-application\Projekt\RentNScoot\RentNScoot.Application\obj\Debug\netstandard2.1\RentNScoot.Application.csproj.CoreCompileInputs.cache
 C:\Users\D3NCE\Dokumente\Code\GitHub\rentNscoot-application\Projekt\RentNScoot\RentNScoot.Application\obj\Debug\netstandard2.1\RentNScoot.Application.csproj.CopyComplete
 C:\Users\D3NCE\Dokumente\Code\GitHub\rentNscoot-application\Projekt\RentNScoot\RentNScoot.Application\obj\Debug\netstandard2.1\RentNScoot.Application.dll
 C:\Users\D3NCE\Dokumente\Code\GitHub\rentNscoot-application\Projekt\RentNScoot\RentNScoot.Application\obj\Debug\netstandard2.1\RentNScoot.Application.pdb
+C:\Users\D3NCE\Dokumente\Code\GitHub\rentNscoot-application\Projekt\RentNScoot\RentNScoot.Application\obj\Debug\netstandard2.1\RentNScoot.Application.csproj.AssemblyReference.cache
+C:\Users\D3NCE\Dokumente\Code\GitHub\rentNscoot-application\Projekt\RentNScoot\RentNScoot.Application\obj\Debug\netstandard2.1\RentNScoot.Application.GeneratedMSBuildEditorConfig.editorconfig

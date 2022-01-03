@@ -34,7 +34,7 @@ namespace RentNScoot.Start
             //Dependency Injection Setup
             //Dependency Inversion Principle
 
-            try
+            /*try
             {
                 //
                 string connectionString = string.Empty;
@@ -59,7 +59,11 @@ namespace RentNScoot.Start
             catch (Exception exception)
             {
                 MessageBox.Show(exception.Message, "ABBRUCH", MessageBoxButton.OK, MessageBoxImage.Stop);
-            }
+            }*/
+
+            //Presentation
+            _dialog = AFactoryDialog.CreateSingleton(_appCommands, _appQueries);
+            _dialog.Show();
         }
 
         //

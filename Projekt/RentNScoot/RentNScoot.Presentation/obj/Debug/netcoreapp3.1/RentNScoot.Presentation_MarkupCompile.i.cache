@@ -16,5 +16,5 @@ TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
 2061233562651
 Presentation\Views\CviCustomerData.xaml;Presentation\Views\CviMain.xaml;Presentation\Views\CviSearchLocation.xaml;Presentation\Views\CviSearchScooter.xaml;Presentation\Views\CviSummary.xaml;
 
-True
+False
 

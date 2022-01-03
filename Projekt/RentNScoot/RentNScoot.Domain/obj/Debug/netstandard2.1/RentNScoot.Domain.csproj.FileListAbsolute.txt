@@ -19,9 +19,10 @@ C:\Users\Freddy\Desktop\rentnscoot_architecture_backup\RentNScoot.Domain\obj\Deb
 C:\Users\D3NCE\Dokumente\Code\GitHub\rentNscoot-application\Projekt\RentNScoot\RentNScoot.Domain\bin\Debug\netstandard2.1\RentNScoot.Domain.deps.json
 C:\Users\D3NCE\Dokumente\Code\GitHub\rentNscoot-application\Projekt\RentNScoot\RentNScoot.Domain\bin\Debug\netstandard2.1\RentNScoot.Domain.dll
 C:\Users\D3NCE\Dokumente\Code\GitHub\rentNscoot-application\Projekt\RentNScoot\RentNScoot.Domain\bin\Debug\netstandard2.1\RentNScoot.Domain.pdb
-C:\Users\D3NCE\Dokumente\Code\GitHub\rentNscoot-application\Projekt\RentNScoot\RentNScoot.Domain\obj\Debug\netstandard2.1\RentNScoot.Domain.csprojAssemblyReference.cache
 C:\Users\D3NCE\Dokumente\Code\GitHub\rentNscoot-application\Projekt\RentNScoot\RentNScoot.Domain\obj\Debug\netstandard2.1\RentNScoot.Domain.AssemblyInfoInputs.cache
 C:\Users\D3NCE\Dokumente\Code\GitHub\rentNscoot-application\Projekt\RentNScoot\RentNScoot.Domain\obj\Debug\netstandard2.1\RentNScoot.Domain.AssemblyInfo.cs
 C:\Users\D3NCE\Dokumente\Code\GitHub\rentNscoot-application\Projekt\RentNScoot\RentNScoot.Domain\obj\Debug\netstandard2.1\RentNScoot.Domain.csproj.CoreCompileInputs.cache
 C:\Users\D3NCE\Dokumente\Code\GitHub\rentNscoot-application\Projekt\RentNScoot\RentNScoot.Domain\obj\Debug\netstandard2.1\RentNScoot.Domain.dll
 C:\Users\D3NCE\Dokumente\Code\GitHub\rentNscoot-application\Projekt\RentNScoot\RentNScoot.Domain\obj\Debug\netstandard2.1\RentNScoot.Domain.pdb
+C:\Users\D3NCE\Dokumente\Code\GitHub\rentNscoot-application\Projekt\RentNScoot\RentNScoot.Domain\obj\Debug\netstandard2.1\RentNScoot.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\D3NCE\Dokumente\Code\GitHub\rentNscoot-application\Projekt\RentNScoot\RentNScoot.Domain\obj\Debug\netstandard2.1\RentNScoot.Domain.csproj.AssemblyReference.cache

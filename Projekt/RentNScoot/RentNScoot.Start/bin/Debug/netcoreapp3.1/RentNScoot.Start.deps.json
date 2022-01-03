@@ -1076,10 +1076,8 @@
       },
       "RentNScoot.Presentation/1.0.0": {
         "dependencies": {
-          "MySql.Data": "8.0.21",
           "RentNScoot.Application": "1.0.0",
-          "RentNScoot.Domain": "1.0.0",
-          "System.Data.SqlClient": "4.8.1"
+          "RentNScoot.Domain": "1.0.0"
         },
         "runtime": {
           "RentNScoot.Presentation.dll": {}
