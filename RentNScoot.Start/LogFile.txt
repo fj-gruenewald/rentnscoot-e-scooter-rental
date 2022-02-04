@@ -1,0 +1,8 @@
+04.02.2022-16:59:27.0095  App                  App_StartUp 
+04.02.2022-16:59:27.0113  AFactoryData         Create_ReadSqlite() Data Source=d:\database.db; Version=3;
+04.02.2022-16:59:27.0143  AFactoryData         Create_WriteSqlite() Data Source=d:\database.db; Version=3;
+04.02.2022-16:59:27.0180  AFactoryApp          Create_Queries(IDataRead) 
+04.02.2022-16:59:27.0181  CAppQueries          Ctor() 
+04.02.2022-16:59:27.0181  AFactoryApp          Create_Commands(IDataWrite) 
+04.02.2022-16:59:27.0181  CAppCommands         Ctor() 
+04.02.2022-16:59:27.0192  CDataReadSqlite      Locations() = GetLocations

@@ -1,0 +1,62 @@
+﻿<UserControl x:Class="RentNScoot.Presentation.Controls.Cards.LocationCard"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d"
+             d:DesignHeight="100"
+             d:DesignWidth="200"
+             Loaded="UserControl_Loaded"
+             Tag="{Binding}">
+
+    <!-- Card Grid -->
+    <Grid Margin="5,5,5,5"
+          MouseEnter="Grid_MouseEnter"
+          MouseLeave="Grid_MouseLeave"
+          MouseDown="Grid_MouseDown">
+
+        <!-- Background Effects -->
+        <Border>
+            <Border.OpacityMask>
+                <VisualBrush>
+                    <VisualBrush.Visual>
+                        <Border CornerRadius="2"
+                                Height="100"
+                                Width="100"
+                                Background="White" />
+                    </VisualBrush.Visual>
+                </VisualBrush>
+            </Border.OpacityMask>
+
+            <!-- Background Color -->
+            <Rectangle x:Name="recBackground"
+                       Fill="#176ebd" />
+        </Border>
+
+        <!-- Card Text -->
+        <StackPanel Margin="5,5,5,5"
+                    VerticalAlignment="Center">
+
+            <TextBlock x:Name="txtLocationPostal"
+                       Text="xxxxx"
+                       FontSize="16"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       Foreground="LightGray" />
+
+            <TextBlock x:Name="txtLocation"
+                       Text="XXXXXXX"
+                       FontSize="26"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       Foreground="White" />
+
+            <TextBlock x:Name="txtLocationDetails"
+                       Text="xxxxxxxxxxxxx xx"
+                       FontSize="16"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       Foreground="LightGray" />
+        </StackPanel>
+    </Grid>
+</UserControl>

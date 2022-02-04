@@ -1,0 +1,179 @@
+﻿<Page x:Class="RentNScoot.Presentation.Views.Frames.TimeFrame"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:RentNScoot.Presentation.Views.Frames"
+      xmlns:strings="clr-namespace:RentNScoot.Properties"
+      xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+      mc:Ignorable="d"
+      d:DesignHeight="450"
+      d:DesignWidth="800"
+      Title="TimeFrame" Loaded="Page_Loaded">
+
+    <!-- Page Grid -->
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="6*" />
+        </Grid.RowDefinitions>
+
+        <!-- Headline -->
+        <TextBlock Grid.Row="0"
+                   Text="{x:Static strings:Resources.TimeFrame_Headline}"
+                   FontSize="28"
+                   TextAlignment="Center"
+                   VerticalAlignment="Center" />
+
+        <!-- Content Grid -->
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="0.6*" />
+                <RowDefinition Height="2*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+
+            <!-- From Panel -->
+            <Rectangle Grid.Row="0"
+                       Grid.Column="0"
+                       Grid.RowSpan="2"
+                       Fill="#eeeeee"
+                       Margin="10,5,5,5" />
+
+            <TextBlock Grid.Row="0"
+                       Grid.Column="0"
+                       FontSize="18"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left"
+                       Margin="15,5,5,5"
+                       Text="{x:Static strings:Resources.TimeFrame_From}" />
+
+            <StackPanel Grid.Row="1"
+                        Grid.Column="0"
+                        Margin="15,0,0,0">
+
+                <DatePicker x:Name="DateFrom"
+                            Width="250"
+                            HorizontalAlignment="Left"
+                            Height="25"
+                            VerticalAlignment="Top"
+                            Margin="0,0,0,5"
+                            BorderThickness="0,0,0,0"
+                            FontSize="14" />
+
+                <TextBlock FontSize="18"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Left"
+                           Text="Wann willst du ihn abholen:"
+                           Margin="5,5,5,5" />
+
+                <StackPanel Orientation="Horizontal">
+
+                    <ComboBox x:Name="combTimeFrom"
+                              Width="200"
+                              FontSize="16"
+                              VerticalAlignment="Top"
+                              HorizontalAlignment="Left"
+                              Margin="10,0,0,0">
+                    </ComboBox>
+
+                    <Image Source="../../../assets/img/check-icon-by-pixel-perfect-from-flaticon.png"
+                           x:Name="imgFromCheckSuccesful"
+                           Visibility="Hidden"
+                           Width="25"
+                           Margin="15,0,0,0" />
+                </StackPanel>
+            </StackPanel>
+
+            <!-- To Panel -->
+            <Rectangle Grid.Row="0"
+                       Grid.Column="1"
+                       Grid.RowSpan="2"
+                       Fill="#eeeeee"
+                       Margin="5,5,10,5" />
+
+            <TextBlock Grid.Row="0"
+                       Grid.Column="1"
+                       FontSize="18"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left"
+                       Margin="10,5,5,5"
+                       Text="{x:Static strings:Resources.TimeFrame_To}" />
+
+            <StackPanel Grid.Row="1"
+                        Grid.Column="1"
+                        Margin="15,0,0,0">
+
+                <DatePicker x:Name="DateTo"
+                            Width="250"
+                            HorizontalAlignment="Left"
+                            Height="25"
+                            VerticalAlignment="Top"
+                            Margin="0,0,0,5"
+                            BorderThickness="0,0,0,0"
+                            FontSize="14" />
+
+                <TextBlock FontSize="18"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left"
+                       Text="Wann willst du ihn zurück bringen:"
+                       Margin="5,5,5,5" />
+
+                <StackPanel Orientation="Horizontal">
+
+                    <ComboBox x:Name="combTimeTo"
+                              Width="200"
+                              FontSize="16"
+                              VerticalAlignment="Top"
+                              HorizontalAlignment="Left"
+                              Margin="10,0,0,0">
+                    </ComboBox>
+
+                    <Image Source="../../../assets/img/check-icon-by-pixel-perfect-from-flaticon.png"
+                           x:Name="imgToCheckSuccesful"
+                           Visibility="Hidden"
+                           Width="25"
+                           Margin="15,0,0,0" />
+                </StackPanel>
+            </StackPanel>
+
+            <!-- Check Date Panel-->
+            <Button x:Name="bttnCheckAvailability"
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Background="#145DA0"
+                    Content="{x:Static strings:Resources.TimeFrame_CheckDateButton}"
+                    Foreground="White"
+                    FontSize="18"
+                    Margin="25,5,25,5"
+                    Click="bttnCheckAvailability_Click" />
+
+            <!-- Disclaimer Panel -->
+            <StackPanel Grid.Row="3"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="2"
+                        Background="#176ebd"
+                        Margin="10,5,10,5">
+
+                <TextBlock Text="{x:Static strings:Resources.TimeFrame_HintTitle}"
+                           Foreground="White"
+                           FontSize="18"
+                           Margin="5,5,5,5" />
+
+                <TextBlock Text="{x:Static strings:Resources.TimeFrame_HintText}"
+                           Foreground="White"
+                           TextWrapping="Wrap"
+                           FontSize="14"
+                           VerticalAlignment="Top"
+                           HorizontalAlignment="Left"
+                           Margin="10,0,5,5" />
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>

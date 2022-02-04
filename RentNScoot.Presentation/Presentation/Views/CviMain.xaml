@@ -1,0 +1,159 @@
+﻿<Window x:Class="RentNScoot.Presentation.Views.CviMain"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RentNScoot.Presentation.Views"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:strings="clr-namespace:RentNScoot.Properties"
+        mc:Ignorable="d"
+        Title="RentNScoot - Einfach mieten und Losfahren"
+        Height="600"
+        Width="1000"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
+
+    <!-- Page Grid -->
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="8*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="0.2*" />
+        </Grid.RowDefinitions>
+
+        <!-- Step Header -->
+        <Grid Background="#eeeeee" x:Name="gridSteps">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.5*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="0.5*" />
+            </Grid.ColumnDefinitions>
+
+            <TextBlock x:Name="txtWelcomeMarker"
+                       Grid.Row="0"
+                       Grid.Column="1"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       Text="•" FontSize="50"
+                       Foreground="#145DA0" />
+
+            <TextBlock x:Name="txtLocationMarker"
+                       Grid.Row="0"
+                       Grid.Column="2"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       Text="•"
+                       FontSize="50"
+                       Foreground="#adafaa" />
+
+            <TextBlock x:Name="txtScooterMarker"
+                       Grid.Row="0"
+                       Grid.Column="3"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       Text="•"
+                       FontSize="50"
+                       Foreground="#adafaa" />
+
+            <TextBlock x:Name="txtTimeMarker"
+                       Grid.Row="0"
+                       Grid.Column="4"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       Text="•"
+                       FontSize="50"
+                       Foreground="#adafaa" />
+
+            <TextBlock x:Name="txtPersonalDataMarker"
+                       Grid.Row="0"
+                       Grid.Column="5"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       Text="•"
+                       FontSize="50"
+                       Foreground="#adafaa" />
+
+            <TextBlock x:Name="txtOverviewMarker"
+                       Grid.Row="0"
+                       Grid.Column="6"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       Text="•"
+                       FontSize="50"
+                       Foreground="#adafaa" />
+        </Grid>
+
+        <!-- Content Frame -->
+        <Frame x:Name="contentFrame" Grid.Row="1" NavigationUIVisibility="Hidden"></Frame>
+
+        <!-- Menu Footer -->
+        <Grid Grid.Row="2" Background="#eeeeee">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.2*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="3*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="0.2*" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Back Button -->
+            <Button x:Name="bttnReturn"
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Content="{x:Static strings:Resources.CviMain_Back_1}"
+                    Background="#145DA0"
+                    Foreground="White"
+                    FontSize="16"
+                    Margin="5,5,5,5"
+                    BorderThickness="0,0,0,0" Click="bttnReturn_Click">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="5" />
+                    </Style>
+                </Button.Resources>
+            </Button>
+
+            <!-- Continue Button -->
+            <Button x:Name="bttnRent"
+                    Background="#145DA0"
+                    Foreground="White"
+                    FontSize="16"
+                    Grid.Row="0"
+                    Grid.Column="3"
+                    Content="{x:Static strings:Resources.CviMain_Continue_1}"
+                    Margin="5,5,5,5"
+                    Click="bttnRent_Click"
+                    BorderThickness="0,0,0,0">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="5" />
+                    </Style>
+                </Button.Resources>
+            </Button>
+
+            <!-- Rental Return Button -->
+            <Button x:Name="bttnReturnRental"
+                    Background="#145DA0"
+                    Foreground="White"
+                    FontSize="16"
+                    Grid.Row="0"
+                    Grid.Column="2"
+                    Content="{x:Static strings:Resources.CviMain_RentalResult_RentalCode}"
+                    Visibility="Hidden"
+                    Margin="5,5,5,5"
+                    BorderThickness="0,0,0,0" Click="bttnReturnRental_Click">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="5" />
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,83 @@
+﻿<Page x:Class="RentNScoot.Presentation.Views.Frames.RentalDetailFrame"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:RentNScoot.Presentation.Views.Frames"
+      xmlns:strings="clr-namespace:RentNScoot.Properties"
+      mc:Ignorable="d"
+      d:DesignHeight="450"
+      d:DesignWidth="800"
+      Title="RentalDetailFrame" Loaded="Page_Loaded">
+
+    <!-- Page Grid -->
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="6*" />
+        </Grid.RowDefinitions>
+
+        <!-- Headline -->
+        <TextBlock Grid.Row="0"
+                   Text="{x:Static strings:Resources.RentalDetailFrame}"
+                   FontSize="28"
+                   TextAlignment="Center"
+                   VerticalAlignment="Center" />
+
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="0.5*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Row="0"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="3"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center">
+
+                <TextBlock VerticalAlignment="Center"
+                           HorizontalAlignment="Center"
+                           FontSize="36"
+                           x:Name="txtRentalCode"
+                           Foreground="#145DA0"
+                           Text="2323-2774-485" MouseDown="txtRentalCode_MouseDown" />
+
+                <TextBlock VerticalAlignment="Center"
+                           HorizontalAlignment="Center"
+                           FontSize="18"
+                           Text="{x:Static strings:Resources.RentalDetailFrame_RentalCodeHint}" />
+            </StackPanel>
+
+            <StackPanel Grid.Row="1"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="3"
+                        Background="#176ebd"
+                        Margin="5,5,5,5">
+
+                <TextBlock x:Name="txtHint"
+                           Text="{x:Static strings:Resources.RentalDetailFrame_PaymentMethod}"
+                           FontSize="16"
+                           Foreground="White"
+                           VerticalAlignment="Top"
+                           HorizontalAlignment="Left"
+                           Margin="10,10,10,5" />
+
+                <TextBlock x:Name="txtHintText"
+                           Text="{x:Static strings:Resources.RentalDetailFrame_PaymentMethodInfo_Cash}"
+                           Foreground="White"
+                           TextWrapping="Wrap"
+                           FontSize="14"
+                           VerticalAlignment="Top"
+                           HorizontalAlignment="Left"
+                           Margin="10,0,5,5" />
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>

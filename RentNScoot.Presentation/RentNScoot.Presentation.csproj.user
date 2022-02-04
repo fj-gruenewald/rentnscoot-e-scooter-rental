@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="Presentation\Controls\Cards\LocationCard.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Presentation\Controls\Cards\ScooterCard.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Presentation\Views\CviMain.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Presentation\Views\Frames\LocationFrame.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Presentation\Views\Frames\OverviewFrame.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Presentation\Views\Frames\PersonalDataFrame.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Presentation\Views\Frames\RentalDetailFrame.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Presentation\Views\Frames\RentalReturnFrame.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Presentation\Views\Frames\ScooterFrame.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Presentation\Views\Frames\TimeFrame.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Presentation\Views\Frames\WelcomeFrame.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Presentation\Controls\Cards\LocationCard.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Presentation\Controls\Cards\ScooterCard.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Presentation\Views\CviMain.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Presentation\Views\Frames\LocationFrame.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Presentation\Views\Frames\OverviewFrame.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Presentation\Views\Frames\PersonalDataFrame.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Presentation\Views\Frames\RentalDetailFrame.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Presentation\Views\Frames\RentalReturnFrame.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Presentation\Views\Frames\ScooterFrame.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Presentation\Views\Frames\TimeFrame.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Presentation\Views\Frames\WelcomeFrame.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

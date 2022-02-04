@@ -1,0 +1,13 @@
+C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Application\bin\Release\netstandard2.1\RentNScoot.Application.deps.json
+C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Application\bin\Release\netstandard2.1\RentNScoot.Application.dll
+C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Application\bin\Release\netstandard2.1\RentNScoot.Application.pdb
+C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Application\bin\Release\netstandard2.1\RentNScoot.Domain.dll
+C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Application\bin\Release\netstandard2.1\RentNScoot.Domain.pdb
+C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Application\obj\Release\netstandard2.1\RentNScoot.Application.csproj.AssemblyReference.cache
+C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Application\obj\Release\netstandard2.1\RentNScoot.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Application\obj\Release\netstandard2.1\RentNScoot.Application.AssemblyInfoInputs.cache
+C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Application\obj\Release\netstandard2.1\RentNScoot.Application.AssemblyInfo.cs
+C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Application\obj\Release\netstandard2.1\RentNScoot.Application.csproj.CoreCompileInputs.cache
+C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Application\obj\Release\netstandard2.1\RentNScoot.Application.csproj.CopyComplete
+C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Application\obj\Release\netstandard2.1\RentNScoot.Application.dll
+C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Application\obj\Release\netstandard2.1\RentNScoot.Application.pdb

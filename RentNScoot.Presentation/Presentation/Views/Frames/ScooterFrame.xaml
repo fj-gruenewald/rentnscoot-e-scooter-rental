@@ -1,0 +1,48 @@
+﻿<Page x:Class="RentNScoot.Presentation.Views.Frames.ScooterFrame"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:RentNScoot.Presentation.Views.Frames"
+      xmlns:cards="clr-namespace:RentNScoot.Presentation.Controls.Cards"
+      xmlns:strings="clr-namespace:RentNScoot.Properties"
+      mc:Ignorable="d"
+      d:DesignHeight="450"
+      d:DesignWidth="800"
+      Title="ScooterFrame" Loaded="Page_Loaded">
+
+    <!-- Page Grid -->
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="6*" />
+        </Grid.RowDefinitions>
+
+        <!-- Headline -->
+        <TextBlock Grid.Row="0"
+                   Text="{x:Static strings:Resources.ScooterFrame_Headline}"
+                   FontSize="28"
+                   TextAlignment="Center"
+                   VerticalAlignment="Center" />
+
+        <!-- Scooter List -->
+        <ScrollViewer Grid.Row="1">
+            <ItemsControl x:Name="ScooterItemsControl"
+                          Margin="5,5,5,5">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <UniformGrid Columns="4"></UniformGrid>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+
+                        <!-- Card to Display -->
+                        <cards:ScooterCard>
+                        </cards:ScooterCard>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+    </Grid>
+</Page>
