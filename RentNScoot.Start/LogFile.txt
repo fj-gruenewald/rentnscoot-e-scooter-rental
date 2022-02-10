@@ -1,8 +1,14 @@
-04.02.2022-16:59:27.0095  App                  App_StartUp 
-04.02.2022-16:59:27.0113  AFactoryData         Create_ReadSqlite() Data Source=d:\database.db; Version=3;
-04.02.2022-16:59:27.0143  AFactoryData         Create_WriteSqlite() Data Source=d:\database.db; Version=3;
-04.02.2022-16:59:27.0180  AFactoryApp          Create_Queries(IDataRead) 
-04.02.2022-16:59:27.0181  CAppQueries          Ctor() 
-04.02.2022-16:59:27.0181  AFactoryApp          Create_Commands(IDataWrite) 
-04.02.2022-16:59:27.0181  CAppCommands         Ctor() 
-04.02.2022-16:59:27.0192  CDataReadSqlite      Locations() = GetLocations
+10.02.2022-17:36:25.0227  App                  App_StartUp 
+10.02.2022-17:36:25.0245  AFactoryData         Create_ReadSqlite() Data Source=d:\database.db; Version=3;
+10.02.2022-17:36:25.0292  AFactoryData         Create_WriteSqlite() Data Source=d:\database.db; Version=3;
+10.02.2022-17:36:25.0339  AFactoryApp          Create_Queries(IDataRead) 
+10.02.2022-17:36:25.0340  CAppQueries          Ctor() 
+10.02.2022-17:36:25.0340  AFactoryApp          Create_Commands(IDataWrite) 
+10.02.2022-17:36:25.0340  CAppCommands         Ctor() 
+10.02.2022-17:36:25.0582  CDataReadSqlite      Locations() = GetLocations
+10.02.2022-17:36:28.0566  CDataReadSqlite      GetRental 
+10.02.2022-17:36:28.0569  CDataReadSqlite      GetScooter 
+10.02.2022-17:36:28.0570  CDataReadSqlite      GetCustomer 
+10.02.2022-17:36:28.0572  CDataReadSqlite      GetLocation 
+10.02.2022-17:36:29.0259  CAppCommands         DeleteRental() sending command to _dataWrite...
+10.02.2022-17:36:29.0260  CDataWriteSqlite     DeleteRental() 

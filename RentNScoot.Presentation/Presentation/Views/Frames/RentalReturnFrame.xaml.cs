@@ -7,10 +7,36 @@ namespace RentNScoot.Presentation.Views.Frames
 {
     public partial class RentalReturnFrame : Page
     {
-        public RentalReturnFrame()
+        //Fields
+
+        private readonly CvmMain _vmMain;
+
+        #region Instance
+
+        private static volatile RentalReturnFrame? instance = null;
+
+        private static readonly object padlock = new object();
+
+        internal static RentalReturnFrame CreateSingleton(CvmMain vmMain)
         {
+            lock (padlock)
+            {
+                if (instance == null) instance = new RentalReturnFrame(vmMain);
+                return instance;
+            }
+        }
+
+        #endregion Instance
+
+        #region ctor
+
+        internal RentalReturnFrame(CvmMain vmMain)
+        {
+            _vmMain = vmMain;
             InitializeComponent();
         }
+
+        #endregion ctor
 
         //OnPageLoad
         private void Page_Loaded(object sender, System.Windows.RoutedEventArgs e)
@@ -66,7 +92,7 @@ namespace RentNScoot.Presentation.Views.Frames
 
         #region Methods
 
-        public int CalculateHours(string startTime, string endTime)
+        private int CalculateHours(string startTime, string endTime)
         {
             int hours = 0;
 

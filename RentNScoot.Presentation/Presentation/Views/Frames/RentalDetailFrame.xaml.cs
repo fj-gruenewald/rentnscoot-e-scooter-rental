@@ -1,25 +1,50 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
+using RentNScoot.Presentation.ViewModels;
 
 namespace RentNScoot.Presentation.Views.Frames
 {
-    /// <summary>
-    /// Interaktionslogik für RentalDetailFrame.xaml
-    /// </summary>
     public partial class RentalDetailFrame : Page
     {
-        public RentalDetailFrame()
+        //Fields
+        private readonly CvmMain _vmMain;
+
+        #region Instance
+
+        private static volatile RentalDetailFrame? instance = null;
+
+        private static readonly object padlock = new object();
+
+        internal static RentalDetailFrame CreateSingleton(CvmMain vmMain)
         {
+            lock (padlock)
+            {
+                if (instance == null) instance = new RentalDetailFrame(vmMain);
+                return instance;
+            }
+        }
+
+        #endregion Instance
+
+        #region ctor
+
+        internal RentalDetailFrame(CvmMain vmMain)
+        {
+            _vmMain = vmMain;
             InitializeComponent();
         }
+
+        #endregion ctor
+
+        #region Methods
 
         private void Page_Loaded(object sender, System.Windows.RoutedEventArgs e)
         {
             //set the rental ID
-            txtRentalCode.Text = OverviewFrame.rental.RentalID;
+            txtRentalCode.Text = CvmMain.rental.RentalID;
 
             //Set the Payment Methods
-            switch (PersonalDataFrame.rentingCustomer.CustomerPayment)
+            switch (CvmMain.rentingCustomer.CustomerPayment)
             {
                 case "Barzahlung":
                     txtHint.Text = Properties.Resources.PaymentMethod_Cash;
@@ -52,7 +77,9 @@ namespace RentNScoot.Presentation.Views.Frames
         private void txtRentalCode_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
             Clipboard.Clear();
-            Clipboard.SetText(OverviewFrame.rental.RentalID);
+            Clipboard.SetText(CvmMain.rental.RentalID);
         }
+
+        #endregion Methods
     }
 }

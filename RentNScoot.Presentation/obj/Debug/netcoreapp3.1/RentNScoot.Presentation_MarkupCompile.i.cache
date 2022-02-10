@@ -16,5 +16,5 @@ TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
 212-155643126
 Presentation\Controls\Cards\LocationCard.xaml;Presentation\Controls\Cards\ScooterCard.xaml;Presentation\Views\CviMain.xaml;Presentation\Views\Frames\LocationFrame.xaml;Presentation\Views\Frames\OverviewFrame.xaml;Presentation\Views\Frames\PersonalDataFrame.xaml;Presentation\Views\Frames\RentalDetailFrame.xaml;Presentation\Views\Frames\RentalReturnFrame.xaml;Presentation\Views\Frames\ScooterFrame.xaml;Presentation\Views\Frames\TimeFrame.xaml;Presentation\Views\Frames\WelcomeFrame.xaml;
 
-False
+True
 

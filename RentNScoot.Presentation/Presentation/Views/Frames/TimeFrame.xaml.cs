@@ -2,23 +2,45 @@
 using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
+using RentNScoot.Presentation.ViewModels;
 
 namespace RentNScoot.Presentation.Views.Frames
 {
-    /// <summary>
-    /// Interaktionslogik für TimeFrame.xaml
-    /// </summary>
     public partial class TimeFrame : Page
     {
         //Fields
 
-        public static RentingTime rentingTime;
+        private readonly CvmMain _vmMain;
         public static bool dateAccepted = false;
 
-        public TimeFrame()
+        #region Instance
+
+        private static volatile TimeFrame? instance = null;
+
+        private static readonly object padlock = new object();
+
+        internal static TimeFrame CreateSingleton(CvmMain vmMain)
         {
+            lock (padlock)
+            {
+                if (instance == null) instance = new TimeFrame(vmMain);
+                return instance;
+            }
+        }
+
+        #endregion Instance
+
+        #region ctor
+
+        internal TimeFrame(CvmMain vmMain)
+        {
+            _vmMain = vmMain;
             InitializeComponent();
         }
+
+        #endregion ctor
+
+        #region Methods
 
         private void Page_Loaded(object sender, System.Windows.RoutedEventArgs e)
         {
@@ -62,7 +84,7 @@ namespace RentNScoot.Presentation.Views.Frames
                         imgFromCheckSuccesful.Visibility = Visibility.Visible;
                         imgToCheckSuccesful.Visibility = Visibility.Visible;
 
-                        rentingTime = new RentingTime(rentingFrom, rentingTo);
+                        CvmMain.rentingTime = new RentingTime(rentingFrom, rentingTo);
                         dateAccepted = true;
                     }
                     else
@@ -80,5 +102,7 @@ namespace RentNScoot.Presentation.Views.Frames
                 MessageBox.Show(Properties.Resources.TimeFrame_DateMissingAlert);
             }
         }
+
+        #endregion Methods
     }
 }

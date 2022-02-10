@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
+using RentNScoot.Presentation.ViewModels;
 
 namespace RentNScoot.Presentation.Views.Frames
 {
@@ -8,11 +9,31 @@ namespace RentNScoot.Presentation.Views.Frames
     {
         //Fields
 
-        public static Customer rentingCustomer;
+        private readonly CvmMain _vmMain;
         public static bool allFieldsSet = false;
 
-        public PersonalDataFrame()
+        #region Instance
+
+        private static volatile PersonalDataFrame? instance = null;
+
+        private static readonly object padlock = new object();
+
+        internal static PersonalDataFrame CreateSingleton(CvmMain vmMain)
         {
+            lock (padlock)
+            {
+                if (instance == null) instance = new PersonalDataFrame(vmMain);
+                return instance;
+            }
+        }
+
+        #endregion Instance
+
+        #region ctor
+
+        internal PersonalDataFrame(CvmMain vmMain)
+        {
+            _vmMain = vmMain;
             InitializeComponent();
 
             //Populate Combobox List
@@ -21,6 +42,10 @@ namespace RentNScoot.Presentation.Views.Frames
             //Set Selected Combobox Item
             combPayment.SelectedValue = Properties.Resources.PersonalData_PaymentMethod_Cash;
         }
+
+        #endregion ctor
+
+        #region Methods
 
         //Handle new Selection Event for Combobox (Hints)
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -60,7 +85,7 @@ namespace RentNScoot.Presentation.Views.Frames
             if (txtFirstName.Text.Length > 1 && txtLastName.Text.Length > 1 && txtPLZ.Text.Length > 1 && txtCity.Text.Length > 1 && txtStreet.Text.Length > 1 && txtHouseNumber.Text.Length > 0)
             {
                 allFieldsSet = true;
-                rentingCustomer = new Customer(txtFirstName.Text + " " + txtLastName.Text,
+                CvmMain.rentingCustomer = new Customer(txtFirstName.Text + " " + txtLastName.Text,
                     txtPLZ.Text + " " + txtCity.Text + ", " + txtStreet.Text + " " + txtHouseNumber.Text,
                     combPayment.SelectedValue.ToString());
             }
@@ -101,5 +126,7 @@ namespace RentNScoot.Presentation.Views.Frames
         {
             CheckFieldsAndPopulate();
         }
+
+        #endregion Methods
     }
 }

@@ -1,22 +1,46 @@
 ﻿using System.Windows.Controls;
 using System.Windows.Media;
+using RentNScoot.Presentation.ViewModels;
 
 namespace RentNScoot.Presentation.Views.Frames
 {
-    /// <summary>
-    /// Interaktionslogik für WelcomeFrame.xaml
-    /// </summary>
     public partial class WelcomeFrame : UserControl
     {
+        //Fields
+
+        private readonly CvmMain _vmMain;
+
         //Brushes
 
         private Color blueColor = (Color)ColorConverter.ConvertFromString("#176ebd");
         private Color grayColor = (Color)ColorConverter.ConvertFromString("#eeeeee");
 
-        public WelcomeFrame()
+        #region Instance
+
+        private static volatile WelcomeFrame? instance = null;
+
+        private static readonly object padlock = new object();
+
+        internal static WelcomeFrame CreateSingleton(CvmMain vmMain)
         {
+            lock (padlock)
+            {
+                if (instance == null) instance = new WelcomeFrame(vmMain);
+                return instance;
+            }
+        }
+
+        #endregion Instance
+
+        #region ctor
+
+        internal WelcomeFrame(CvmMain vmMain)
+        {
+            _vmMain = vmMain;
             InitializeComponent();
         }
+
+        #endregion ctor
 
         #region Hover Effects
 

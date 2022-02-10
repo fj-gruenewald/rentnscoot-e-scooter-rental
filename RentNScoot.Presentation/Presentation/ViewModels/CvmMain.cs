@@ -11,20 +11,18 @@ namespace RentNScoot.Presentation.ViewModels
         private IAppQueries _appQueries;
         private IAppCommands _appCommands;
 
-        public static List<Location> locationList = new List<Location>();
-        public static List<Scooter> scooterList = new List<Scooter>();
-        public static RentalData rentalData = new RentalData();
+        internal static RentalData rentalData = new RentalData();
 
         //Renting Process Variables
 
-        public static Location rentingLocation;
-        public static Scooter rentingScooter;
-        public static RentingTime rentingTimeFrame;
-        public static Customer rentingCustomer;
+        internal static Location rentingLocation;
+        internal static Scooter rentingScooter;
+        internal static Customer rentingCustomer;
+        internal static RentingTime rentingTime;
+        internal static Rental rental;
 
         #region Instance
 
-        //Instance
         private static volatile CvmMain? instance = null;
 
         private static readonly object padlock = new object();
@@ -50,19 +48,26 @@ namespace RentNScoot.Presentation.ViewModels
 
             //Get the List of all Locations
 
-            List<Location> locations = _appQueries.GetLocationListFromDB() ?? new List<Location>();
-            locationList = locations;
+            //List<Location> locations = _appQueries.GetLocationListFromDB() ?? new List<Location>();
+            //locationList = locations;
         }
 
         #endregion Ctor
 
         #region Methods
 
+        //Get Locations List
+        public List<Location> LocationList()
+        {
+            List<Location> locations = _appQueries.GetLocationListFromDB() ?? new List<Location>();
+            return locations;
+        }
+
         //Get Scooter List to Location
-        public void GetScooterListToLocation(Location location)
+        public List<Scooter> ScooterList(Location location)
         {
             List<Scooter> scooters = _appQueries.GetScooterListFromDbByObject(location) ?? new List<Scooter>();
-            scooterList = scooters;
+            return scooters;
         }
 
         //Push Customer to DB
@@ -87,15 +92,23 @@ namespace RentNScoot.Presentation.ViewModels
             {
                 if (rentalId.Length >= 20)
                 {
-                    var rental = _appQueries.GetRentableFromDbById(rentalId);
-                    var scooter = _appQueries.GetScooterFromDbById(rental.ScooterID.ToString());
-                    var customer = _appQueries.GetCustomerFromDbById(rental.CustomerID);
-                    var location = _appQueries.GetLocationFromDbById(rental.LocationID);
+                    try
+                    {
+                        var rental = _appQueries.GetRentableFromDbById(rentalId);
+                        var scooter = _appQueries.GetScooterFromDbById(rental.ScooterID.ToString());
+                        var customer = _appQueries.GetCustomerFromDbById(rental.CustomerID);
+                        var location = _appQueries.GetLocationFromDbById(rental.LocationID);
 
-                    rentalData = null;
-                    rentalData = new RentalData(rental, customer, scooter, location);
+                        rentalData = null;
+                        rentalData = new RentalData(rental, customer, scooter, location);
 
-                    hasFinished = true;
+                        hasFinished = true;
+                    }
+                    catch (Exception e)
+                    {
+                        MessageBox.Show(Properties.Resources.CvmMain_Err_RentalCodeError);
+                        throw;
+                    }
                 }
             }
             catch (Exception e)

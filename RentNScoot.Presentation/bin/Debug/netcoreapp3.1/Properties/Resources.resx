@@ -145,7 +145,7 @@
     <value>Uns Fehlen noch Daten von dir. Bitte fülle die Felder aus</value>
   </data>
   <data name="CviMain_RentalResult_Back" xml:space="preserve">
-    <value>Zurück zur Übersicht</value>
+    <value>Rückgabe abschließen</value>
   </data>
   <data name="CviMain_RentalResult_RentalCode" xml:space="preserve">
     <value>Rental Code überprüfen</value>
@@ -155,6 +155,9 @@
   </data>
   <data name="CviMain_TimeFrame_NoAcceptedDateAlert" xml:space="preserve">
     <value>Bitte prüfe die Verfügbarkeit eines Rollers an deinem Datum</value>
+  </data>
+  <data name="CvmMain_Err_RentalCodeError" xml:space="preserve">
+    <value>Es gab Probleme mit deinem Rental Code, probiere es bitte später erneut oder wende dich an unseren Support. Fehler 105</value>
   </data>
   <data name="CvmMain_Err_RentalCodeNotExistent" xml:space="preserve">
     <value>Etwas stimmt mit deinem Rental Code nicht. Wir beenden den Prozess, probiere es bitte erneut</value>

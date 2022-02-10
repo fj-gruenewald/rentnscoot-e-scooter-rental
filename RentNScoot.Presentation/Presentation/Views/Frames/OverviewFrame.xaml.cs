@@ -1,5 +1,6 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
+using RentNScoot.Presentation.ViewModels;
 
 namespace RentNScoot.Presentation.Views.Frames
 {
@@ -8,32 +9,60 @@ namespace RentNScoot.Presentation.Views.Frames
     /// </summary>
     public partial class OverviewFrame : Page
     {
-        public static Rental rental;
+        //Fields
 
-        public OverviewFrame()
+        private readonly CvmMain _vmMain;
+
+        #region Instance
+
+        private static volatile OverviewFrame? instance = null;
+
+        private static readonly object padlock = new object();
+
+        internal static OverviewFrame CreateSingleton(CvmMain vmMain)
         {
+            lock (padlock)
+            {
+                if (instance == null) instance = new OverviewFrame(vmMain);
+                return instance;
+            }
+        }
+
+        #endregion Instance
+
+        #region ctor
+
+        internal OverviewFrame(CvmMain vmMain)
+        {
+            _vmMain = vmMain;
             InitializeComponent();
         }
+
+        #endregion ctor
+
+        #region Methods
 
         private void Page_Loaded(object sender, System.Windows.RoutedEventArgs e)
         {
             //Setting all the TextBoxes
-            txtSelectedLocation.Text = LocationFrame.rentingLocation.Postal + " " + LocationFrame.rentingLocation.City + ", " + LocationFrame.rentingLocation.Street + " " + LocationFrame.rentingLocation.StreetNr;
-            txtSelectedScooter.Text = ScooterFrame.rentingScooter.Manufacturer + " " + ScooterFrame.rentingScooter.Model;
-            txtSelectedTimespanFrom.Text = TimeFrame.rentingTime.CollectTime.ToString();
-            txtSelectedTimespanTo.Text = TimeFrame.rentingTime.GiveOffTime.ToString();
+            txtSelectedLocation.Text = CvmMain.rentingLocation.Postal + " " + CvmMain.rentingLocation.City + ", " + CvmMain.rentingLocation.Street + " " + CvmMain.rentingLocation.StreetNr;
+            txtSelectedScooter.Text = CvmMain.rentingScooter.Manufacturer + " " + CvmMain.rentingScooter.Model;
+            txtSelectedTimespanFrom.Text = CvmMain.rentingTime.CollectTime.ToString();
+            txtSelectedTimespanTo.Text = CvmMain.rentingTime.GiveOffTime.ToString();
 
-            txtNameData.Text = PersonalDataFrame.rentingCustomer.CustomerName;
-            txtAddressData.Text = PersonalDataFrame.rentingCustomer.CustomerAddress;
-            txtPaymentData.Text = PersonalDataFrame.rentingCustomer.CustomerPayment;
+            txtNameData.Text = CvmMain.rentingCustomer.CustomerName;
+            txtAddressData.Text = CvmMain.rentingCustomer.CustomerAddress;
+            txtPaymentData.Text = CvmMain.rentingCustomer.CustomerPayment;
 
             //Create the Rental Object
-            rental = new Rental(PersonalDataFrame.rentingCustomer.CustomerID,
-                LocationFrame.rentingLocation.LocationID, ScooterFrame.rentingScooter.ScooterID,
-                TimeFrame.rentingTime.CollectTime.ToString(), TimeFrame.rentingTime.GiveOffTime.ToString());
+            CvmMain.rental = new Rental(CvmMain.rentingCustomer.CustomerID,
+                CvmMain.rentingLocation.LocationID, CvmMain.rentingScooter.ScooterID,
+                CvmMain.rentingTime.CollectTime.ToString(), CvmMain.rentingTime.GiveOffTime.ToString());
 
             //Set the Rentable Status of the Scooter
-            ScooterFrame.rentingScooter.Rentable = 0;
+            CvmMain.rentingScooter.Rentable = 0;
         }
+
+        #endregion Methods
     }
 }

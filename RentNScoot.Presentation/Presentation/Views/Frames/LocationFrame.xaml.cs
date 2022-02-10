@@ -1,33 +1,42 @@
-﻿using System.Collections.Generic;
-using System.Windows.Controls;
+﻿using System.Windows.Controls;
 using RentNScoot.Presentation.ViewModels;
 
 namespace RentNScoot.Presentation.Views.Frames
 {
-    /// <summary>
-    /// Interaktionslogik für LocationFrame.xaml
-    /// </summary>
     public partial class LocationFrame : Page
     {
-        //Variables
+        //Fields
 
-        public static Location rentingLocation = new Location("1", "1", 1, "1", "1", "1");
+        private readonly CvmMain _vmMain;
 
-        public LocationFrame()
+        #region Instance
+
+        private static volatile LocationFrame? instance = null;
+
+        private static readonly object padlock = new object();
+
+        internal static LocationFrame CreateSingleton(CvmMain vmMain)
         {
+            lock (padlock)
+            {
+                if (instance == null) instance = new LocationFrame(vmMain);
+                return instance;
+            }
+        }
+
+        #endregion Instance
+
+        #region ctor
+
+        internal LocationFrame(CvmMain vmMain)
+        {
+            _vmMain = vmMain;
             InitializeComponent();
 
-            //Get the List of Locations
-            List<Location> displayList = new List<Location>();
-            displayList = CvmMain.locationList;
-
-            LocationsItemsControl.ItemsSource = displayList;
+            CvmMain.rentingLocation = new Location("1", 1, "1", "1", "1");
+            LocationsItemsControl.ItemsSource = vmMain.LocationList();
         }
 
-        //Reset
-        public void ResetLocationFrame()
-        {
-            rentingLocation = new Location("1", "1", 1, "1", "1", "1");
-        }
+        #endregion ctor
     }
 }

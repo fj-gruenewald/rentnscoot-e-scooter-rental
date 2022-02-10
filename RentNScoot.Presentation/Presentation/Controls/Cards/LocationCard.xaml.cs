@@ -2,19 +2,15 @@
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
-using RentNScoot.Presentation.Views.Frames;
+using RentNScoot.Presentation.ViewModels;
 
 namespace RentNScoot.Presentation.Controls.Cards
 {
-    /// <summary>
-    /// Interaktionslogik für LocationCard.xaml
-    /// </summary>
     public partial class LocationCard : UserControl
     {
         //Fields
 
         private Location location;
-        private Location sampleLocation = new Location("1", "1", 1, "1", "1", "1");
         private bool isClicked = false;
 
         //Brushes
@@ -23,10 +19,16 @@ namespace RentNScoot.Presentation.Controls.Cards
         private Color hoverColor = (Color)ColorConverter.ConvertFromString("#1a7dd7");
         private Color clickedColor = (Color)ColorConverter.ConvertFromString("#104a80");
 
-        public LocationCard()
+        #region ctor
+
+        internal LocationCard()
         {
             InitializeComponent();
         }
+
+        #endregion ctor
+
+        #region Methods
 
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
         {
@@ -62,29 +64,27 @@ namespace RentNScoot.Presentation.Controls.Cards
         {
             SolidColorBrush clickedBrush = new SolidColorBrush(clickedColor);
 
-            if ((LocationFrame.rentingLocation.City.Length > 2) == false || LocationFrame.rentingLocation.LocationID == location.LocationID)
+            if ((CvmMain.rentingLocation.City.Length > 2) == false || CvmMain.rentingLocation.LocationID == location.LocationID)
             {
                 recBackground.Fill = clickedBrush;
 
                 if (isClicked)
                 {
                     isClicked = false;
-                    LocationFrame.rentingLocation = sampleLocation;
+                    CvmMain.rentingLocation = new Location("1", 1, "1", "1", "1");
                 }
                 else
                 {
                     isClicked = true;
-                    LocationFrame.rentingLocation = location;
+                    CvmMain.rentingLocation = location;
                 }
             }
             else
             {
                 MessageBox.Show(Properties.Resources.LocationFrame_TooManLocationsAlert);
             }
-
-            //Put Location in marked Location List / if more then 1 show Hint
-            //LocationFrame.rentingLocation = location;
-            //MessageBox.Show("location set: " + LocationFrame.rentingLocation.City);
         }
+
+        #endregion Methods
     }
 }

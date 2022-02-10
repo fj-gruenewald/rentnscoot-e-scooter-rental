@@ -39,7 +39,9 @@ C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Application\bin\Debug\nets
 C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Application\bin\Debug\netstandard2.1\RentNScoot.Application.dll
 C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Application\bin\Debug\netstandard2.1\RentNScoot.Application.pdb
 C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Application\bin\Debug\netstandard2.1\RentNScoot.Domain.dll
+C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Application\bin\Debug\netstandard2.1\RentNScoot.Utils.dll
 C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Application\bin\Debug\netstandard2.1\RentNScoot.Domain.pdb
+C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Application\bin\Debug\netstandard2.1\RentNScoot.Utils.pdb
 C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Application\obj\Debug\netstandard2.1\RentNScoot.Application.csproj.AssemblyReference.cache
 C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Application\obj\Debug\netstandard2.1\RentNScoot.Application.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Application\obj\Debug\netstandard2.1\RentNScoot.Application.AssemblyInfoInputs.cache
@@ -48,5 +50,3 @@ C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Application\obj\Debug\nets
 C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Application\obj\Debug\netstandard2.1\RentNScoot.Application.csproj.CopyComplete
 C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Application\obj\Debug\netstandard2.1\RentNScoot.Application.dll
 C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Application\obj\Debug\netstandard2.1\RentNScoot.Application.pdb
-C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Application\bin\Debug\netstandard2.1\RentNScoot.Utils.dll
-C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Application\bin\Debug\netstandard2.1\RentNScoot.Utils.pdb

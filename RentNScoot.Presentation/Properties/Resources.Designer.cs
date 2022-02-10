@@ -142,7 +142,7 @@ namespace RentNScoot.Properties {
         }
         
         /// <summary>
-        ///   Sucht eine lokalisierte Zeichenfolge, die Zurück zur Übersicht ähnelt.
+        ///   Sucht eine lokalisierte Zeichenfolge, die Rückgabe abschließen ähnelt.
         /// </summary>
         public static string CviMain_RentalResult_Back {
             get {
@@ -174,6 +174,15 @@ namespace RentNScoot.Properties {
         public static string CviMain_TimeFrame_NoAcceptedDateAlert {
             get {
                 return ResourceManager.GetString("CviMain_TimeFrame_NoAcceptedDateAlert", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Sucht eine lokalisierte Zeichenfolge, die Es gab Probleme mit deinem Rental Code, probiere es bitte später erneut oder wende dich an unseren Support. Fehler 105 ähnelt.
+        /// </summary>
+        public static string CvmMain_Err_RentalCodeError {
+            get {
+                return ResourceManager.GetString("CvmMain_Err_RentalCodeError", resourceCulture);
             }
         }
         

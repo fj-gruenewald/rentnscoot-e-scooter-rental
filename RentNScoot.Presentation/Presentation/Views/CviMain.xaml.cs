@@ -1,69 +1,77 @@
-﻿using System.Collections.Generic;
-using RentNScoot.Presentation.ViewModels;
+﻿using RentNScoot.Presentation.ViewModels;
 using System.Windows;
 using System.Windows.Media;
-using Renci.SshNet.Messages;
 using RentNScoot.Presentation.Views.Frames;
 
 namespace RentNScoot.Presentation.Views
 {
-    /// <summary>
-    /// Interaktionslogik für CviMain.xaml
-    /// </summary>
     public partial class CviMain : Window, IDialog
     {
-        //ViewModel
-        private CvmMain _vmMain;
+        //Views
 
-        //Variables for the page navigation
+        private CvmMain _vmMain;
+        private WelcomeFrame _welcomeFrame;
+        private LocationFrame _locationFrame;
+        private TimeFrame _timeFrame;
+        private ScooterFrame _scooterFrame;
+        private PersonalDataFrame _personalDataFrame;
+        private OverviewFrame _overviewFrame;
+        private RentalDetailFrame _rentalDetailFrame;
+        private RentalReturnFrame _rentalReturnFrame;
+
+        //Variables for Navigation
 
         private int pageIndex = 0;
         private int returnIndex = 0;
         private SolidColorBrush activeColor = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#145DA0"));
         private SolidColorBrush inactiveColor = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#adafaa"));
 
-        //Initialize Frames
-
-        private WelcomeFrame welcomeFrame = new WelcomeFrame();
-        private LocationFrame locationFrame = new LocationFrame();
-        private ScooterFrame scooterFrame = new ScooterFrame();
-        private TimeFrame timeFrame = new TimeFrame();
-        private PersonalDataFrame personalDataFrame = new PersonalDataFrame();
-        private OverviewFrame overviewFrame = new OverviewFrame();
-        private RentalDetailFrame rentalDetailFrame = new RentalDetailFrame();
-        private RentalReturnFrame rentalReturnFrame = new RentalReturnFrame();
-
         //colors
+
         private Color returnColor = (Color)ColorConverter.ConvertFromString("#145DA0");
+        private Color solidgray = (Color)ColorConverter.ConvertFromString("#eeeeee");
+
+        #region Instance
 
         private static volatile CviMain? instance = null;
         private static readonly object padlock = new object();
 
-        internal static CviMain CreateSingleton(CvmMain vmMain)
+        internal static CviMain CreateSingleton(CvmMain vmMain, WelcomeFrame welcomeFrame, RentalReturnFrame rentalReturnFrame, LocationFrame locationFrame, TimeFrame timeFrame, ScooterFrame scooterFrame, PersonalDataFrame personalDataFrame, OverviewFrame overviewFrame, RentalDetailFrame rentalDetailFrame)
         {
             lock (padlock)
             {
-                if (instance == null) instance = new CviMain(vmMain);
+                if (instance == null) instance = new CviMain(vmMain, welcomeFrame, rentalReturnFrame, locationFrame, timeFrame, scooterFrame, personalDataFrame, overviewFrame, rentalDetailFrame);
                 return instance;
             }
         }
 
+        #endregion Instance
+
+        #region ctor
+
         //Initialize CviMain
-        private CviMain(CvmMain vmMain)
+        private CviMain(CvmMain vmMain, WelcomeFrame welcomeFrame, RentalReturnFrame rentalReturnFrame, LocationFrame locationFrame, TimeFrame timeFrame, ScooterFrame scooterFrame, PersonalDataFrame personalDataFrame, OverviewFrame overviewFrame, RentalDetailFrame rentalDetailFrame)
         {
             _vmMain = vmMain;
+            _welcomeFrame = welcomeFrame;
+            _rentalReturnFrame = rentalReturnFrame;
+            _locationFrame = locationFrame;
+            _timeFrame = timeFrame;
+            _scooterFrame = scooterFrame;
+            _personalDataFrame = personalDataFrame;
+            _overviewFrame = overviewFrame;
+            _rentalDetailFrame = rentalDetailFrame;
 
             InitializeComponent();
             DataContext = vmMain;
 
             //Show start Frame
-            contentFrame.Navigate(welcomeFrame);
+            contentFrame.Navigate(_welcomeFrame);
         }
 
-        private void StartProcess(object sender, RoutedEventArgs e)
-        {
-            this.Hide();
-        }
+        #endregion ctor
+
+        #region Navigation
 
         //Logic for switching between the Frames
         private void bttnRent_Click(object sender, RoutedEventArgs e)
@@ -72,7 +80,7 @@ namespace RentNScoot.Presentation.Views
             {
                 //we are on the welcome Page
                 case 0:
-                    contentFrame.Navigate(locationFrame);
+                    contentFrame.Navigate(_locationFrame);
                     pageIndex++;
 
                     txtWelcomeMarker.Foreground = inactiveColor;
@@ -84,9 +92,9 @@ namespace RentNScoot.Presentation.Views
 
                 //we are on the location Page
                 case 1:
-                    if (LocationFrame.rentingLocation.City.Length > 2)
+                    if (CvmMain.rentingLocation.City.Length > 2)
                     {
-                        contentFrame.Navigate(timeFrame);
+                        contentFrame.Navigate(_timeFrame);
                         pageIndex++;
 
                         txtLocationMarker.Foreground = inactiveColor;
@@ -105,7 +113,7 @@ namespace RentNScoot.Presentation.Views
                 case 2:
                     if (TimeFrame.dateAccepted)
                     {
-                        contentFrame.Navigate(scooterFrame);
+                        contentFrame.Navigate(_scooterFrame);
                         pageIndex++;
 
                         txtScooterMarker.Foreground = inactiveColor;
@@ -114,9 +122,7 @@ namespace RentNScoot.Presentation.Views
                         bttnReturn.Content = Properties.Resources.CviMain_Back_2;
                         bttnRent.Content = Properties.Resources.CviMain_Continue_2;
 
-                        //Populate Scooter List for next Frame
                         //TODO scooters that are rented are completely invisible, Check for Date in the Future and only Block scooters for their specific renting date
-                        _vmMain.GetScooterListToLocation(LocationFrame.rentingLocation);
                     }
                     else
                     {
@@ -126,9 +132,9 @@ namespace RentNScoot.Presentation.Views
 
                 //we are on the scooter Page
                 case 3:
-                    if (ScooterFrame.rentingScooter.Manufacturer.Length > 2)
+                    if (CvmMain.rentingScooter.Manufacturer.Length > 2)
                     {
-                        contentFrame.Navigate(personalDataFrame);
+                        contentFrame.Navigate(_personalDataFrame);
                         pageIndex++;
 
                         txtTimeMarker.Foreground = inactiveColor;
@@ -147,7 +153,7 @@ namespace RentNScoot.Presentation.Views
                 case 4:
                     if (PersonalDataFrame.allFieldsSet)
                     {
-                        contentFrame.Navigate(overviewFrame);
+                        contentFrame.Navigate(_overviewFrame);
                         pageIndex++;
 
                         txtPersonalDataMarker.Foreground = inactiveColor;
@@ -164,7 +170,7 @@ namespace RentNScoot.Presentation.Views
 
                 //we are on the rental Code Page
                 case 5:
-                    contentFrame.Navigate(rentalDetailFrame);
+                    contentFrame.Navigate(_rentalDetailFrame);
                     pageIndex++;
 
                     txtWelcomeMarker.Foreground = activeColor;
@@ -178,8 +184,8 @@ namespace RentNScoot.Presentation.Views
                     bttnRent.Content = Properties.Resources.CviMain_Continue_4;
 
                     //push the Customer and Rental Objects to the DB
-                    _vmMain.PushCustomerToDb(PersonalDataFrame.rentingCustomer);
-                    _vmMain.PushRentalToDb(OverviewFrame.rental, ScooterFrame.rentingScooter);
+                    _vmMain.PushCustomerToDb(CvmMain.rentingCustomer);
+                    _vmMain.PushRentalToDb(CvmMain.rental, CvmMain.rentingScooter);
 
                     break;
 
@@ -195,7 +201,7 @@ namespace RentNScoot.Presentation.Views
             {
                 //we are on the RentalDetail frame
                 case 5:
-                    contentFrame.Navigate(personalDataFrame);
+                    contentFrame.Navigate(_personalDataFrame);
                     pageIndex--;
 
                     txtPersonalDataMarker.Foreground = activeColor;
@@ -206,7 +212,7 @@ namespace RentNScoot.Presentation.Views
 
                 //we are on the PersonalDataFrame
                 case 4:
-                    contentFrame.Navigate(scooterFrame);
+                    contentFrame.Navigate(_scooterFrame);
                     pageIndex--;
 
                     txtTimeMarker.Foreground = activeColor;
@@ -217,7 +223,7 @@ namespace RentNScoot.Presentation.Views
 
                 //we are on the Scooter Frame
                 case 3:
-                    contentFrame.Navigate(timeFrame);
+                    contentFrame.Navigate(_timeFrame);
                     pageIndex--;
 
                     txtScooterMarker.Foreground = activeColor;
@@ -228,7 +234,7 @@ namespace RentNScoot.Presentation.Views
 
                 //we are on the Time Frame
                 case 2:
-                    contentFrame.Navigate(locationFrame);
+                    contentFrame.Navigate(_locationFrame);
                     pageIndex--;
 
                     txtLocationMarker.Foreground = activeColor;
@@ -239,7 +245,7 @@ namespace RentNScoot.Presentation.Views
 
                 //we are on the Location Frame
                 case 1:
-                    contentFrame.Navigate(welcomeFrame);
+                    contentFrame.Navigate(_welcomeFrame);
                     pageIndex--;
 
                     txtWelcomeMarker.Foreground = activeColor;
@@ -251,14 +257,14 @@ namespace RentNScoot.Presentation.Views
 
                 //we are on the Welcome Frame
                 case 0:
-                    contentFrame.Navigate(rentalReturnFrame);
+                    contentFrame.Navigate(_rentalReturnFrame);
 
                     SolidColorBrush returnBrush = new SolidColorBrush(returnColor);
                     gridSteps.Background = returnBrush;
+                    txtLocationMarker.Foreground = activeColor;
                     txtTimeMarker.Foreground = activeColor;
                     txtScooterMarker.Foreground = activeColor;
                     txtPersonalDataMarker.Foreground = activeColor;
-                    txtLocationMarker.Foreground = activeColor;
                     txtOverviewMarker.Foreground = activeColor;
 
                     bttnRent.Visibility = Visibility.Hidden;
@@ -277,9 +283,9 @@ namespace RentNScoot.Presentation.Views
             {
                 //Load Rental Return Data
                 case 0:
-                    if (_vmMain.ReadRentalDataFromDb(rentalReturnFrame.GetRentalCodeFromRentalReturnFrame()))
+                    if (_vmMain.ReadRentalDataFromDb(_rentalReturnFrame.GetRentalCodeFromRentalReturnFrame()))
                     {
-                        rentalReturnFrame.RefreshFrame();
+                        _rentalReturnFrame.RefreshFrame();
                         bttnReturnRental.Content = Properties.Resources.CviMain_RentalResult_Back;
                         returnIndex++;
                     }
@@ -297,13 +303,25 @@ namespace RentNScoot.Presentation.Views
                         //TODO delete Rental or Put on notActive in this Case it gets deleted to save Server Space
                         _vmMain.DeleterentalAfterReturn(CvmMain.rentalData.Rental);
 
+                        SolidColorBrush solidGrayBrush = new SolidColorBrush(solidgray);
+
                         bttnReturnRental.Visibility = Visibility.Hidden;
-                        contentFrame.Navigate(welcomeFrame);
+                        contentFrame.Navigate(_welcomeFrame);
+
+                        gridSteps.Background = solidGrayBrush;
+                        txtWelcomeMarker.Foreground = activeColor;
+                        txtLocationMarker.Foreground = inactiveColor;
+                        txtTimeMarker.Foreground = inactiveColor;
+                        txtScooterMarker.Foreground = inactiveColor;
+                        txtPersonalDataMarker.Foreground = inactiveColor;
+                        txtOverviewMarker.Foreground = inactiveColor;
+
                         returnIndex = 0;
                         pageIndex = 0;
+
                         bttnRent.Visibility = Visibility.Visible;
                         bttnReturn.Visibility = Visibility.Visible;
-                        rentalReturnFrame.ResetFrame();
+                        _rentalReturnFrame.ResetFrame();
                     }
                     else
                     {
@@ -312,5 +330,7 @@ namespace RentNScoot.Presentation.Views
                     break;
             }
         }
+
+        #endregion Navigation
     }
 }

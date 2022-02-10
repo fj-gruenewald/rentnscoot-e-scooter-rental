@@ -3,19 +3,15 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media.Imaging;
 using System.Windows.Media;
-using RentNScoot.Presentation.Views.Frames;
+using RentNScoot.Presentation.ViewModels;
 
 namespace RentNScoot.Presentation.Controls.Cards
 {
-    /// <summary>
-    /// Interaktionslogik für ScooterCard.xaml
-    /// </summary>
     public partial class ScooterCard : UserControl
     {
         //Fields
 
         private Scooter scooter;
-        private Scooter sampleScooter = new Scooter(1, 1, 1, "1", "1");
         private bool isClicked = false;
 
         //Brushes
@@ -24,10 +20,16 @@ namespace RentNScoot.Presentation.Controls.Cards
         private Color hoverColor = (Color)ColorConverter.ConvertFromString("#1a7dd7");
         private Color clickedColor = (Color)ColorConverter.ConvertFromString("#104a80");
 
+        #region ctor
+
         public ScooterCard()
         {
             InitializeComponent();
         }
+
+        #endregion ctor
+
+        #region Methods
 
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
         {
@@ -86,8 +88,8 @@ namespace RentNScoot.Presentation.Controls.Cards
         {
             SolidColorBrush clickedBrush = new SolidColorBrush(clickedColor);
 
-            if ((ScooterFrame.rentingScooter.Manufacturer.Length >= 2) == false ||
-                ScooterFrame.rentingScooter.ScooterID == scooter.ScooterID)
+            if ((CvmMain.rentingScooter.Manufacturer.Length >= 2) == false ||
+                CvmMain.rentingScooter.ScooterID == scooter.ScooterID)
             {
                 RecInfoBox.Background = clickedBrush;
                 txtManufacturer.Foreground = Brushes.White;
@@ -96,12 +98,12 @@ namespace RentNScoot.Presentation.Controls.Cards
                 if (isClicked)
                 {
                     isClicked = false;
-                    ScooterFrame.rentingScooter = sampleScooter;
+                    CvmMain.rentingScooter = new Scooter(1, 1, 1, "1", "1");
                 }
                 else
                 {
                     isClicked = true;
-                    ScooterFrame.rentingScooter = scooter;
+                    CvmMain.rentingScooter = scooter;
                 }
             }
             else
@@ -109,5 +111,7 @@ namespace RentNScoot.Presentation.Controls.Cards
                 MessageBox.Show(Properties.Resources.ScooterFrame_ToManScootersAlert);
             }
         }
+
+        #endregion Methods
     }
 }

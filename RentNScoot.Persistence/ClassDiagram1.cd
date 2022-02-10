@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="RentNScoot.Properties.Resources">
+    <Position X="13.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAFEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RentNScoot.Persistence.Factories.AFactoryData">
+    <Position X="13.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAQAACAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Persistence\Factories\AFactoryData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RentNScoot.Persistence.ADataRead" Collapsed="true">
+    <Position X="8.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAABCgAAEBACAEAAAAAAAAAAAAAAgAACBA=</HashCode>
+      <FileName>Persistence\ADataRead.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="RentNScoot.Persistence.ADataWrite" Collapsed="true">
+    <Position X="11" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEgAAAAAAAEJAAAAQQEAAAAAAAAAAAA=</HashCode>
+      <FileName>Persistence\ADataWrite.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="RentNScoot.Persistence.CDataReadFake" BaseTypeListCollapsed="true">
+    <Position X="15.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAACAAAAAAECACAEAAAAAAAAAAAAAAAgAABA=</HashCode>
+      <FileName>Persistence\CDataReadFake.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="RentNScoot.Persistence.CDataReadSqlite" Collapsed="true">
+    <Position X="8.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Persistence\CDataReadSqlite.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RentNScoot.Persistence.CDataWriteFake" BaseTypeListCollapsed="true">
+    <Position X="19.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAgABACAAAEAAAAAQAEAAAAAAAgAAAA=</HashCode>
+      <FileName>Persistence\CDataWriteFake.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="RentNScoot.Persistence.CDataWriteSqlite" Collapsed="true">
+    <Position X="11" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Persistence\CDataWriteSqlite.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RentNScoot.Persistence.AData" Collapsed="true">
+    <Position X="9.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAACgAgAAAAIAAAEAAgAAAA=</HashCode>
+      <FileName>AData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RentNScoot.SExtendPersistence">
+    <Position X="17.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAQAAAAAAAQDAAAIAAAAAAAAAEAgAAA=</HashCode>
+      <FileName>SExtendPersistence.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
