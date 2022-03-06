@@ -33,3 +33,14 @@ C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Presentation\obj\Release\n
 C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Presentation\obj\Release\netcoreapp3.1\RentNScoot.Presentation.csproj.CopyComplete
 C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Presentation\obj\Release\netcoreapp3.1\RentNScoot.Presentation.dll
 C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Presentation\obj\Release\netcoreapp3.1\RentNScoot.Presentation.pdb
+C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Presentation\bin\Release\netcoreapp3.1\Properties\Resources.resx
+C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Presentation\bin\Release\netcoreapp3.1\RentNScoot.Utils.dll
+C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Presentation\bin\Release\netcoreapp3.1\RentNScoot.Utils.pdb
+C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Presentation\obj\Release\netcoreapp3.1\Presentation\Controls\Cards\ScooterCard.g.cs
+C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Presentation\obj\Release\netcoreapp3.1\Presentation\Views\Frames\RentalDetailFrame.g.cs
+C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Presentation\obj\Release\netcoreapp3.1\Presentation\Views\Frames\RentalReturnFrame.g.cs
+C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Presentation\obj\Release\netcoreapp3.1\Presentation\Controls\Cards\ScooterCard.baml
+C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Presentation\obj\Release\netcoreapp3.1\Presentation\Views\Frames\RentalDetailFrame.baml
+C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Presentation\obj\Release\netcoreapp3.1\Presentation\Views\Frames\RentalReturnFrame.baml
+C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Presentation\obj\Release\netcoreapp3.1\RentNScoot.Properties.Resources.resources
+C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Presentation\obj\Release\netcoreapp3.1\RentNScoot.Presentation.csproj.GenerateResource.cache

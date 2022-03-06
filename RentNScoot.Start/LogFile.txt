@@ -1,14 +1,8 @@
-10.02.2022-17:36:25.0227  App                  App_StartUp 
-10.02.2022-17:36:25.0245  AFactoryData         Create_ReadSqlite() Data Source=d:\database.db; Version=3;
-10.02.2022-17:36:25.0292  AFactoryData         Create_WriteSqlite() Data Source=d:\database.db; Version=3;
-10.02.2022-17:36:25.0339  AFactoryApp          Create_Queries(IDataRead) 
-10.02.2022-17:36:25.0340  CAppQueries          Ctor() 
-10.02.2022-17:36:25.0340  AFactoryApp          Create_Commands(IDataWrite) 
-10.02.2022-17:36:25.0340  CAppCommands         Ctor() 
-10.02.2022-17:36:25.0582  CDataReadSqlite      Locations() = GetLocations
-10.02.2022-17:36:28.0566  CDataReadSqlite      GetRental 
-10.02.2022-17:36:28.0569  CDataReadSqlite      GetScooter 
-10.02.2022-17:36:28.0570  CDataReadSqlite      GetCustomer 
-10.02.2022-17:36:28.0572  CDataReadSqlite      GetLocation 
-10.02.2022-17:36:29.0259  CAppCommands         DeleteRental() sending command to _dataWrite...
-10.02.2022-17:36:29.0260  CDataWriteSqlite     DeleteRental() 
+01.03.2022-16:10:31.0539  App                  App_StartUp 
+01.03.2022-16:10:31.0648  AFactoryData         Create_ReadSqlite() Data Source=C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Start\bin\Debug\netcoreapp3.1\Database\database.db; Version=3;
+01.03.2022-16:10:31.0702  AFactoryData         Create_WriteSqlite() Data Source=C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Start\bin\Debug\netcoreapp3.1\Database\database.db; Version=3;
+01.03.2022-16:10:31.0744  AFactoryApp          Create_Queries(IDataRead) 
+01.03.2022-16:10:31.0744  CAppQueries          Ctor() 
+01.03.2022-16:10:31.0744  AFactoryApp          Create_Commands(IDataWrite) 
+01.03.2022-16:10:31.0745  CAppCommands         Ctor() 
+01.03.2022-16:10:32.0026  CDataReadSqlite      Locations() = GetLocations

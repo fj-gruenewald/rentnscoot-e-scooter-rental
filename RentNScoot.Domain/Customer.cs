@@ -10,7 +10,7 @@ namespace RentNScoot
         public string CustomerAddress { get; set; } = String.Empty;
         public string CustomerPayment { get; set; } = String.Empty;
 
-        //Create an Customer Object
+        //ctor
         public Customer(string name, string address, string payment)
         {
             Guid customerguid = System.Guid.NewGuid();
@@ -21,6 +21,7 @@ namespace RentNScoot
             CustomerPayment = payment;
         }
 
+        //ctor without attributes
         public Customer()
         { }
     }

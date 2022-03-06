@@ -9,9 +9,9 @@
     ".NETStandard,Version=v2.1/": {
       "RentNScoot.Persistence/1.0.0": {
         "dependencies": {
-          "MySql.Data": "8.0.21",
           "RentNScoot.Application": "1.0.0",
           "RentNScoot.Domain": "1.0.0",
+          "System.Data.SQLite.Core": "1.0.115.5",
           "System.Data.SqlClient": "4.8.1"
         },
         "runtime": {
@@ -304,6 +304,14 @@
           }
         }
       },
+      "Stub.System.Data.SQLite.Core.NetStandard/1.0.115.5": {
+        "runtime": {
+          "lib/netstandard2.1/System.Data.SQLite.dll": {
+            "assemblyVersion": "1.0.115.5",
+            "fileVersion": "1.0.115.5"
+          }
+        }
+      },
       "System.AppContext/4.3.0": {
         "dependencies": {
           "System.Runtime": "4.3.0"
@@ -385,6 +393,11 @@
             "assemblyVersion": "4.6.1.1",
             "fileVersion": "4.700.20.6702"
           }
+        }
+      },
+      "System.Data.SQLite.Core/1.0.115.5": {
+        "dependencies": {
+          "Stub.System.Data.SQLite.Core.NetStandard": "1.0.115.5"
         }
       },
       "System.Diagnostics.Debug/4.3.0": {
@@ -1239,6 +1252,7 @@
         "dependencies": {
           "MySql.Data": "8.0.21",
           "RentNScoot.Domain": "1.0.0",
+          "RentNScoot.Utils": "1.0.0",
           "System.Data.SqlClient": "4.8.1"
         },
         "runtime": {
@@ -1252,6 +1266,11 @@
         },
         "runtime": {
           "RentNScoot.Domain.dll": {}
+        }
+      },
+      "RentNScoot.Utils/1.0.0": {
+        "runtime": {
+          "RentNScoot.Utils.dll": {}
         }
       }
     }
@@ -1500,6 +1519,13 @@
       "path": "sshnet.security.cryptography/1.2.0",
       "hashPath": "sshnet.security.cryptography.1.2.0.nupkg.sha512"
     },
+    "Stub.System.Data.SQLite.Core.NetStandard/1.0.115.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WfrqQg6WL+r4H1sVKTenNj6ERLXUukUxqcjH1rqPqXadeIWccTVpydESieD7cZ/NWQVSKLYIHuoBX5du+BFhIQ==",
+      "path": "stub.system.data.sqlite.core.netstandard/1.0.115.5",
+      "hashPath": "stub.system.data.sqlite.core.netstandard.1.0.115.5.nupkg.sha512"
+    },
     "System.AppContext/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -1548,6 +1574,13 @@
       "sha512": "sha512-HKLykcv6eZLbLnSMnlQ6Os4+UAmFE+AgYm92CTvJYeTOBtOYusX3qu8OoGhFrnKZax91UcLcDo5vPrqvJUTSNQ==",
       "path": "system.data.sqlclient/4.8.1",
       "hashPath": "system.data.sqlclient.4.8.1.nupkg.sha512"
+    },
+    "System.Data.SQLite.Core/1.0.115.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vADIqqgpxaC5xR6qOV8/KMZkQeSDCfmmWpVOtQx0oEr3Yjq2XdTxX7+jfE4+oO2xPovAbYiz6Q5cLRbSsDkq6Q==",
+      "path": "system.data.sqlite.core/1.0.115.5",
+      "hashPath": "system.data.sqlite.core.1.0.115.5.nupkg.sha512"
     },
     "System.Diagnostics.Debug/4.3.0": {
       "type": "package",
@@ -2003,6 +2036,11 @@
       "sha512": ""
     },
     "RentNScoot.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RentNScoot.Utils/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

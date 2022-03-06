@@ -1,7 +1,6 @@
 ﻿using RentNScoot.Application.Factories;
 using RentNScoot.Presentation.Factories;
 using System;
-using System.Configuration;
 using System.Globalization;
 using System.Windows;
 using System.Windows.Markup;
@@ -26,17 +25,15 @@ namespace RentNScoot.Start
             Log.D(this, "App_StartUp", "");
             Err.D(this, "Start", "");
 
+            //relative Path for DB
+            string strExeFilePath = System.Reflection.Assembly.GetExecutingAssembly().Location;
+            string strWorkPath = System.IO.Path.GetDirectoryName(strExeFilePath);
+            string connectionString = $"Data Source={strWorkPath + "\\Database\\database.db"}; Version=3;";
+
             //Dependency Injection Setup
-            //Dependency Inversion Principle
-
-            string connectionString = @"Data Source=d:\database.db; Version=3;";
-
             try
             {
-                /*Persistence Write
-                connectionString = @"Server=localhost;Database=scooterdatabase;Uid=root;Pwd=geh1m_;";
-                _dataWrite = AFactoryData.Create_WriteSql(connectionString);*/
-
+                //Persistence
                 _dataRead = AFactoryData.Create_ReadInstanceSqlite(connectionString);
                 _dataWrite = AFactoryData.Create_WriteInstanceSqlite(connectionString);
 

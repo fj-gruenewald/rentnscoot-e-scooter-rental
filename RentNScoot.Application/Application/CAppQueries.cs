@@ -1,15 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using RentNScoot.Utils;
 
 namespace RentNScoot.Application
 {
     internal class CAppQueries : IAppQueries
     {
-        //dataread initialisieren
+        #region Fields
+
         private IDataRead _dataRead;
 
-        //Konstruktor
+        #endregion Fields
+
+        #region ctor
+
         private static volatile CAppQueries? instance = null;
 
         private static readonly object padlock = new object();
@@ -30,16 +33,26 @@ namespace RentNScoot.Application
             _dataRead = dataRead;
         }
 
-        //Hand over Vars from IDataRead
+        #endregion ctor
 
-        //List of all Locations
+        #region Location Methods
+
         public virtual List<Location> GetLocationListFromDB()
         {
             var LocationListFromDB = _dataRead.GetLocationListFromDB();
             return LocationListFromDB;
         }
 
-        //List of Scooters to Location
+        public virtual Location GetLocationFromDbById(string locationId)
+        {
+            var location = _dataRead.GetLocationFromDbById(locationId);
+            return location;
+        }
+
+        #endregion Location Methods
+
+        #region Scooter Methods
+
         public virtual List<Scooter> GetScooterListFromDbByObject(Location location)
         {
             var ScooterListFromDB = _dataRead.GetScooterListFromDbByObject(location);
@@ -52,11 +65,19 @@ namespace RentNScoot.Application
             return scooter;
         }
 
+        #endregion Scooter Methods
+
+        #region Rental Methods
+
         public virtual Rental GetRentableFromDbById(string rentableId)
         {
             var rentable = _dataRead.GetRentableFromDbById(rentableId);
             return rentable;
         }
+
+        #endregion Rental Methods
+
+        #region Customer Methods
 
         public virtual Customer GetCustomerFromDbById(string customerId)
         {
@@ -64,10 +85,6 @@ namespace RentNScoot.Application
             return customer;
         }
 
-        public virtual Location GetLocationFromDbById(string locationId)
-        {
-            var location = _dataRead.GetLocationFromDbById(locationId);
-            return location;
-        }
+        #endregion Customer Methods
     }
 }

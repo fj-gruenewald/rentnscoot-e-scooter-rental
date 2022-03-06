@@ -11,6 +11,8 @@ namespace RentNScoot.Persistence
         internal ADataRead(DbProviderFactory dbProviderFactory, string connectionString) : base(dbProviderFactory, connectionString)
         { }
 
+        #region Location Methods
+
         //Read List of all Locations
         public List<Location> GetLocationListFromDB()
         {
@@ -49,6 +51,39 @@ namespace RentNScoot.Persistence
             Log.D(this, "Locations() =", "GetLocations");
             return ListOfLocations;
         }
+
+        public Location? GetLocationFromDbById(string locationId)
+        {
+            Log.D(this, "GetLocation", "");
+            Location? location = null;
+
+            _dbConnection.Open();
+            if (_dbConnection.State == ConnectionState.Open)
+            {
+                _dbCommand.CommandType = CommandType.Text;
+                _dbCommand.Parameters.Clear();
+                _dbCommand.CommandText = GetSqlLocationById(locationId);
+
+                AddParameter(_dbCommand, "LocationID", locationId);
+                var dbDataReader = _dbCommand.ExecuteReader();
+
+                if (dbDataReader != null && dbDataReader.HasRows)
+                {
+                    while (dbDataReader.Read())
+                    {
+                        location = new Location();
+                        location.LocationFromDbDataReader(dbDataReader);
+                    }
+                    if (!dbDataReader.IsClosed) dbDataReader.Close();
+                }
+            }
+            if (_dbConnection.State == ConnectionState.Open) _dbConnection.Close();
+            return location;
+        }
+
+        #endregion Location Methods
+
+        #region Scooter Method
 
         public List<Scooter> GetScooterListFromDbByObject(Location location)
         {
@@ -117,6 +152,10 @@ namespace RentNScoot.Persistence
             return scooter;
         }
 
+        #endregion Scooter Method
+
+        #region Rental Methods
+
         public Rental? GetRentableFromDbById(string rentalId)
         {
             Log.D(this, "GetRental", "");
@@ -145,6 +184,10 @@ namespace RentNScoot.Persistence
             if (_dbConnection.State == ConnectionState.Open) _dbConnection.Close();
             return rental;
         }
+
+        #endregion Rental Methods
+
+        #region Customer Methods
 
         public Customer? GetCustomerFromDbById(string customerId)
         {
@@ -175,34 +218,7 @@ namespace RentNScoot.Persistence
             return customer;
         }
 
-        public Location? GetLocationFromDbById(string locationId)
-        {
-            Log.D(this, "GetLocation", "");
-            Location? location = null;
-
-            _dbConnection.Open();
-            if (_dbConnection.State == ConnectionState.Open)
-            {
-                _dbCommand.CommandType = CommandType.Text;
-                _dbCommand.Parameters.Clear();
-                _dbCommand.CommandText = GetSqlLocationById(locationId);
-
-                AddParameter(_dbCommand, "LocationID", locationId);
-                var dbDataReader = _dbCommand.ExecuteReader();
-
-                if (dbDataReader != null && dbDataReader.HasRows)
-                {
-                    while (dbDataReader.Read())
-                    {
-                        location = new Location();
-                        location.LocationFromDbDataReader(dbDataReader);
-                    }
-                    if (!dbDataReader.IsClosed) dbDataReader.Close();
-                }
-            }
-            if (_dbConnection.State == ConnectionState.Open) _dbConnection.Close();
-            return location;
-        }
+        #endregion Customer Methods
 
         #region SQL Queries
 

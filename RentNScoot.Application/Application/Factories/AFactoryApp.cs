@@ -4,6 +4,7 @@ namespace RentNScoot.Application.Factories
 {
     public abstract class AFactoryApp
     {
+        //Create the Read or Write Instances for the Application
         public static IAppQueries CreateQueryInstance(IDataRead dataRead)
         {
             Log.D("AFactoryApp", "Create_Queries(IDataRead)", "");

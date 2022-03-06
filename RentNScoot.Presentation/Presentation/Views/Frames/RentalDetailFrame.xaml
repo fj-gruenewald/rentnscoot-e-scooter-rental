@@ -24,6 +24,7 @@
                    TextAlignment="Center"
                    VerticalAlignment="Center" />
 
+        <!-- Content Grid -->
         <Grid Grid.Row="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*" />
@@ -55,6 +56,7 @@
                            Text="{x:Static strings:Resources.RentalDetailFrame_RentalCodeHint}" />
             </StackPanel>
 
+            <!-- Info Card -->
             <StackPanel Grid.Row="1"
                         Grid.Column="0"
                         Grid.ColumnSpan="3"

@@ -1,0 +1,7 @@
+C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Start\bin\Release\netcoreapp3.1\publish\RentNScoot.Start.pdb
+C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Start\bin\Release\netcoreapp3.1\publish\RentNScoot.Domain.pdb
+C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Start\bin\Release\netcoreapp3.1\publish\RentNScoot.Persistence.pdb
+C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Start\bin\Release\netcoreapp3.1\publish\RentNScoot.Presentation.pdb
+C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Start\bin\Release\netcoreapp3.1\publish\RentNScoot.Utils.pdb
+C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Start\bin\Release\netcoreapp3.1\publish\RentNScoot.Application.pdb
+C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Start\bin\Release\netcoreapp3.1\publish\RentNScoot.Start.exe

@@ -5,7 +5,7 @@ namespace RentNScoot.Persistence.Factories
 {
     public abstract class AFactoryData
     {
-        //Fake
+        //Fake Methods
         public static IDataRead Create_ReadInstanceFake()
         {
             Log.D("AFactoryData", "Create_ReadCarFake()", "");
@@ -18,7 +18,7 @@ namespace RentNScoot.Persistence.Factories
             return new CDataWriteFake();
         }
 
-        //SQLITE
+        //SQLITE Methods
         public static IDataRead Create_ReadInstanceSqlite(string connectionString)
         {
             Log.D("AFactoryData", "Create_ReadSqlite()", connectionString);

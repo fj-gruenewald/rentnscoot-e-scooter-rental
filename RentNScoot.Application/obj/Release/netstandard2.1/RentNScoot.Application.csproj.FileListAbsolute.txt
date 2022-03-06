@@ -11,3 +11,5 @@ C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Application\obj\Release\ne
 C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Application\obj\Release\netstandard2.1\RentNScoot.Application.csproj.CopyComplete
 C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Application\obj\Release\netstandard2.1\RentNScoot.Application.dll
 C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Application\obj\Release\netstandard2.1\RentNScoot.Application.pdb
+C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Application\bin\Release\netstandard2.1\RentNScoot.Utils.dll
+C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Application\bin\Release\netstandard2.1\RentNScoot.Utils.pdb

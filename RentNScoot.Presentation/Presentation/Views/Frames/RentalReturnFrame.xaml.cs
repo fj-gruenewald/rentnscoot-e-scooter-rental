@@ -38,35 +38,12 @@ namespace RentNScoot.Presentation.Views.Frames
 
         #endregion ctor
 
+        #region Interface Methods
+
         //OnPageLoad
         private void Page_Loaded(object sender, System.Windows.RoutedEventArgs e)
         {
         }
-
-        public string GetRentalCodeFromRentalReturnFrame()
-        {
-            if (txtbRentalCode.Text.Length >= 20)
-            {
-                Guid validate;
-
-                if (Guid.TryParse(txtbRentalCode.Text, out validate))
-                {
-                    return txtbRentalCode.Text;
-                }
-                else
-                {
-                    MessageBox.Show(Properties.Resources.RentalReturnFrame_Err_RentalCodeInvalid);
-                }
-            }
-            else
-            {
-                MessageBox.Show(Properties.Resources.RentalReturnFrame_Err_RentalCodeEmpty);
-            }
-
-            return string.Empty;
-        }
-
-        #region Interface Methods
 
         public void RefreshFrame()
         {
@@ -91,6 +68,29 @@ namespace RentNScoot.Presentation.Views.Frames
         #endregion Interface Methods
 
         #region Methods
+
+        public string GetRentalCodeFromRentalReturnFrame()
+        {
+            if (txtbRentalCode.Text.Length >= 20)
+            {
+                Guid validate;
+
+                if (Guid.TryParse(txtbRentalCode.Text, out validate))
+                {
+                    return txtbRentalCode.Text;
+                }
+                else
+                {
+                    MessageBox.Show(Properties.Resources.RentalReturnFrame_Err_RentalCodeInvalid);
+                }
+            }
+            else
+            {
+                MessageBox.Show(Properties.Resources.RentalReturnFrame_Err_RentalCodeEmpty);
+            }
+
+            return string.Empty;
+        }
 
         private int CalculateHours(string startTime, string endTime)
         {

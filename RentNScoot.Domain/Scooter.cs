@@ -10,7 +10,7 @@ namespace RentNScoot
         public string Manufacturer { get; set; } = String.Empty;
         public string Model { get; set; } = String.Empty;
 
-        //Create an Scooter Object
+        //ctor
         public Scooter(int id, int location, int rentable, string manufacturer, string model)
         {
             ScooterID = id;
@@ -20,6 +20,7 @@ namespace RentNScoot
             Model = model;
         }
 
+        //ctor without attributes
         public Scooter()
         { }
     }

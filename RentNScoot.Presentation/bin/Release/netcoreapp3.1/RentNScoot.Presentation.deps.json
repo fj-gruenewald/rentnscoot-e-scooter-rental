@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v3.1": {
       "RentNScoot.Presentation/1.0.0": {
         "dependencies": {
+          "Extended.Wpf.Toolkit": "4.2.0",
           "RentNScoot.Application": "1.0.0",
           "RentNScoot.Domain": "1.0.0"
         },
@@ -25,6 +26,68 @@
           "lib/netstandard2.0/BouncyCastle.Crypto.dll": {
             "assemblyVersion": "1.8.2.0",
             "fileVersion": "1.8.18099.1"
+          }
+        }
+      },
+      "Extended.Wpf.Toolkit/4.2.0": {
+        "runtime": {
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll": {
+            "assemblyVersion": "4.2.0.0",
+            "fileVersion": "4.2.0.0"
+          },
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll": {
+            "assemblyVersion": "4.2.0.0",
+            "fileVersion": "4.2.0.0"
+          },
+          "lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll": {
+            "assemblyVersion": "4.2.0.0",
+            "fileVersion": "4.2.0.0"
+          },
+          "lib/net40/Xceed.Wpf.AvalonDock.dll": {
+            "assemblyVersion": "4.2.0.0",
+            "fileVersion": "4.2.0.0"
+          },
+          "lib/net40/Xceed.Wpf.Toolkit.dll": {
+            "assemblyVersion": "4.2.0.0",
+            "fileVersion": "4.2.0.0"
+          }
+        },
+        "resources": {
+          "lib/net40/cs-CZ/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "cs-CZ"
+          },
+          "lib/net40/de/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net40/es/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net40/fr/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net40/hu/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "hu"
+          },
+          "lib/net40/it/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "it"
+          },
+          "lib/net40/ja-JP/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "ja-JP"
+          },
+          "lib/net40/pt-BR/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net40/ro/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "ro"
+          },
+          "lib/net40/ru/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net40/sv/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "sv"
+          },
+          "lib/net40/zh-Hans/Xceed.Wpf.AvalonDock.resources.dll": {
+            "locale": "zh-Hans"
           }
         }
       },
@@ -1045,6 +1108,7 @@
         "dependencies": {
           "MySql.Data": "8.0.21",
           "RentNScoot.Domain": "1.0.0",
+          "RentNScoot.Utils": "1.0.0",
           "System.Data.SqlClient": "4.8.1"
         },
         "runtime": {
@@ -1058,6 +1122,11 @@
         },
         "runtime": {
           "RentNScoot.Domain.dll": {}
+        }
+      },
+      "RentNScoot.Utils/1.0.0": {
+        "runtime": {
+          "RentNScoot.Utils.dll": {}
         }
       }
     }
@@ -1074,6 +1143,13 @@
       "sha512": "sha512-jAy3uHN1U9DpoT/TgLqDTEhlccn/4doOVxhSmmNsnoSsGfHT9Lwr634ac9D0YFujAhNw61nWF4UIpHyzv0aQww==",
       "path": "bouncycastle.netcore/1.8.3",
       "hashPath": "bouncycastle.netcore.1.8.3.nupkg.sha512"
+    },
+    "Extended.Wpf.Toolkit/4.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1yxsUfhyNA8A85sO6R8avjmRHyJXSR3icB5Puk7Ri65L4IgejTElU9dVxAGfP21hLQGOFQbBRno4FyuN8dTo6w==",
+      "path": "extended.wpf.toolkit/4.2.0",
+      "hashPath": "extended.wpf.toolkit.4.2.0.nupkg.sha512"
     },
     "Google.Protobuf/3.6.1": {
       "type": "package",
@@ -1823,6 +1899,11 @@
       "sha512": ""
     },
     "RentNScoot.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RentNScoot.Utils/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

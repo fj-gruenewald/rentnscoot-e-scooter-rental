@@ -21,7 +21,7 @@ namespace RentNScoot.Presentation.Controls.Cards
 
         #region ctor
 
-        internal LocationCard()
+        public LocationCard()
         {
             InitializeComponent();
         }

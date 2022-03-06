@@ -11,13 +11,11 @@ namespace RentNScoot
         public string RentalStart { get; set; } = String.Empty;
         public string RentalEnd { get; set; } = String.Empty;
 
-        //Create an Rental Object
+        //ctor
         public Rental(string customerid, string locationid, int scooterid, string start, string end)
         {
-            //Rental Id
             Guid rentalguid = System.Guid.NewGuid();
 
-            //Rental Fields
             RentalID = rentalguid.ToString();
             CustomerID = customerid;
             LocationID = locationid;
@@ -26,6 +24,7 @@ namespace RentNScoot
             RentalEnd = end;
         }
 
+        //ctor without attributes
         public Rental()
         { }
     }

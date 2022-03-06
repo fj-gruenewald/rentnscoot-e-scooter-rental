@@ -1,0 +1,17 @@
+06.03.2022-11:31:30.0603  AFactoryData         Create_ReadCarFake() 
+06.03.2022-11:31:30.0603  CDataReadFake        Ctor() 
+06.03.2022-11:31:30.0622  AFactoryData         Create_WriteFake() 
+06.03.2022-11:31:30.0625  AFactoryData         Create_ReadCarFake() 
+06.03.2022-11:31:30.0625  CDataReadFake        Ctor() 
+06.03.2022-11:31:30.0626  CDataReadFake        Locations() = GetLocations
+06.03.2022-11:31:30.0629  AFactoryData         Create_ReadCarFake() 
+06.03.2022-11:31:30.0629  CDataReadFake        Ctor() 
+06.03.2022-11:31:30.0629  CDataReadFake        Locations() = GetLocations
+06.03.2022-11:31:30.0632  AFactoryData         Create_ReadCarFake() 
+06.03.2022-11:31:30.0632  CDataReadFake        Ctor() 
+06.03.2022-11:31:30.0635  AFactoryData         Create_ReadCarFake() 
+06.03.2022-11:31:30.0635  CDataReadFake        Ctor() 
+06.03.2022-11:31:30.0637  AFactoryData         Create_ReadCarFake() 
+06.03.2022-11:31:30.0637  CDataReadFake        Ctor() 
+06.03.2022-11:31:30.0640  AFactoryData         Create_ReadCarFake() 
+06.03.2022-11:31:30.0640  CDataReadFake        Ctor() 

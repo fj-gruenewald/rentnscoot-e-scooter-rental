@@ -14,3 +14,7 @@ C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Persistence\obj\Release\ne
 C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Persistence\obj\Release\netstandard2.1\RentNScoot.Persistence.csproj.CopyComplete
 C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Persistence\obj\Release\netstandard2.1\RentNScoot.Persistence.dll
 C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Persistence\obj\Release\netstandard2.1\RentNScoot.Persistence.pdb
+C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Persistence\bin\Release\netstandard2.1\RentNScoot.Utils.dll
+C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Persistence\bin\Release\netstandard2.1\RentNScoot.Utils.pdb
+C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Persistence\obj\Release\netstandard2.1\RentNScoot.Properties.Resources.resources
+C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Persistence\obj\Release\netstandard2.1\RentNScoot.Persistence.csproj.GenerateResource.cache

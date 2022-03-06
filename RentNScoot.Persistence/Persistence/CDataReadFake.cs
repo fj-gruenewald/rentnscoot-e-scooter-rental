@@ -126,7 +126,8 @@ namespace RentNScoot.Persistence
 
         public Rental GetRentableFromDbById(string rentableId)
         {
-            throw new NotImplementedException();
+            Rental rentalToReturn = new Rental("1", "1", 1, "today", "tomorrow");
+            return rentalToReturn;
         }
 
         public Customer GetCustomerFromDbById(string customerId)

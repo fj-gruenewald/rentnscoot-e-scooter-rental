@@ -1,0 +1,453 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CviMain_Back_1" xml:space="preserve">
+    <value>Roller Abgeben</value>
+  </data>
+  <data name="CviMain_Back_2" xml:space="preserve">
+    <value>Zurück</value>
+  </data>
+  <data name="CviMain_Continue_1" xml:space="preserve">
+    <value>Roller Mieten</value>
+  </data>
+  <data name="CviMain_Continue_2" xml:space="preserve">
+    <value>Zum nächsten Schritt</value>
+  </data>
+  <data name="CviMain_Continue_3" xml:space="preserve">
+    <value>Daten bestätigen</value>
+  </data>
+  <data name="CviMain_Continue_4" xml:space="preserve">
+    <value>Programm schließen</value>
+  </data>
+  <data name="CviMain_Err_Payment" xml:space="preserve">
+    <value>Wir überprüfen deine Zahlung...</value>
+  </data>
+  <data name="CviMain_LocationFrame_ChooseAnOptionAlert" xml:space="preserve">
+    <value>Bitte wähle einen Standort aus</value>
+  </data>
+  <data name="CviMain_PersonalDataFrame_NotAllFieldsSetAlert" xml:space="preserve">
+    <value>Uns Fehlen noch Daten von dir. Bitte fülle die Felder aus</value>
+  </data>
+  <data name="CviMain_RentalResult_Back" xml:space="preserve">
+    <value>Rückgabe abschließen</value>
+  </data>
+  <data name="CviMain_RentalResult_RentalCode" xml:space="preserve">
+    <value>Rental Code überprüfen</value>
+  </data>
+  <data name="CviMain_ScooterFrame_ChooseAnOptionAlert" xml:space="preserve">
+    <value>Bitte wähle einen Scooter aus</value>
+  </data>
+  <data name="CviMain_TimeFrame_NoAcceptedDateAlert" xml:space="preserve">
+    <value>Bitte prüfe die Verfügbarkeit eines Rollers an deinem Datum</value>
+  </data>
+  <data name="CvmMain_Err_RentalCodeError" xml:space="preserve">
+    <value>Es gab Probleme mit deinem Rental Code, probiere es bitte später erneut oder wende dich an unseren Support. Fehler 105</value>
+  </data>
+  <data name="CvmMain_Err_RentalCodeNotExistent" xml:space="preserve">
+    <value>Etwas stimmt mit deinem Rental Code nicht. Wir beenden den Prozess, probiere es bitte erneut</value>
+  </data>
+  <data name="LocationFrame_Headline" xml:space="preserve">
+    <value>Wählen einen unserer Standorte</value>
+  </data>
+  <data name="LocationFrame_TooManLocationsAlert" xml:space="preserve">
+    <value>Bitte wähle maximal 1 Standort aus. Um den ausgewählten Standort zurückzusetzten klicke ihn erneut an.</value>
+  </data>
+  <data name="OverviewFrame_Headline" xml:space="preserve">
+    <value>Deine Übersicht, hier muss alles stimmen...</value>
+  </data>
+  <data name="OverviewFrame_Location" xml:space="preserve">
+    <value>Abholort:</value>
+  </data>
+  <data name="OverviewFrame_Location_Placeholder" xml:space="preserve">
+    <value>21220 Hamburg, Dresslerstraße 12</value>
+  </data>
+  <data name="OverviewFrame_PersonalData" xml:space="preserve">
+    <value>Deine Daten:</value>
+  </data>
+  <data name="OverviewFrame_PersonalData_Address" xml:space="preserve">
+    <value>Adresse:</value>
+  </data>
+  <data name="OverviewFrame_PersonalData_Address_Placeholder" xml:space="preserve">
+    <value>11111 Musterstadt, Musterstraße 54A</value>
+  </data>
+  <data name="OverviewFrame_PersonalData_Name" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="OverviewFrame_PersonalData_Name_Placeholder" xml:space="preserve">
+    <value>Max Mustermann</value>
+  </data>
+  <data name="OverviewFrame_PersonalData_Payment" xml:space="preserve">
+    <value>Zahlungsmethode:</value>
+  </data>
+  <data name="OverviewFrame_PersonalData_Payment_Placeholder" xml:space="preserve">
+    <value>Vorrauszahlung</value>
+  </data>
+  <data name="OverviewFrame_Scooter" xml:space="preserve">
+    <value>Scooter:</value>
+  </data>
+  <data name="OverviewFrame_Scooter_Placeholder" xml:space="preserve">
+    <value>Xiaomi Mi Electric Scooter 1S</value>
+  </data>
+  <data name="OverviewFrame_TimeSpanFrom" xml:space="preserve">
+    <value>Abholung am:</value>
+  </data>
+  <data name="OverviewFrame_TimeSpanFrom_Placeholder" xml:space="preserve">
+    <value>21.12.2021 um 9:00 Uhr</value>
+  </data>
+  <data name="OverviewFrame_TimeSpanTo" xml:space="preserve">
+    <value>Rückgabe am:</value>
+  </data>
+  <data name="OverviewFrame_TimeSpanTo_Placeholder" xml:space="preserve">
+    <value>22.12.2021 um 9:00 Uhr</value>
+  </data>
+  <data name="PaymentMethod_Cash" xml:space="preserve">
+    <value>Barzahlung:</value>
+  </data>
+  <data name="PaymentMethod_Credit" xml:space="preserve">
+    <value>Kreditkarte:</value>
+  </data>
+  <data name="PaymentMethod_Klarna" xml:space="preserve">
+    <value>Klarna:</value>
+  </data>
+  <data name="PaymentMethod_Paypal" xml:space="preserve">
+    <value>Paypal:</value>
+  </data>
+  <data name="PaymentMethod_UpFront" xml:space="preserve">
+    <value>Vorrauszahlung:</value>
+  </data>
+  <data name="PersonalData_City" xml:space="preserve">
+    <value>Stadt:</value>
+  </data>
+  <data name="PersonalData_CityExample" xml:space="preserve">
+    <value>Musterstadt</value>
+  </data>
+  <data name="PersonalData_FirstName" xml:space="preserve">
+    <value>Vorname:</value>
+  </data>
+  <data name="PersonalData_FirstNameExample" xml:space="preserve">
+    <value>Max</value>
+  </data>
+  <data name="PersonalData_Headline" xml:space="preserve">
+    <value>Wir bräuchten noch ein Paar Daten...</value>
+  </data>
+  <data name="PersonalData_Number" xml:space="preserve">
+    <value>Hausnummer:</value>
+  </data>
+  <data name="PersonalData_NumberExample" xml:space="preserve">
+    <value>54A</value>
+  </data>
+  <data name="PersonalData_PaymentMethod" xml:space="preserve">
+    <value>Zahlungsmethode:</value>
+  </data>
+  <data name="PersonalData_PaymentMethod_Cash" xml:space="preserve">
+    <value>Barzahlung</value>
+  </data>
+  <data name="PersonalData_PaymentMethod_Cash_Hint" xml:space="preserve">
+    <value>Bezahle bei der Abholung deines Scooters im Laden. Mit EC-Karte oder Bargeld.</value>
+  </data>
+  <data name="PersonalData_PaymentMethod_CreditCard" xml:space="preserve">
+    <value>Kreditkarte</value>
+  </data>
+  <data name="PersonalData_PaymentMethod_CreditCard_Hint" xml:space="preserve">
+    <value>Du wirst nach Abschluss des Mietvorganges im Browser auf die Seite unseres sicheren Kreditkartendienstleisters weitergeleitet.</value>
+  </data>
+  <data name="PersonalData_PaymentMethod_Klarna" xml:space="preserve">
+    <value>Klarna</value>
+  </data>
+  <data name="PersonalData_PaymentMethod_Klarna_Hint" xml:space="preserve">
+    <value>Du wirst nach Abschluss des Mietvorganges im Browser auf die Seite von Klarna weitergeleitet.</value>
+  </data>
+  <data name="PersonalData_PaymentMethod_Paypal" xml:space="preserve">
+    <value>Paypal</value>
+  </data>
+  <data name="PersonalData_PaymentMethod_Paypal_Hint" xml:space="preserve">
+    <value>Du wirst nach Abschluss des Mietvorganges im Browser auf die Seite von Paypal weitergeileitet.</value>
+  </data>
+  <data name="PersonalData_PaymentMethod_UpFront" xml:space="preserve">
+    <value>Vorrauszahlung</value>
+  </data>
+  <data name="PersonalData_PaymentMethod_UpFront_Hint" xml:space="preserve">
+    <value>Zahle einfach per Überweisung und hole deinen Scooter schnell und unkompliziert ab. Nach Abschluss der Reservierung leiten wir dich dafür auf die Seite unseres Finanzinstitutes weiter.</value>
+  </data>
+  <data name="PersonalData_PostalCode" xml:space="preserve">
+    <value>PLZ:</value>
+  </data>
+  <data name="PersonalData_PostalCode_Example" xml:space="preserve">
+    <value>21035</value>
+  </data>
+  <data name="PersonalData_SecondNameExample" xml:space="preserve">
+    <value>Mustermann</value>
+  </data>
+  <data name="PersonalData_SeconName" xml:space="preserve">
+    <value>Nachname:</value>
+  </data>
+  <data name="PersonalData_Street" xml:space="preserve">
+    <value>Straße:</value>
+  </data>
+  <data name="PersonalData_StreetExample" xml:space="preserve">
+    <value>Musterstraße</value>
+  </data>
+  <data name="RentalDetailFrame" xml:space="preserve">
+    <value>Deine Reservierung wurde getätigt...</value>
+  </data>
+  <data name="RentalDetailFrame_PaymentMethod" xml:space="preserve">
+    <value>Infos zu deiner Zahlungsmethode:</value>
+  </data>
+  <data name="RentalDetailFrame_PaymentMethodInfo_Cash" xml:space="preserve">
+    <value>Du hast Barzahlung als Zahlungsmittel ausgewählt. Erscheine dafür bitte rechtzeitig in unserem Laden und zahle deine Mietgebühr. Solltest du zu spät erscheinen wird deine Reservierung storniert.</value>
+  </data>
+  <data name="RentalDetailFrame_PaymentMethodInfo_CreditCard" xml:space="preserve">
+    <value>Du hast bezahlung per Kreditkarte als zahlungsmethode gewählt. Wir leiten dich in kürze weiter auf die Seite unseres Kreditinstitutes...</value>
+  </data>
+  <data name="RentalDetailFrame_PaymentMethodInfo_Klarna" xml:space="preserve">
+    <value>Du hast Klarna als Zahlungsmethode gewählt. Wir leiten dich in kürze auf die Klarna Seite weiter...</value>
+  </data>
+  <data name="RentalDetailFrame_PaymentMethodInfo_Paypal" xml:space="preserve">
+    <value>Du hast Paypal als Zahlungsmethode gewählt. Wir leiten dich in kürze weiter zu Paypal...</value>
+  </data>
+  <data name="RentalDetailFrame_PaymentMethodInfo_UpFront" xml:space="preserve">
+    <value>Du hast Vorrauszahlung als Zahlungsmethode gewählt. Wir leiten dich gleich auf die Seite unseres Finanzdienstleisters weiter.</value>
+  </data>
+  <data name="RentalDetailFrame_RentalCodeHint" xml:space="preserve">
+    <value>Das ist dein Rental Code, speichere ihn dir gut ab, du brauchst ihn um deinen Roller wieder abzugeben.</value>
+  </data>
+  <data name="RentalReturnFrame_Err_RentalCodeEmpty" xml:space="preserve">
+    <value>Bitte trage einen Rental Code ein</value>
+  </data>
+  <data name="RentalReturnFrame_Err_RentalCodeInvalid" xml:space="preserve">
+    <value>Der eingetragene Rental Code ist ungültig</value>
+  </data>
+  <data name="RentalReturnFrame_Headline" xml:space="preserve">
+    <value>Gebe deinen Roller ab</value>
+  </data>
+  <data name="RentalReturnFrame_PostCodeHere" xml:space="preserve">
+    <value>Trage dazu bitte hier deinen Rental Code ein:</value>
+  </data>
+  <data name="RentalReturnFrame_Summary_HeadlineInfo1" xml:space="preserve">
+    <value>Hallo</value>
+  </data>
+  <data name="RentalReturnFrame_Summary_HeadlineInfo2" xml:space="preserve">
+    <value>, hier ist deine Abgabe Übersicht:</value>
+  </data>
+  <data name="RentalReturnFrame_Summary_HeadlineInfo_Placeholder" xml:space="preserve">
+    <value>Hallo xxxxx xxxxx, hier ist deine Abgabe Übersicht:</value>
+  </data>
+  <data name="RentalReturnFrame_Summary_LocationInfo1" xml:space="preserve">
+    <value>und sich dein Roller am richtigen Abgabeort:</value>
+  </data>
+  <data name="RentalReturnFrame_Summary_LocationInfo2" xml:space="preserve">
+    <value>befindet.</value>
+  </data>
+  <data name="RentalReturnFrame_Summary_LocationInfo_Placeholder" xml:space="preserve">
+    <value>und sich dein Roller am richtigen Abgabeort: xxxxx xxxxx, xxxxxxxxxx x befindet.</value>
+  </data>
+  <data name="RentalReturnFrame_Summary_PaymentInfo" xml:space="preserve">
+    <value>Bitte stelle sicher das die Bezahlung stattgefunden hat</value>
+  </data>
+  <data name="RentalReturnFrame_Summary_RentalProcess" xml:space="preserve">
+    <value>Deine Mietvorgang ist hiermit abgeschlossen, bei Problemen melden wir uns bei dir.</value>
+  </data>
+  <data name="RentalReturnFrame_Summary_RentalProcessEnd" xml:space="preserve">
+    <value>Vielen Dank das du mit uns gescootet bist, kehre mit Rückgabe abschließen zur Übersicht zurück.</value>
+  </data>
+  <data name="RentalReturnFrame_Summary_ScooterInfo1" xml:space="preserve">
+    <value>Du hattest deinen</value>
+  </data>
+  <data name="RentalReturnFrame_Summary_ScooterInfo2" xml:space="preserve">
+    <value>für</value>
+  </data>
+  <data name="RentalReturnFrame_Summary_ScooterInfo3" xml:space="preserve">
+    <value>Stunden.</value>
+  </data>
+  <data name="RentalReturnFrame_Summary_ScooterInfo_Placeholder" xml:space="preserve">
+    <value>Du hattest deinen xxxxxx für xx Tage, dies kostet dich xxx Euro</value>
+  </data>
+  <data name="ScooterFrame_Headline" xml:space="preserve">
+    <value>Such dir einen Roller aus</value>
+  </data>
+  <data name="ScooterFrame_ToManScootersAlert" xml:space="preserve">
+    <value>Bitte wähle maximal 1 Scooter aus. Um den ausgewählten Scooter zurückzusetzten klicke ihn erneut an.</value>
+  </data>
+  <data name="TimeFrame_CheckDateButton" xml:space="preserve">
+    <value>Verfügbarkeit prüfen</value>
+  </data>
+  <data name="TimeFrame_DateMissingAlert" xml:space="preserve">
+    <value>Das Datum ist nicht korrekt</value>
+  </data>
+  <data name="TimeFrame_DatesMixedAlert" xml:space="preserve">
+    <value>Du gibst den Roller ab bevor du ihn abholst?</value>
+  </data>
+  <data name="TimeFrame_EmptyFieldsAlert" xml:space="preserve">
+    <value>Bitte vervollständige deine Daten</value>
+  </data>
+  <data name="TimeFrame_From" xml:space="preserve">
+    <value>Wann willst du ihn abholen</value>
+  </data>
+  <data name="TimeFrame_Headline" xml:space="preserve">
+    <value>Von Wann bis Wann willst du mieten?</value>
+  </data>
+  <data name="TimeFrame_HintText" xml:space="preserve">
+    <value>Wir Teilen den Tag in Abhol und Rückgabezeiten auf. Damit du deinen Roller schnell bekommst und direkt loslegen kannst wähle bitte eine Zeit aus. Keine Sorge wir reservieren dir den Scooter für 30 Minuten. Solltest du nicht im Laden bezahlen wird bei nichterscheinen 30 Minuten nach deinem Termin mit der Abrechnung begonnen, sollte du nicht vorher abgesagt haben.</value>
+  </data>
+  <data name="TimeFrame_HintTitle" xml:space="preserve">
+    <value>Wofür die Zeitangabe</value>
+  </data>
+  <data name="TimeFrame_TimeMissingAlert" xml:space="preserve">
+    <value>Es fehlt eine Zeit</value>
+  </data>
+  <data name="TimeFrame_To" xml:space="preserve">
+    <value>Wann willst du ihn zurückbringen</value>
+  </data>
+  <data name="WelcomeFrame_DataCard_Choose" xml:space="preserve">
+    <value>angeben</value>
+  </data>
+  <data name="WelcomeFrame_DataCard_Data" xml:space="preserve">
+    <value>Daten</value>
+  </data>
+  <data name="WelcomeFrame_Headline" xml:space="preserve">
+    <value>Willkommen bei RentNScoot</value>
+  </data>
+  <data name="WelcomeFrame_HeadlineUnderline" xml:space="preserve">
+    <value>Deine Mobilität für nur 3,99€ die Stunde</value>
+  </data>
+  <data name="WelcomeFrame_LocationCard_Choose" xml:space="preserve">
+    <value>wählen</value>
+  </data>
+  <data name="WelcomeFrame_LocationCard_Location" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="WelcomeFrame_ReadyCard_Choose" xml:space="preserve">
+    <value>fahren</value>
+  </data>
+  <data name="WelcomeFrame_ReadyCard_Ready" xml:space="preserve">
+    <value>abholen</value>
+  </data>
+  <data name="WelcomeFrame_ScooterCard_Choose" xml:space="preserve">
+    <value>aussuchen</value>
+  </data>
+  <data name="WelcomeFrame_ScooterCard_Scooter" xml:space="preserve">
+    <value>Scooter</value>
+  </data>
+  <data name="WelcomeFrame_TimeCard_Choose" xml:space="preserve">
+    <value>festlegen</value>
+  </data>
+  <data name="WelcomeFrame_TimeCard_Time" xml:space="preserve">
+    <value>Zeitraum</value>
+  </data>
+</root>

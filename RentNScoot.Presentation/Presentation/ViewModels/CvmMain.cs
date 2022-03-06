@@ -45,11 +45,6 @@ namespace RentNScoot.Presentation.ViewModels
         {
             _appQueries = appQueries;
             _appCommands = appCommands;
-
-            //Get the List of all Locations
-
-            //List<Location> locations = _appQueries.GetLocationListFromDB() ?? new List<Location>();
-            //locationList = locations;
         }
 
         #endregion Ctor

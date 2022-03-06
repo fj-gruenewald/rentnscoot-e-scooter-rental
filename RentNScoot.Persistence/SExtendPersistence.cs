@@ -68,7 +68,7 @@ namespace RentNScoot
             AddParameter(dbCommand, "RentalEnd", rental.RentalEnd);
         }
 
-        //
+        //Add Parameters to Push to DB
         private static void AddParameter(DbCommand dbCommand, string name, object value)
         {
             DbParameter dbParameter = dbCommand.CreateParameter();
@@ -77,7 +77,7 @@ namespace RentNScoot
             dbCommand.Parameters.Add(dbParameter);
         }
 
-        //
+        //Format Scooter Parameters to Push to DB
         public static void AddScooterUpdateParameters(this Scooter scooter, DbCommand dbCommand)
         {
             dbCommand.Parameters.Clear();

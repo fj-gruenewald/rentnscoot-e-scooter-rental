@@ -11,6 +11,7 @@ namespace RentNScoot
         public string Street { get; set; } = String.Empty;
         public string StreetNr { get; set; } = String.Empty;
 
+        //Create empty Location Object
         public Location()
         {
         }
