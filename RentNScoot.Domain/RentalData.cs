@@ -16,7 +16,7 @@
             Location = location;
         }
 
-        //ctor without attributes
+        //ctor2
         public RentalData()
         { }
     }

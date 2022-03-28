@@ -2,7 +2,7 @@
 {
     public interface IDialog
     {
-        //Form zeigen
+        //Show Window
         void Show();
     }
 }

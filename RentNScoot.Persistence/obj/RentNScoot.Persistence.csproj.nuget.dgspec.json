@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\D3NCE\\OneDrive\\Desktop\\RentNScoot\\RentNScoot.Persistence\\RentNScoot.Persistence.csproj": {}
+    "C:\\Users\\D3NCE\\Desktop\\Projektdaten\\RentNScoot\\RentNScoot.Persistence\\RentNScoot.Persistence.csproj": {}
   },
   "projects": {
-    "C:\\Users\\D3NCE\\OneDrive\\Desktop\\RentNScoot\\RentNScoot.Application\\RentNScoot.Application.csproj": {
+    "C:\\Users\\D3NCE\\Desktop\\Projektdaten\\RentNScoot\\RentNScoot.Application\\RentNScoot.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\D3NCE\\OneDrive\\Desktop\\RentNScoot\\RentNScoot.Application\\RentNScoot.Application.csproj",
+        "projectUniqueName": "C:\\Users\\D3NCE\\Desktop\\Projektdaten\\RentNScoot\\RentNScoot.Application\\RentNScoot.Application.csproj",
         "projectName": "RentNScoot.Application",
-        "projectPath": "C:\\Users\\D3NCE\\OneDrive\\Desktop\\RentNScoot\\RentNScoot.Application\\RentNScoot.Application.csproj",
+        "projectPath": "C:\\Users\\D3NCE\\Desktop\\Projektdaten\\RentNScoot\\RentNScoot.Application\\RentNScoot.Application.csproj",
         "packagesPath": "C:\\Users\\D3NCE\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\D3NCE\\OneDrive\\Desktop\\RentNScoot\\RentNScoot.Application\\obj\\",
+        "outputPath": "C:\\Users\\D3NCE\\Desktop\\Projektdaten\\RentNScoot\\RentNScoot.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\D3NCE\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
@@ -34,11 +32,11 @@
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "C:\\Users\\D3NCE\\OneDrive\\Desktop\\RentNScoot\\RentNScoot.Domain\\RentNScoot.Domain.csproj": {
-                "projectPath": "C:\\Users\\D3NCE\\OneDrive\\Desktop\\RentNScoot\\RentNScoot.Domain\\RentNScoot.Domain.csproj"
+              "C:\\Users\\D3NCE\\Desktop\\Projektdaten\\RentNScoot\\RentNScoot.Domain\\RentNScoot.Domain.csproj": {
+                "projectPath": "C:\\Users\\D3NCE\\Desktop\\Projektdaten\\RentNScoot\\RentNScoot.Domain\\RentNScoot.Domain.csproj"
               },
-              "C:\\Users\\D3NCE\\OneDrive\\Desktop\\RentNScoot\\RentNScoot.Utils\\RentNScoot.Utils.csproj": {
-                "projectPath": "C:\\Users\\D3NCE\\OneDrive\\Desktop\\RentNScoot\\RentNScoot.Utils\\RentNScoot.Utils.csproj"
+              "C:\\Users\\D3NCE\\Desktop\\Projektdaten\\RentNScoot\\RentNScoot.Utils\\RentNScoot.Utils.csproj": {
+                "projectPath": "C:\\Users\\D3NCE\\Desktop\\Projektdaten\\RentNScoot\\RentNScoot.Utils\\RentNScoot.Utils.csproj"
               }
             }
           }
@@ -52,16 +50,6 @@
       "frameworks": {
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
-          "dependencies": {
-            "MySql.Data": {
-              "target": "Package",
-              "version": "[8.0.21, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.8.1, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -72,33 +60,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "NETStandard.Library": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\D3NCE\\OneDrive\\Desktop\\RentNScoot\\RentNScoot.Domain\\RentNScoot.Domain.csproj": {
+    "C:\\Users\\D3NCE\\Desktop\\Projektdaten\\RentNScoot\\RentNScoot.Domain\\RentNScoot.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\D3NCE\\OneDrive\\Desktop\\RentNScoot\\RentNScoot.Domain\\RentNScoot.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\D3NCE\\Desktop\\Projektdaten\\RentNScoot\\RentNScoot.Domain\\RentNScoot.Domain.csproj",
         "projectName": "RentNScoot.Domain",
-        "projectPath": "C:\\Users\\D3NCE\\OneDrive\\Desktop\\RentNScoot\\RentNScoot.Domain\\RentNScoot.Domain.csproj",
+        "projectPath": "C:\\Users\\D3NCE\\Desktop\\Projektdaten\\RentNScoot\\RentNScoot.Domain\\RentNScoot.Domain.csproj",
         "packagesPath": "C:\\Users\\D3NCE\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\D3NCE\\OneDrive\\Desktop\\RentNScoot\\RentNScoot.Domain\\obj\\",
+        "outputPath": "C:\\Users\\D3NCE\\Desktop\\Projektdaten\\RentNScoot\\RentNScoot.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\D3NCE\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
@@ -122,16 +103,6 @@
       "frameworks": {
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
-          "dependencies": {
-            "MySql.Data": {
-              "target": "Package",
-              "version": "[8.0.21, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.8.1, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -142,33 +113,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "NETStandard.Library": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\D3NCE\\OneDrive\\Desktop\\RentNScoot\\RentNScoot.Persistence\\RentNScoot.Persistence.csproj": {
+    "C:\\Users\\D3NCE\\Desktop\\Projektdaten\\RentNScoot\\RentNScoot.Persistence\\RentNScoot.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\D3NCE\\OneDrive\\Desktop\\RentNScoot\\RentNScoot.Persistence\\RentNScoot.Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\D3NCE\\Desktop\\Projektdaten\\RentNScoot\\RentNScoot.Persistence\\RentNScoot.Persistence.csproj",
         "projectName": "RentNScoot.Persistence",
-        "projectPath": "C:\\Users\\D3NCE\\OneDrive\\Desktop\\RentNScoot\\RentNScoot.Persistence\\RentNScoot.Persistence.csproj",
+        "projectPath": "C:\\Users\\D3NCE\\Desktop\\Projektdaten\\RentNScoot\\RentNScoot.Persistence\\RentNScoot.Persistence.csproj",
         "packagesPath": "C:\\Users\\D3NCE\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\D3NCE\\OneDrive\\Desktop\\RentNScoot\\RentNScoot.Persistence\\obj\\",
+        "outputPath": "C:\\Users\\D3NCE\\Desktop\\Projektdaten\\RentNScoot\\RentNScoot.Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\D3NCE\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
@@ -181,11 +145,11 @@
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "C:\\Users\\D3NCE\\OneDrive\\Desktop\\RentNScoot\\RentNScoot.Application\\RentNScoot.Application.csproj": {
-                "projectPath": "C:\\Users\\D3NCE\\OneDrive\\Desktop\\RentNScoot\\RentNScoot.Application\\RentNScoot.Application.csproj"
+              "C:\\Users\\D3NCE\\Desktop\\Projektdaten\\RentNScoot\\RentNScoot.Application\\RentNScoot.Application.csproj": {
+                "projectPath": "C:\\Users\\D3NCE\\Desktop\\Projektdaten\\RentNScoot\\RentNScoot.Application\\RentNScoot.Application.csproj"
               },
-              "C:\\Users\\D3NCE\\OneDrive\\Desktop\\RentNScoot\\RentNScoot.Domain\\RentNScoot.Domain.csproj": {
-                "projectPath": "C:\\Users\\D3NCE\\OneDrive\\Desktop\\RentNScoot\\RentNScoot.Domain\\RentNScoot.Domain.csproj"
+              "C:\\Users\\D3NCE\\Desktop\\Projektdaten\\RentNScoot\\RentNScoot.Domain\\RentNScoot.Domain.csproj": {
+                "projectPath": "C:\\Users\\D3NCE\\Desktop\\Projektdaten\\RentNScoot\\RentNScoot.Domain\\RentNScoot.Domain.csproj"
               }
             }
           }
@@ -199,16 +163,6 @@
       "frameworks": {
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
-          "dependencies": {
-            "System.Data.SQLite.Core": {
-              "target": "Package",
-              "version": "[1.0.115.5, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.8.1, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -219,33 +173,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "NETStandard.Library": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\D3NCE\\OneDrive\\Desktop\\RentNScoot\\RentNScoot.Utils\\RentNScoot.Utils.csproj": {
+    "C:\\Users\\D3NCE\\Desktop\\Projektdaten\\RentNScoot\\RentNScoot.Utils\\RentNScoot.Utils.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\D3NCE\\OneDrive\\Desktop\\RentNScoot\\RentNScoot.Utils\\RentNScoot.Utils.csproj",
+        "projectUniqueName": "C:\\Users\\D3NCE\\Desktop\\Projektdaten\\RentNScoot\\RentNScoot.Utils\\RentNScoot.Utils.csproj",
         "projectName": "RentNScoot.Utils",
-        "projectPath": "C:\\Users\\D3NCE\\OneDrive\\Desktop\\RentNScoot\\RentNScoot.Utils\\RentNScoot.Utils.csproj",
+        "projectPath": "C:\\Users\\D3NCE\\Desktop\\Projektdaten\\RentNScoot\\RentNScoot.Utils\\RentNScoot.Utils.csproj",
         "packagesPath": "C:\\Users\\D3NCE\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\D3NCE\\OneDrive\\Desktop\\RentNScoot\\RentNScoot.Utils\\obj\\",
+        "outputPath": "C:\\Users\\D3NCE\\Desktop\\Projektdaten\\RentNScoot\\RentNScoot.Utils\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\D3NCE\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
@@ -279,12 +226,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "NETStandard.Library": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

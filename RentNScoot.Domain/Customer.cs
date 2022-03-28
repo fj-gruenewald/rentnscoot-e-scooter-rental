@@ -21,7 +21,7 @@ namespace RentNScoot
             CustomerPayment = payment;
         }
 
-        //ctor without attributes
+        //ctor2
         public Customer()
         { }
     }

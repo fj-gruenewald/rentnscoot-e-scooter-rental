@@ -4,7 +4,7 @@
 library
 C#
 .cs
-C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Presentation\obj\Debug\netcoreapp3.1\
+C:\Users\D3NCE\OneDrive\Desktop\CBSE-Gruenewald-Frederik-70453004\Projektdaten\RentNScoot\RentNScoot.Presentation\obj\Debug\netcoreapp3.1\
 RentNScoot
 none
 false
@@ -13,8 +13,8 @@ TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
 11-859388613
 
 20-517056668
-212-155643126
+212-883004770
 Presentation\Controls\Cards\LocationCard.xaml;Presentation\Controls\Cards\ScooterCard.xaml;Presentation\Views\CviMain.xaml;Presentation\Views\Frames\LocationFrame.xaml;Presentation\Views\Frames\OverviewFrame.xaml;Presentation\Views\Frames\PersonalDataFrame.xaml;Presentation\Views\Frames\RentalDetailFrame.xaml;Presentation\Views\Frames\RentalReturnFrame.xaml;Presentation\Views\Frames\ScooterFrame.xaml;Presentation\Views\Frames\TimeFrame.xaml;Presentation\Views\Frames\WelcomeFrame.xaml;
 
-False
+True
 

@@ -32,23 +32,6 @@ using System.Windows.Media.TextFormatting;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Shell;
-using Xceed.Wpf.Toolkit;
-using Xceed.Wpf.Toolkit.Chromes;
-using Xceed.Wpf.Toolkit.Converters;
-using Xceed.Wpf.Toolkit.Core;
-using Xceed.Wpf.Toolkit.Core.Converters;
-using Xceed.Wpf.Toolkit.Core.Input;
-using Xceed.Wpf.Toolkit.Core.Media;
-using Xceed.Wpf.Toolkit.Core.Utilities;
-using Xceed.Wpf.Toolkit.Mag.Converters;
-using Xceed.Wpf.Toolkit.Panels;
-using Xceed.Wpf.Toolkit.Primitives;
-using Xceed.Wpf.Toolkit.PropertyGrid;
-using Xceed.Wpf.Toolkit.PropertyGrid.Attributes;
-using Xceed.Wpf.Toolkit.PropertyGrid.Commands;
-using Xceed.Wpf.Toolkit.PropertyGrid.Converters;
-using Xceed.Wpf.Toolkit.PropertyGrid.Editors;
-using Xceed.Wpf.Toolkit.Zoombox;
 
 
 namespace RentNScoot.Presentation.Views.Frames {
@@ -121,14 +104,13 @@ namespace RentNScoot.Presentation.Views.Frames {
         /// InitializeComponent
         /// </summary>
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "5.0.14.0")]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "6.0.2.0")]
         public void InitializeComponent() {
             if (_contentLoaded) {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/RentNScoot.Presentation;V1.0.0.0;component/presentation/views/frames/timeframe.x" +
-                    "aml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/RentNScoot.Presentation;component/presentation/views/frames/timeframe.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\..\Presentation\Views\Frames\TimeFrame.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
@@ -138,7 +120,7 @@ namespace RentNScoot.Presentation.Views.Frames {
         }
         
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "5.0.14.0")]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "6.0.2.0")]
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Never)]
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Design", "CA1033:InterfaceMethodsShouldBeCallableByChildTypes")]
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]

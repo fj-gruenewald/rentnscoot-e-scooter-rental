@@ -35,3 +35,13 @@ C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Domain\obj\Debug\netstanda
 C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Domain\obj\Debug\netstandard2.1\RentNScoot.Domain.dll
 C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Domain\obj\Debug\netstandard2.1\RentNScoot.Domain.pdb
 C:\Users\D3NCE\OneDrive\Desktop\RentNScoot\RentNScoot.Domain\obj\Debug\netstandard2.1\RentNScoot.Domain.csproj.AssemblyReference.cache
+C:\Users\D3NCE\OneDrive\Desktop\CBSE-Gruenewald-Frederik-70453004\Projektdaten\RentNScoot\RentNScoot.Domain\bin\Debug\netstandard2.1\RentNScoot.Domain.deps.json
+C:\Users\D3NCE\OneDrive\Desktop\CBSE-Gruenewald-Frederik-70453004\Projektdaten\RentNScoot\RentNScoot.Domain\bin\Debug\netstandard2.1\RentNScoot.Domain.dll
+C:\Users\D3NCE\OneDrive\Desktop\CBSE-Gruenewald-Frederik-70453004\Projektdaten\RentNScoot\RentNScoot.Domain\bin\Debug\netstandard2.1\RentNScoot.Domain.pdb
+C:\Users\D3NCE\OneDrive\Desktop\CBSE-Gruenewald-Frederik-70453004\Projektdaten\RentNScoot\RentNScoot.Domain\obj\Debug\netstandard2.1\RentNScoot.Domain.csproj.AssemblyReference.cache
+C:\Users\D3NCE\OneDrive\Desktop\CBSE-Gruenewald-Frederik-70453004\Projektdaten\RentNScoot\RentNScoot.Domain\obj\Debug\netstandard2.1\RentNScoot.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\D3NCE\OneDrive\Desktop\CBSE-Gruenewald-Frederik-70453004\Projektdaten\RentNScoot\RentNScoot.Domain\obj\Debug\netstandard2.1\RentNScoot.Domain.AssemblyInfoInputs.cache
+C:\Users\D3NCE\OneDrive\Desktop\CBSE-Gruenewald-Frederik-70453004\Projektdaten\RentNScoot\RentNScoot.Domain\obj\Debug\netstandard2.1\RentNScoot.Domain.AssemblyInfo.cs
+C:\Users\D3NCE\OneDrive\Desktop\CBSE-Gruenewald-Frederik-70453004\Projektdaten\RentNScoot\RentNScoot.Domain\obj\Debug\netstandard2.1\RentNScoot.Domain.csproj.CoreCompileInputs.cache
+C:\Users\D3NCE\OneDrive\Desktop\CBSE-Gruenewald-Frederik-70453004\Projektdaten\RentNScoot\RentNScoot.Domain\obj\Debug\netstandard2.1\RentNScoot.Domain.dll
+C:\Users\D3NCE\OneDrive\Desktop\CBSE-Gruenewald-Frederik-70453004\Projektdaten\RentNScoot\RentNScoot.Domain\obj\Debug\netstandard2.1\RentNScoot.Domain.pdb

@@ -20,7 +20,7 @@ namespace RentNScoot
             Model = model;
         }
 
-        //ctor without attributes
+        //ctor2
         public Scooter()
         { }
     }

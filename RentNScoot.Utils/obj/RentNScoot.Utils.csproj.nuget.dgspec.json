@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\D3NCE\\OneDrive\\Desktop\\RentNScoot\\RentNScoot.Utils\\RentNScoot.Utils.csproj": {}
+    "C:\\Users\\D3NCE\\Desktop\\Projektdaten\\RentNScoot\\RentNScoot.Utils\\RentNScoot.Utils.csproj": {}
   },
   "projects": {
-    "C:\\Users\\D3NCE\\OneDrive\\Desktop\\RentNScoot\\RentNScoot.Utils\\RentNScoot.Utils.csproj": {
+    "C:\\Users\\D3NCE\\Desktop\\Projektdaten\\RentNScoot\\RentNScoot.Utils\\RentNScoot.Utils.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\D3NCE\\OneDrive\\Desktop\\RentNScoot\\RentNScoot.Utils\\RentNScoot.Utils.csproj",
+        "projectUniqueName": "C:\\Users\\D3NCE\\Desktop\\Projektdaten\\RentNScoot\\RentNScoot.Utils\\RentNScoot.Utils.csproj",
         "projectName": "RentNScoot.Utils",
-        "projectPath": "C:\\Users\\D3NCE\\OneDrive\\Desktop\\RentNScoot\\RentNScoot.Utils\\RentNScoot.Utils.csproj",
+        "projectPath": "C:\\Users\\D3NCE\\Desktop\\Projektdaten\\RentNScoot\\RentNScoot.Utils\\RentNScoot.Utils.csproj",
         "packagesPath": "C:\\Users\\D3NCE\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\D3NCE\\OneDrive\\Desktop\\RentNScoot\\RentNScoot.Utils\\obj\\",
+        "outputPath": "C:\\Users\\D3NCE\\Desktop\\Projektdaten\\RentNScoot\\RentNScoot.Utils\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\D3NCE\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
@@ -55,12 +53,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "NETStandard.Library": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

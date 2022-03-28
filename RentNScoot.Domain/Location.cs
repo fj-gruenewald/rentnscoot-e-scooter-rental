@@ -11,12 +11,12 @@ namespace RentNScoot
         public string Street { get; set; } = String.Empty;
         public string StreetNr { get; set; } = String.Empty;
 
-        //Create empty Location Object
+        //ctor
         public Location()
         {
         }
 
-        //Create an Location Object but generate the ID
+        //ctor2 - Create an Location Object but generate the ID
         public Location(string city, int postal, string state, string street, string streetnr)
         {
             LocationID = Guid.NewGuid().ToString();
@@ -27,7 +27,7 @@ namespace RentNScoot
             StreetNr = streetnr;
         }
 
-        //Create an Location Object
+        //ctor3 - Create an Location Object
         public Location(string id, string city, int postal, string state, string street, string streetnr)
         {
             LocationID = id;

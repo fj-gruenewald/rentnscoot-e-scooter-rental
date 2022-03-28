@@ -24,7 +24,7 @@ namespace RentNScoot
             RentalEnd = end;
         }
 
-        //ctor without attributes
+        //ctor2
         public Rental()
         { }
     }
