@@ -1,8 +1,8 @@
-06.03.2022-19:54:30.0502  App                  App_StartUp 
-06.03.2022-19:54:30.0602  AFactoryData         Create_ReadSqlite() Data Source=C:\Users\D3NCE\OneDrive\Desktop\CBSE-Gruenewald-Frederik-70453004\Projektdaten\RentNScoot\RentNScoot.Start\bin\Debug\netcoreapp3.1\Database\database.db; Version=3;
-06.03.2022-19:54:30.0658  AFactoryData         Create_WriteSqlite() Data Source=C:\Users\D3NCE\OneDrive\Desktop\CBSE-Gruenewald-Frederik-70453004\Projektdaten\RentNScoot\RentNScoot.Start\bin\Debug\netcoreapp3.1\Database\database.db; Version=3;
-06.03.2022-19:54:30.0698  AFactoryApp          Create_Queries(IDataRead) 
-06.03.2022-19:54:30.0698  CAppQueries          Ctor() 
-06.03.2022-19:54:30.0698  AFactoryApp          Create_Commands(IDataWrite) 
-06.03.2022-19:54:30.0698  CAppCommands         Ctor() 
-06.03.2022-19:54:30.0935  CDataReadSqlite      Locations() = GetLocations
+12.05.2022-10:17:50.0277  App                  App_StartUp 
+12.05.2022-10:17:50.0383  AFactoryData         Create_ReadSqlite() Data Source=C:\Users\D3NCE\Documents\GitHub\rentnscoot-e-scooter-rental\RentNScoot.Start\bin\Debug\netcoreapp3.1\Database\database.db; Version=3;
+12.05.2022-10:17:50.0451  AFactoryData         Create_WriteSqlite() Data Source=C:\Users\D3NCE\Documents\GitHub\rentnscoot-e-scooter-rental\RentNScoot.Start\bin\Debug\netcoreapp3.1\Database\database.db; Version=3;
+12.05.2022-10:17:50.0502  AFactoryApp          Create_Queries(IDataRead) 
+12.05.2022-10:17:50.0502  CAppQueries          Ctor() 
+12.05.2022-10:17:50.0503  AFactoryApp          Create_Commands(IDataWrite) 
+12.05.2022-10:17:50.0503  CAppCommands         Ctor() 
+12.05.2022-10:17:50.0885  CDataReadSqlite      Locations() = GetLocations
