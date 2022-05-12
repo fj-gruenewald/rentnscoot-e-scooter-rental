@@ -18,8 +18,16 @@
 </p>
 
 ## About The Project
+<img align="right" src="https://github.com/fj-gruenewald/rentnscoot-e-scooter-rental/blob/master/img/rentNscoot-home-screen.png" width="440">
 
-RentNScoot allows renting and returning electric scooters for a certain period of time. Locations, scooters and rentals can be read from a SQLite database and dynamically displayed in lists.
+<br/>
+
+RentNScoot allows to rent electric scooters for a certain period of time and return them afterwards. 
+The scooters, locations, personal data of the user and information needed for the rental process are stored in a SQLite database 
+and can be read out and displayed in dynamic lists at any given time. The application was developed completely in the programming 
+language C# and WPF in the frontend.
+
+<br/>
 <br/>
 
 ## Functions
